@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\regC\simulation\qsim
+vregC
+Z1 I;Z0z;JKK7aVL:h?eACE=X2
+Z2 Vn[Kb[T0fHlQH[IL[Z0Ejn0
+Z3 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\regC\simulation\qsim
+Z4 w1529936484
+Z5 8regC.vo
+Z6 FregC.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 nreg@c
+!i10b 1
+Z10 !s100 DTFW[HZfK2<B8d4iT52YV1
+!s85 0
+Z11 !s108 1529936484.971000
+Z12 !s107 regC.vo|
+Z13 !s90 -work|work|regC.vo|
+!s101 -O0
+vregC_vlg_check_tst
+!i10b 1
+!s100 anMgklLOLFkKQmKGm]SJC1
+IaJ[`K[h33M<aI8mC2NSl<2
+VKiFmoFUz^ZhC;<ccUX1W<2
+R3
+Z14 w1529936483
+Z15 8regC.vt
+Z16 FregC.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1529936485.161000
+Z18 !s107 regC.vt|
+Z19 !s90 -work|work|regC.vt|
+!s101 -O0
+R8
+nreg@c_vlg_check_tst
+vregC_vlg_sample_tst
+!i10b 1
+!s100 V0SzZoN:ihi=l7M^W<JDP3
+Ihc;@oQZ6d8831CYAn9RK63
+V1EGjjz@a>FXi==0FgS?241
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+nreg@c_vlg_sample_tst
+vregC_vlg_vec_tst
+!i10b 1
+!s100 AnSn4zRT>G7bjO_M<1AnR0
+IaF@AV;aL_DV_CfnofN[PM2
+VIcaJKjNPPjAmeUeX[=5WT3
+R3
+R14
+R15
+R16
+L0 452
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+nreg@c_vlg_vec_tst

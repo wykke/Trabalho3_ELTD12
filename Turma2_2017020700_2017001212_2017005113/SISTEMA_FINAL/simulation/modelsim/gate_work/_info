@@ -1,0 +1,26 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\modelsim
+vSISTEMA_FINAL
+!i10b 1
+!s100 iJ4HQmajPYDW[D5S0IH]X0
+IjAR7]A78MckIFl9ElGU=]2
+V>LLJ_mJJKU_Cld05zjWIz2
+Z1 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\modelsim
+w1530466618
+8SISTEMA_FINAL.vo
+FSISTEMA_FINAL.vo
+L0 31
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1530466917.052000
+!s107 SISTEMA_FINAL.vo|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|SISTEMA_FINAL.vo|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+. -O0
+n@s@i@s@t@e@m@a_@f@i@n@a@l

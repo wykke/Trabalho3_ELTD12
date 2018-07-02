@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\ALU\simulation\qsim
+vALU
+Z1 !s100 mzm;0mUgADocjzAh8=zP71
+Z2 I87b^m=8z32GhEC@7VA;Wk0
+Z3 VMn3I]Hma^J5[f9D9`LEK<1
+Z4 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\ALU\simulation\qsim
+Z5 w1529935927
+Z6 8ALU.vo
+Z7 FALU.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|ALU.vo|
+Z10 o-work work -O0
+Z11 n@a@l@u
+!i10b 1
+!s85 0
+Z12 !s108 1529935928.250000
+Z13 !s107 ALU.vo|
+!s101 -O0
+vALU_vlg_check_tst
+!i10b 1
+Z14 !s100 L;@?gTod>><^fN<[zFGg01
+Z15 IQE>cokjcYj<TEg[K8o^Vo0
+Z16 Vkmd0W@MVlgO=bkS1I:QR^1
+R4
+Z17 w1529935926
+Z18 8ALU.vt
+Z19 FALU.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z20 !s108 1529935928.484000
+Z21 !s107 ALU.vt|
+Z22 !s90 -work|work|ALU.vt|
+!s101 -O0
+R10
+Z23 n@a@l@u_vlg_check_tst
+vALU_vlg_sample_tst
+!i10b 1
+Z24 !s100 MU3GF:IZm>D3;V5HM6NO<1
+Z25 IOn`N2f4Mb?R_fei_99fPn0
+Z26 VWVHYB5TnAd@5P7bKWE]M71
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@a@l@u_vlg_sample_tst
+vALU_vlg_vec_tst
+!i10b 1
+Z28 !s100 ^jW62eM38RPz<XM7QgJ;F3
+Z29 I6daNd_hSZ<h1LilEX:_4>3
+Z30 V>bFnnU[^IecCM5^<l3;]W0
+R4
+R17
+R18
+R19
+Z31 L0 425
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@a@l@u_vlg_vec_tst

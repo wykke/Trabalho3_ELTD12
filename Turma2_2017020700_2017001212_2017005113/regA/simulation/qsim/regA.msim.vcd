@@ -1,0 +1,729 @@
+$comment
+	File created using the following command:
+		vcd file regA.msim.vcd -direction
+$end
+$date
+	Mon Jun 25 11:18:32 2018
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module regA_vlg_vec_tst $end
+$var reg 1 ! EnA $end
+$var reg 1 " clk $end
+$var reg 8 # entrada [7:0] $end
+$var wire 1 $ FimA $end
+$var wire 1 % saidaA [15] $end
+$var wire 1 & saidaA [14] $end
+$var wire 1 ' saidaA [13] $end
+$var wire 1 ( saidaA [12] $end
+$var wire 1 ) saidaA [11] $end
+$var wire 1 * saidaA [10] $end
+$var wire 1 + saidaA [9] $end
+$var wire 1 , saidaA [8] $end
+$var wire 1 - saidaA [7] $end
+$var wire 1 . saidaA [6] $end
+$var wire 1 / saidaA [5] $end
+$var wire 1 0 saidaA [4] $end
+$var wire 1 1 saidaA [3] $end
+$var wire 1 2 saidaA [2] $end
+$var wire 1 3 saidaA [1] $end
+$var wire 1 4 saidaA [0] $end
+$var wire 1 5 sampler $end
+$scope module i1 $end
+$var wire 1 6 gnd $end
+$var wire 1 7 vcc $end
+$var wire 1 8 unknown $end
+$var tri1 1 9 devclrn $end
+$var tri1 1 : devpor $end
+$var tri1 1 ; devoe $end
+$var wire 1 < clk~combout $end
+$var wire 1 = clk~clkctrl_outclk $end
+$var wire 1 > EnA~combout $end
+$var wire 1 ? FimA~reg0_regout $end
+$var wire 1 @ saidaA[0]~reg0feeder_combout $end
+$var wire 1 A saidaA[0]~reg0_regout $end
+$var wire 1 B saidaA[1]~reg0_regout $end
+$var wire 1 C saidaA[2]~reg0feeder_combout $end
+$var wire 1 D saidaA[2]~reg0_regout $end
+$var wire 1 E saidaA[3]~reg0feeder_combout $end
+$var wire 1 F saidaA[3]~reg0_regout $end
+$var wire 1 G saidaA[4]~reg0feeder_combout $end
+$var wire 1 H saidaA[4]~reg0_regout $end
+$var wire 1 I saidaA[5]~reg0_regout $end
+$var wire 1 J saidaA[6]~reg0_regout $end
+$var wire 1 K saidaA[7]~reg0feeder_combout $end
+$var wire 1 L saidaA[7]~reg0_regout $end
+$var wire 1 M entrada~combout [7] $end
+$var wire 1 N entrada~combout [6] $end
+$var wire 1 O entrada~combout [5] $end
+$var wire 1 P entrada~combout [4] $end
+$var wire 1 Q entrada~combout [3] $end
+$var wire 1 R entrada~combout [2] $end
+$var wire 1 S entrada~combout [1] $end
+$var wire 1 T entrada~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+b1100100 #
+0'
+0&
+0%
+x5
+06
+17
+x8
+19
+1:
+1;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+1C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0T
+0S
+1R
+0Q
+0P
+1O
+1N
+0M
+0$
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+$end
+#10000
+1"
+1<
+1=
+05
+#20000
+0"
+0<
+0=
+15
+#30000
+1"
+1<
+1=
+05
+#40000
+0"
+0<
+0=
+15
+#50000
+1"
+1<
+1=
+05
+#60000
+0"
+0<
+0=
+15
+#70000
+1"
+1<
+1=
+05
+#80000
+0"
+0<
+0=
+15
+#90000
+1"
+1<
+1=
+05
+#100000
+0"
+0<
+0=
+15
+#110000
+1"
+1<
+1=
+05
+#120000
+b11100100 #
+b11000100 #
+b11001100 #
+b11001000 #
+0"
+0R
+1Q
+0O
+1M
+0<
+0=
+15
+0C
+1E
+1K
+#130000
+1"
+1<
+1=
+05
+#140000
+0"
+0<
+0=
+15
+#150000
+1"
+1<
+1=
+05
+#160000
+0"
+0<
+0=
+15
+#170000
+1"
+1<
+1=
+05
+#180000
+0"
+0<
+0=
+15
+#190000
+1"
+1<
+1=
+05
+#200000
+0"
+0<
+0=
+15
+#210000
+1"
+1<
+1=
+05
+#220000
+0"
+0<
+0=
+15
+#230000
+1"
+1<
+1=
+05
+#240000
+b10001000 #
+b1000 #
+b101000 #
+b101100 #
+0"
+1R
+1O
+0N
+0M
+0<
+0=
+15
+1C
+0K
+#250000
+1!
+1"
+1>
+1<
+1=
+05
+1I
+1F
+1D
+1?
+1/
+11
+12
+1$
+#260000
+0"
+0<
+0=
+15
+#270000
+1"
+1<
+1=
+05
+#280000
+0"
+0<
+0=
+15
+#290000
+1"
+1<
+1=
+05
+#300000
+0"
+0<
+0=
+15
+#310000
+1"
+1<
+1=
+05
+#320000
+0"
+0<
+0=
+15
+#330000
+1"
+1<
+1=
+05
+#340000
+0"
+0<
+0=
+15
+#350000
+1"
+1<
+1=
+05
+#360000
+0"
+0<
+0=
+15
+#370000
+1"
+1<
+1=
+05
+#380000
+b101110 #
+b101111 #
+b100111 #
+b111 #
+b11 #
+0"
+1T
+1S
+0R
+0Q
+0O
+0<
+0=
+15
+1@
+0C
+0E
+#390000
+1"
+1<
+1=
+05
+0I
+0F
+0D
+1B
+1A
+0/
+01
+02
+13
+14
+#400000
+0"
+0<
+0=
+15
+#410000
+1"
+1<
+1=
+05
+#420000
+0"
+0<
+0=
+15
+#430000
+1"
+1<
+1=
+05
+#440000
+0"
+0<
+0=
+15
+#450000
+1"
+1<
+1=
+05
+#460000
+0"
+0<
+0=
+15
+#470000
+1"
+1<
+1=
+05
+#480000
+0"
+0<
+0=
+15
+#490000
+1"
+1<
+1=
+05
+#500000
+0!
+0"
+0>
+0<
+0=
+15
+#510000
+1"
+1<
+1=
+05
+0?
+0$
+#520000
+b10011 #
+b10001 #
+b10000 #
+b10100 #
+0"
+0T
+0S
+1R
+1P
+0<
+0=
+15
+0@
+1C
+1G
+#530000
+1"
+1<
+1=
+05
+#540000
+0"
+0<
+0=
+15
+#550000
+1"
+1<
+1=
+05
+#560000
+0"
+0<
+0=
+15
+#570000
+1"
+1<
+1=
+05
+#580000
+0"
+0<
+0=
+15
+#590000
+1"
+1<
+1=
+05
+#600000
+0"
+0<
+0=
+15
+#610000
+1"
+1<
+1=
+05
+#620000
+0"
+0<
+0=
+15
+#630000
+1"
+1<
+1=
+05
+#640000
+0"
+0<
+0=
+15
+#650000
+1"
+1<
+1=
+05
+#660000
+0"
+0<
+0=
+15
+#670000
+1"
+1<
+1=
+05
+#680000
+0"
+0<
+0=
+15
+#690000
+1"
+1<
+1=
+05
+#700000
+0"
+0<
+0=
+15
+#710000
+1"
+1<
+1=
+05
+#720000
+0"
+0<
+0=
+15
+#730000
+1"
+1<
+1=
+05
+#740000
+0"
+0<
+0=
+15
+#750000
+1!
+1"
+1>
+1<
+1=
+05
+1H
+1D
+0B
+0A
+1?
+10
+12
+03
+04
+1$
+#760000
+0"
+0<
+0=
+15
+#770000
+1"
+1<
+1=
+05
+#780000
+0"
+0<
+0=
+15
+#790000
+1"
+1<
+1=
+05
+#800000
+b1010100 #
+b1110100 #
+b1100100 #
+b1100110 #
+b1100111 #
+b1100011 #
+0"
+1T
+1S
+0R
+0P
+1O
+1N
+0<
+0=
+15
+1@
+0C
+0G
+#810000
+1"
+1<
+1=
+05
+1J
+1I
+0H
+0D
+1B
+1A
+1.
+1/
+00
+02
+13
+14
+#820000
+0"
+0<
+0=
+15
+#830000
+1"
+1<
+1=
+05
+#840000
+0"
+0<
+0=
+15
+#850000
+1"
+1<
+1=
+05
+#860000
+0"
+0<
+0=
+15
+#870000
+1"
+1<
+1=
+05
+#880000
+0"
+0<
+0=
+15
+#890000
+1"
+1<
+1=
+05
+#900000
+0"
+0<
+0=
+15
+#910000
+1"
+1<
+1=
+05
+#920000
+0"
+0<
+0=
+15
+#930000
+1"
+1<
+1=
+05
+#940000
+0"
+0<
+0=
+15
+#950000
+1"
+1<
+1=
+05
+#960000
+0"
+0<
+0=
+15
+#970000
+1"
+1<
+1=
+05
+#980000
+0"
+0<
+0=
+15
+#990000
+1"
+1<
+1=
+05
+#1000000

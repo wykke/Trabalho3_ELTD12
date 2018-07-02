@@ -1,0 +1,188 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do SISTEMA_FINAL_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica\ Digital\ II/Trabalhos/Trabalho\ 2/Turma2_2017020700_2017001212_2017005113/ROM {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/ROM/ROM.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ROM
+# 
+# Top level modules:
+# 	ROM
+# vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica\ Digital\ II/Trabalhos/Trabalho\ 2/Turma2_2017020700_2017001212_2017005113/regC {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/regC/regC.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regC
+# 
+# Top level modules:
+# 	regC
+# vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica\ Digital\ II/Trabalhos/Trabalho\ 2/Turma2_2017020700_2017001212_2017005113/regA {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/regA/regA.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module regA
+# 
+# Top level modules:
+# 	regA
+# vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica\ Digital\ II/Trabalhos/Trabalho\ 2/Turma2_2017020700_2017001212_2017005113/Controle {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/Controle/Controle.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Controle
+# 
+# Top level modules:
+# 	Controle
+# vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica\ Digital\ II/Trabalhos/Trabalho\ 2/Turma2_2017020700_2017001212_2017005113/AntiLoop {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/AntiLoop/AntiLoop.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module AntiLoop
+# 
+# Top level modules:
+# 	AntiLoop
+# vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica\ Digital\ II/Trabalhos/Trabalho\ 2/Turma2_2017020700_2017001212_2017005113/ALU {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/ALU/ALU.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module ALU
+# -- Compiling module ALU_4bits
+# 
+# Top level modules:
+# 	ALU
+# vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica\ Digital\ II/Trabalhos/Trabalho\ 2/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINAL.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module SISTEMA_FINAL
+# 
+# Top level modules:
+# 	SISTEMA_FINAL
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica\ Digital\ II/Trabalhos/Trabalho\ 2/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module Sistema_TB
+# 
+# Top level modules:
+# 	Sistema_TB
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  Sistema_TB
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Sistema_TB 
+# Loading work.Sistema_TB
+# Loading work.SISTEMA_FINAL
+# Loading work.Controle
+# Loading work.ALU
+# Loading work.ALU_4bits
+# Loading work.ROM
+# Loading work.regA
+# Loading work.regC
+# Loading work.AntiLoop
+# ** Warning: (vsim-3015) C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINAL.v(12): [PCDPC] - Port size (8 or 8) does not match connection size (16) for port 'B'. The port definition is at: C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/Controle/Controle.v(1).
+# 
+#         Region: /Sistema_TB/S0/controle
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 10 us
+# 		time,	clk,	Saida
+#                    0, 	0, 	    x
+#                   10, 	1, 	    x
+#                   20, 	0, 	    x
+#                   30, 	1, 	    x
+#                   40, 	0, 	    x
+#                   50, 	1, 	    x
+#                   60, 	0, 	    x
+#                   70, 	1, 	    x
+#                   80, 	0, 	    x
+#                   90, 	1, 	    x
+#                  100, 	0, 	    x
+#                  110, 	1, 	    x
+#                  120, 	0, 	    x
+#                  130, 	1, 	    x
+#                  140, 	0, 	    x
+#                  150, 	1, 	    x
+#                  160, 	0, 	    x
+#                  170, 	1, 	    x
+#                  180, 	0, 	    x
+#                  190, 	1, 	    X
+#                  200, 	0, 	    X
+#                  210, 	1, 	    X
+#                  220, 	0, 	    X
+#                  230, 	1, 	    X
+#                  240, 	0, 	    X
+#                  250, 	1, 	    X
+#                  260, 	0, 	    X
+#                  270, 	1, 	    X
+#                  280, 	0, 	    X
+#                  290, 	1, 	    X
+#                  300, 	0, 	    X
+#                  310, 	1, 	    0
+#                  320, 	0, 	    0
+#                  330, 	1, 	    0
+#                  340, 	0, 	    0
+#                  350, 	1, 	    0
+#                  360, 	0, 	    0
+#                  370, 	1, 	    X
+#                  380, 	0, 	    X
+#                  390, 	1, 	    X
+#                  400, 	0, 	    X
+#                  410, 	1, 	    X
+#                  420, 	0, 	    X
+#                  430, 	1, 	61694
+#                  440, 	0, 	61694
+#                  450, 	1, 	61694
+#                  460, 	0, 	61694
+#                  470, 	1, 	61694
+#                  480, 	0, 	61694
+#                  490, 	1, 	 4376
+#                  500, 	0, 	 4376
+#                  510, 	1, 	 4376
+#                  520, 	0, 	 4376
+#                  530, 	1, 	 4376
+#                  540, 	0, 	 4376
+#                  550, 	1, 	    5
+#                  560, 	0, 	    5
+#                  570, 	1, 	    5
+#                  580, 	0, 	    5
+#                  590, 	1, 	    5
+#                  600, 	0, 	    5
+#                  610, 	1, 	    5
+#                  620, 	0, 	    5
+#                  630, 	1, 	    5
+#                  640, 	0, 	    5
+#                  650, 	1, 	    5
+#                  660, 	0, 	    5
+#                  670, 	1, 	    0
+#                  680, 	0, 	    0
+#                  690, 	1, 	    0
+#                  700, 	0, 	    0
+#                  710, 	1, 	    0
+#                  720, 	0, 	    0
+#                  730, 	1, 	   15
+#                  740, 	0, 	   15
+#                  750, 	1, 	   15
+#                  760, 	0, 	   15
+#                  770, 	1, 	   15
+#                  780, 	0, 	   15
+#                  790, 	1, 	61694
+#                  800, 	0, 	61694
+#                  810, 	1, 	61694
+#                  820, 	0, 	61694
+#                  830, 	1, 	61694
+#                  840, 	0, 	61694
+#                  850, 	1, 	 4376
+#                  860, 	0, 	 4376
+#                  870, 	1, 	 4376
+#                  880, 	0, 	 4376
+#                  890, 	1, 	 4376
+#                  900, 	0, 	 4376
+#                  910, 	1, 	    5
+#                  920, 	0, 	    5
+#                  930, 	1, 	    5
+#                  940, 	0, 	    5
+#                  950, 	1, 	    5
+#                  960, 	0, 	    5
+#                  970, 	1, 	    5
+#                  980, 	0, 	    5
+#                  990, 	1, 	    5
+# Break in Module Sistema_TB at C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v line 31
+# Simulation Breakpoint: Break in Module Sistema_TB at C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 2/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v line 31
+# MACRO ./SISTEMA_FINAL_run_msim_rtl_verilog.do PAUSED at line 23
