@@ -1,8 +1,6 @@
-module SISTEMA_FINAL(clk, saida, saidaResto, contador, SaidaAlu, ffald, FimB);
+module SISTEMA_FINAL(clk, saida, saidaResto);
 input clk;
-output [15:0] saida, saidaResto, SaidaAlu, ffald;
-output [7:0] contador;
-output FimB;
+output [15:0] saida, saidaResto;
 
 wire FimA, FimB, FimC, EnA, EnB, EnC, Op, SELM, clk, FimResto, EnResto, menor, resetResto;
 wire [7:0] DadosRom, contador;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SISTEMA_FINAL
-Mon Jul 02 14:34:25 2018
+Mon Jul 02 15:11:05 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -52,7 +52,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jul 02 14:34:25 2018            ;
+; Analysis & Synthesis Status        ; Successful - Mon Jul 02 15:11:05 2018            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; SISTEMA_FINAL                                    ;
 ; Top-level Entity Name              ; SISTEMA_FINAL                                    ;
@@ -61,7 +61,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 210                                              ;
 ;     Dedicated logic registers      ; 101                                              ;
 ; Total registers                    ; 101                                              ;
-; Total pins                         ; 74                                               ;
+; Total pins                         ; 33                                               ;
 ; Total virtual pins                 ; 0                                                ;
 ; Total memory bits                  ; 64                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                                ;
@@ -171,32 +171,32 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                         ;
-+-----------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path        ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                                                                     ; Library ;
-+-----------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../RegResto/RegResto.v                  ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/RegResto/RegResto.v                                   ;         ;
-; ../AntiLoopD/AntiLoopD.v                ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/AntiLoopD/AntiLoopD.v                                 ;         ;
-; ../ROM/ROM.v                            ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/ROM/ROM.v                                             ;         ;
-; ../regC/regC.v                          ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/regC/regC.v                                           ;         ;
-; ../regA/regA.v                          ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/regA/regA.v                                           ;         ;
-; ../Controle/Controle.v                  ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/Controle/Controle.v                                   ;         ;
-; ../AntiLoop/AntiLoop.v                  ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/AntiLoop/AntiLoop.v                                   ;         ;
-; ../ALU/ALU.v                            ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/ALU/ALU.v                                             ;         ;
-; SISTEMA_FINAL.v                         ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINAL.v                         ;         ;
-; altsyncram.tdf                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                                 ;         ;
-; stratix_ram_block.inc                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                                          ;         ;
-; lpm_mux.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                                    ;         ;
-; lpm_decode.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                                 ;         ;
-; aglobal130.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                                                                 ;         ;
-; a_rdenreg.inc                           ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                                  ;         ;
-; altrom.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                                                                     ;         ;
-; altram.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                                                                     ;         ;
-; altdpram.inc                            ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                                                                   ;         ;
-; db/altsyncram_2q61.tdf                  ; yes             ; Auto-Generated Megafunction                           ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/db/altsyncram_2q61.tdf                  ;         ;
-; db/SISTEMA_FINAL.ram0_ROM_16bd8.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/db/SISTEMA_FINAL.ram0_ROM_16bd8.hdl.mif ;         ;
-+-----------------------------------------+-----------------+-------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                             ;
++-----------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path        ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                                                                         ; Library ;
++-----------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../RegResto/RegResto.v                  ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/RegResto/RegResto.v                                   ;         ;
+; ../AntiLoopD/AntiLoopD.v                ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopD/AntiLoopD.v                                 ;         ;
+; ../ROM/ROM.v                            ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ROM/ROM.v                                             ;         ;
+; ../regC/regC.v                          ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regC/regC.v                                           ;         ;
+; ../regA/regA.v                          ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regA/regA.v                                           ;         ;
+; ../Controle/Controle.v                  ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/Controle/Controle.v                                   ;         ;
+; ../AntiLoop/AntiLoop.v                  ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoop/AntiLoop.v                                   ;         ;
+; ../ALU/ALU.v                            ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ALU/ALU.v                                             ;         ;
+; SISTEMA_FINAL.v                         ; yes             ; User Verilog HDL File                                 ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINAL.v                         ;         ;
+; altsyncram.tdf                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                                                     ;         ;
+; stratix_ram_block.inc                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                                              ;         ;
+; lpm_mux.inc                             ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                                                        ;         ;
+; lpm_decode.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                                                     ;         ;
+; aglobal130.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                                                                     ;         ;
+; a_rdenreg.inc                           ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                                                      ;         ;
+; altrom.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                                                                         ;         ;
+; altram.inc                              ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                                                                         ;         ;
+; altdpram.inc                            ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                                                                       ;         ;
+; db/altsyncram_2q61.tdf                  ; yes             ; Auto-Generated Megafunction                           ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/db/altsyncram_2q61.tdf                  ;         ;
+; db/sistema_final.ram0_rom_16bd8.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/db/sistema_final.ram0_rom_16bd8.hdl.mif ;         ;
++-----------------------------------------+-----------------+-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -220,13 +220,13 @@ applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 101   ;
 ;     -- I/O registers                        ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 74    ;
+; I/O pins                                    ; 33    ;
 ; Total memory bits                           ; 64    ;
 ; Embedded Multiplier 9-bit elements          ; 0     ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 109   ;
-; Total fan-out                               ; 1065  ;
-; Average fan-out                             ; 2.71  ;
+; Total fan-out                               ; 1024  ;
+; Average fan-out                             ; 2.91  ;
 +---------------------------------------------+-------+
 
 
@@ -235,7 +235,7 @@ applicable agreement for further details.
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                         ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------+--------------+
-; |SISTEMA_FINAL                            ; 210 (40)          ; 101 (0)      ; 64          ; 0            ; 0       ; 0         ; 74   ; 0            ; |SISTEMA_FINAL                                                              ; work         ;
+; |SISTEMA_FINAL                            ; 210 (40)          ; 101 (0)      ; 64          ; 0            ; 0       ; 0         ; 33   ; 0            ; |SISTEMA_FINAL                                                              ; work         ;
 ;    |ALU:alu|                              ; 36 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SISTEMA_FINAL|ALU:alu                                                      ; work         ;
 ;       |ALU_8bits:alu1|                    ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SISTEMA_FINAL|ALU:alu|ALU_8bits:alu1                                       ; work         ;
 ;       |ALU_8bits:alu2|                    ; 17 (17)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SISTEMA_FINAL|ALU:alu|ALU_8bits:alu2                                       ; work         ;
@@ -323,11 +323,11 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                     ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |SISTEMA_FINAL|regC:regc|saidaC[8]             ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |SISTEMA_FINAL|regC:regc|saidaC[2]             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |SISTEMA_FINAL|regC:regc|saidaC[9]             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |SISTEMA_FINAL|regC:regc|saidaC[5]             ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |SISTEMA_FINAL|RegResto:regResto|saidaResto[7] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |SISTEMA_FINAL|Controle:controle|Endereco[1]   ;
-; 7:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |SISTEMA_FINAL|Controle:controle|contador[2]   ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 0 LEs                ; 6 LEs                  ; Yes        ; |SISTEMA_FINAL|Controle:controle|Endereco[2]   ;
+; 7:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |SISTEMA_FINAL|Controle:controle|contador[4]   ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |SISTEMA_FINAL|ALU:alu|ALU_8bits:alu2|Add0     ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |SISTEMA_FINAL|Controle:controle|state         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------+
@@ -456,7 +456,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -466,33 +466,33 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Jul 02 14:34:23 2018
+    Info: Processing started: Mon Jul 02 15:10:43 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SISTEMA_FINAL -c SISTEMA_FINAL
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/turma2_2017020700_2017001212_2017005113/regresto/regresto.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/git/turma2_2017020700_2017001212_2017005113/regresto/regresto.v
     Info (12023): Found entity 1: RegResto
-Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/turma2_2017020700_2017001212_2017005113/antiloopd/antiloopd.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/git/turma2_2017020700_2017001212_2017005113/antiloopd/antiloopd.v
     Info (12023): Found entity 1: AntiLoopD
-Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/turma2_2017020700_2017001212_2017005113/rom/rom.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/git/turma2_2017020700_2017001212_2017005113/rom/rom.v
     Info (12023): Found entity 1: ROM
-Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/turma2_2017020700_2017001212_2017005113/regc/regc.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/git/turma2_2017020700_2017001212_2017005113/regc/regc.v
     Info (12023): Found entity 1: regC
-Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/turma2_2017020700_2017001212_2017005113/rega/rega.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/git/turma2_2017020700_2017001212_2017005113/rega/rega.v
     Info (12023): Found entity 1: regA
-Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/turma2_2017020700_2017001212_2017005113/controle/controle.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/git/turma2_2017020700_2017001212_2017005113/controle/controle.v
     Info (12023): Found entity 1: Controle
-Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/turma2_2017020700_2017001212_2017005113/antiloop/antiloop.v
+Info (12021): Found 1 design units, including 1 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/git/turma2_2017020700_2017001212_2017005113/antiloop/antiloop.v
     Info (12023): Found entity 1: AntiLoop
-Info (12021): Found 2 design units, including 2 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/turma2_2017020700_2017001212_2017005113/alu/alu.v
+Info (12021): Found 2 design units, including 2 entities, in source file /users/wykke/documentos/unifei/2018.1/eletrônica digital ii/trabalhos/trabalho 3/git/turma2_2017020700_2017001212_2017005113/alu/alu.v
     Info (12023): Found entity 1: ALU
     Info (12023): Found entity 2: ALU_8bits
 Info (12021): Found 1 design units, including 1 entities, in source file sistema_final.v
     Info (12023): Found entity 1: SISTEMA_FINAL
-Warning (10236): Verilog HDL Implicit Net warning at SISTEMA_FINAL.v(15): created implicit net for "SELD"
+Warning (10236): Verilog HDL Implicit Net warning at SISTEMA_FINAL.v(13): created implicit net for "SELD"
 Info (12127): Elaborating entity "SISTEMA_FINAL" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at SISTEMA_FINAL.v(54): truncated value with size 16 to match size of target (8)
+Warning (10235): Verilog HDL Always Construct warning at SISTEMA_FINAL.v(56): variable "SaidaAlu" is read inside the Always Construct but isn't in the Always Construct's Event Control
 Warning (10230): Verilog HDL assignment warning at SISTEMA_FINAL.v(56): truncated value with size 16 to match size of target (8)
-Warning (10235): Verilog HDL Always Construct warning at SISTEMA_FINAL.v(58): variable "SaidaAlu" is read inside the Always Construct but isn't in the Always Construct's Event Control
-Warning (10230): Verilog HDL assignment warning at SISTEMA_FINAL.v(58): truncated value with size 16 to match size of target (8)
 Info (12128): Elaborating entity "Controle" for hierarchy "Controle:controle"
 Warning (10036): Verilog HDL or VHDL warning at Controle.v(11): object "gA" assigned a value but never read
 Info (10264): Verilog HDL Case Statement information at Controle.v(18): all case item expressions in this case statement are onehot
@@ -551,15 +551,15 @@ Info (17049): 3 registers lost all their fanouts during netlist optimizations.
 Info (17036): Removed 6 MSB VCC or GND address nodes from RAM block "ROM:rom|altsyncram:temp_rtl_0|altsyncram_2q61:auto_generated|ALTSYNCRAM"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 338 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 297 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
-    Info (21059): Implemented 73 output pins
+    Info (21059): Implemented 32 output pins
     Info (21061): Implemented 256 logic cells
     Info (21064): Implemented 8 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 20 warnings
     Info: Peak virtual memory: 4643 megabytes
-    Info: Processing ended: Mon Jul 02 14:34:25 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Mon Jul 02 15:11:05 2018
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:03
 
 

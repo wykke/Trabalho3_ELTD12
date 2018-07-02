@@ -72,4 +72,4 @@ set_global_assignment -name VERILOG_FILE ../ALU/ALU.v
 set_global_assignment -name VERILOG_FILE SISTEMA_FINAL.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE SISTEMA_FINALWaveform.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINALWaveform.vwf"
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINALWaveform.vwf"
