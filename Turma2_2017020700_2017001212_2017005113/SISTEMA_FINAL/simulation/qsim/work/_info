@@ -4,56 +4,56 @@ K3
 cModel Technology
 Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\SISTEMA_FINAL\simulation\qsim
 vSISTEMA_FINAL
-Z1 IJ5cO3217Ii>l9X?bdTknJ1
-Z2 V>LLJ_mJJKU_Cld05zjWIz2
-Z3 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\qsim
-Z4 w1530469456
-Z5 8SISTEMA_FINAL.vo
-Z6 FSISTEMA_FINAL.vo
+Z1 !s100 =g1YRjeFZ1JA1PAa8A3]P2
+Z2 IVPoYTo@HHeAecCI31CQHa0
+Z3 VQQl`7E?aY>:3D_3XHnYcf3
+Z4 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\qsim
+Z5 w1530500761
+Z6 8SISTEMA_FINAL.vo
+Z7 FSISTEMA_FINAL.vo
 L0 31
-Z7 OV;L;10.1d;51
+Z8 OV;L;10.1d;51
 r1
 31
-Z8 !s90 -work|work|SISTEMA_FINAL.vo|
-Z9 o-work work -O0
-Z10 n@s@i@s@t@e@m@a_@f@i@n@a@l
+Z9 !s90 -work|work|SISTEMA_FINAL.vo|
+Z10 o-work work -O0
+Z11 n@s@i@s@t@e@m@a_@f@i@n@a@l
 !i10b 1
-Z11 !s100 D]jV1?Y77<;o8798aSnFQ0
 !s85 0
-Z12 !s108 1530469457.403000
+Z12 !s108 1530500762.479000
 Z13 !s107 SISTEMA_FINAL.vo|
 !s101 -O0
 vSISTEMA_FINAL_vlg_check_tst
 !i10b 1
-Z14 !s100 U[lWLX0E_[3F`=O`VSUNF2
-Z15 IIAhK;3GIV@nhQ?lKhilP50
-Z16 VR:DACfPi5_W?l6XCPX@4V2
-R3
-Z17 w1530469455
+Z14 !s100 XURG0o92C0<:31U5TdcY:0
+Z15 IW746=<=Y3:K[A;:::C]2D1
+Z16 VHf;8zG4Ne?=[8=78N3_352
+R4
+Z17 w1530500760
 Z18 8SISTEMA_FINAL.vt
 Z19 FSISTEMA_FINAL.vt
 L0 57
-R7
+R8
 r1
 !s85 0
 31
-Z20 !s108 1530469457.674000
+Z20 !s108 1530500763.797000
 Z21 !s107 SISTEMA_FINAL.vt|
 Z22 !s90 -work|work|SISTEMA_FINAL.vt|
 !s101 -O0
-R9
+R10
 Z23 n@s@i@s@t@e@m@a_@f@i@n@a@l_vlg_check_tst
 vSISTEMA_FINAL_vlg_sample_tst
 !i10b 1
 Z24 !s100 1FWV8OLjXKmEd^gafda0F3
 Z25 IccT2Hcd9T1b_o2HBL3ELj0
 Z26 VZ=QY9dO9ZHmgDdEg4^a0b3
-R3
+R4
 R17
 R18
 R19
 L0 29
-R7
+R8
 r1
 !s85 0
 31
@@ -61,19 +61,19 @@ R20
 R21
 R22
 !s101 -O0
-R9
+R10
 Z27 n@s@i@s@t@e@m@a_@f@i@n@a@l_vlg_sample_tst
 vSISTEMA_FINAL_vlg_vec_tst
 !i10b 1
-Z28 !s100 ZXm]>USc5LmeTP@cA=<W<1
-Z29 I;`md?JAolMPHCo?ElLI@73
+Z28 !s100 4eogQ<BG=e8mIB:7S8WT?1
+Z29 I_?`RbWEPFB6Q8AdV:>Hkj3
 Z30 VNmhXC5lTF=Ha9aCBBcQjE0
-R3
+R4
 R17
 R18
 R19
-Z31 L0 421
-R7
+Z31 L0 1461
+R8
 r1
 !s85 0
 31
@@ -81,5 +81,5 @@ R20
 R21
 R22
 !s101 -O0
-R9
+R10
 Z32 n@s@i@s@t@e@m@a_@f@i@n@a@l_vlg_vec_tst

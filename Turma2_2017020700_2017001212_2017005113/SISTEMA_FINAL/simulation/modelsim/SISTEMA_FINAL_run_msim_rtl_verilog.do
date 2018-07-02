@@ -5,6 +5,8 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletr么nica\ Digital\ II/Trabalhos/Trabalho\ 3/Turma2_2017020700_2017001212_2017005113/RegResto {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletr鬾ica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/RegResto/RegResto.v}
+vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletr么nica\ Digital\ II/Trabalhos/Trabalho\ 3/Turma2_2017020700_2017001212_2017005113/AntiLoopD {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletr鬾ica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/AntiLoopD/AntiLoopD.v}
 vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletr么nica\ Digital\ II/Trabalhos/Trabalho\ 3/Turma2_2017020700_2017001212_2017005113/ROM {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletr鬾ica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/ROM/ROM.v}
 vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletr么nica\ Digital\ II/Trabalhos/Trabalho\ 3/Turma2_2017020700_2017001212_2017005113/regC {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletr鬾ica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/regC/regC.v}
 vlog -vlog01compat -work work +incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletr么nica\ Digital\ II/Trabalhos/Trabalho\ 3/Turma2_2017020700_2017001212_2017005113/regA {C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletr鬾ica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/regA/regA.v}

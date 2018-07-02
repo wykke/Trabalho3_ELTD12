@@ -8,7 +8,7 @@ reg [9:0] indice;
 reg [7:0] temp[0:511];
 
 initial begin
-
+	/*
 	temp[10'd0] <= 8'd50;
 	temp[10'd1] <= 8'd43;
 	temp[10'd2] <= 8'd33;
@@ -17,6 +17,15 @@ initial begin
 	temp[10'd5] <= 8'd50;
 	temp[10'd6] <= 8'd255;
 	temp[10'd7] <= 8'd50;
+	*/
+	temp[10'd0] <= 8'd10;
+	temp[10'd1] <= 8'd2;
+	temp[10'd2] <= 8'd7;
+	temp[10'd3] <= 8'd12;
+	temp[10'd4] <= 8'd25;
+	temp[10'd5] <= 8'd31;
+	temp[10'd6] <= 8'd47;
+	temp[10'd7] <= 8'd3;
 	
 	indice = 9'd8;
 	while(indice < 10'd512) begin
