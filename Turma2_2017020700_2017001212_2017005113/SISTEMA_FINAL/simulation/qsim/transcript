@@ -30,57 +30,7 @@
 # Loading cycloneii_ver.cycloneii_ram_pulse_generator
 # Loading work.SISTEMA_FINAL_vlg_sample_tst
 # Loading work.SISTEMA_FINAL_vlg_check_tst
-# SDF 10.1d Compiler 2012.11 Nov  2 2012
-# 
-# Loading instances from SISTEMA_FINAL_v.sdo
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
-# Loading timing data from SISTEMA_FINAL_v.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst File: SISTEMA_FINAL.vt
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5351): $hold( posedge clk &&& nosloadsclr:10856 ps, datain:10908 ps, 286 ps );
-#    Time: 10908 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\controle|EnC 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13032 ps, 286 ps );
-#    Time: 13032 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[9] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13032 ps, 286 ps );
-#    Time: 13032 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[11] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13032 ps, 286 ps );
-#    Time: 13032 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[12] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13032 ps, 286 ps );
-#    Time: 13032 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[13] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13032 ps, 286 ps );
-#    Time: 13032 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[14] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13072 ps, 286 ps );
-#    Time: 13072 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[0] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13072 ps, 286 ps );
-#    Time: 13072 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[1] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13072 ps, 286 ps );
-#    Time: 13072 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[2] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13072 ps, 286 ps );
-#    Time: 13072 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[4] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13072 ps, 286 ps );
-#    Time: 13072 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[5] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13072 ps, 286 ps );
-#    Time: 13072 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[6] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12859 ps, ena:13072 ps, 286 ps );
-#    Time: 13072 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[10] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12860 ps, ena:13082 ps, 286 ps );
-#    Time: 13082 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[3] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12860 ps, ena:13082 ps, 286 ps );
-#    Time: 13082 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[7] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12860 ps, ena:13082 ps, 286 ps );
-#    Time: 13082 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[8] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5355): $hold( posedge clk &&& reset:12860 ps, ena:13082 ps, 286 ps );
-#    Time: 13082 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regc|saidaC[15] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5354): $hold( posedge clk &&& sloaddata:16858 ps, sdata:17046 ps, 286 ps );
-#    Time: 17046 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regb|saidaA[3] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5354): $hold( posedge clk &&& sloaddata:16858 ps, sdata:17057 ps, 286 ps );
-#    Time: 17057 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regb|saidaA[4] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5354): $hold( posedge clk &&& sloaddata:16858 ps, sdata:17061 ps, 286 ps );
-#    Time: 17061 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regb|saidaA[0] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5354): $hold( posedge clk &&& sloaddata:20858 ps, sdata:21046 ps, 286 ps );
-#    Time: 21046 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regb|saidaA[3] 
-# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/../altera/verilog/src/cycloneii_atoms.v(5354): $hold( posedge clk &&& sloaddata:20858 ps, sdata:21059 ps, 286 ps );
-#    Time: 21059 ps  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/i1/\regb|saidaA[1] 
 # Simulation passed !
-# ** Note: $finish    : SISTEMA_FINAL.vt(417)
+# ** Note: $finish    : SISTEMA_FINAL.vt(1484)
 #    Time: 1 us  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/tb_out
