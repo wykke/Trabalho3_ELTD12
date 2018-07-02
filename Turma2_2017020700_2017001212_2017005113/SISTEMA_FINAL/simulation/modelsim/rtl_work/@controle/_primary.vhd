@@ -12,7 +12,7 @@ entity Controle is
         EnB             : out    vl_logic;
         EnC             : out    vl_logic;
         Op              : out    vl_logic;
-        SEL             : out    vl_logic;
+        SELM            : out    vl_logic;
         contador        : out    vl_logic_vector(7 downto 0)
     );
 end Controle;

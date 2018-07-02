@@ -1,4 +1,4 @@
-`timescale 10ns/100ps 
+`timescale 1 ps/ 1 ps
 module Sistema_TB ;
 	
 	reg clk;
@@ -15,7 +15,7 @@ module Sistema_TB ;
 		clk = 0;		
 	end	
 
-	always 		#10 	clk = ~clk;
+	always 		#2000 	clk = ~clk;
 		
 	initial begin
 		$dumpfile ("sistema.vcd");
@@ -28,7 +28,7 @@ module Sistema_TB ;
 	end
 	
 	initial
-		#1000 $stop;
+		#1000000 $stop;
 		
 endmodule
 	

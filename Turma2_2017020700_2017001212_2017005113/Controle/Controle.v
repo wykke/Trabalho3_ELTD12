@@ -1,13 +1,13 @@
-module Controle(clk, FimA, FimB, FimC, B, Endereco, EnA, EnB, EnC, Op, SEL, contador);
+module Controle(clk, FimA, FimB, FimC, B, Endereco, EnA, EnB, EnC, Op, SELM, contador);
 input FimA, FimB, FimC, clk;
 input [7:0] B;
 output reg [8:0] Endereco;
-output reg EnA, EnB, EnC, Op, SEL;
+output reg EnA, EnB, EnC, Op, SELM;
 output reg [7:0] contador;
 
 reg multp;
 reg [2:0] state, next_state;
-localparam s1=3'd0, s2=3'd1, s3=3'd2, s4=3'd3, s5=3'd4;
+localparam s1=3'd0, s2=3'd1, s3=3'd2, s4=3'd3;
 
 //estados da maquina de estado
 always @(*)
@@ -15,7 +15,6 @@ always @(*)
 		s1: next_state<=s2;
 		s2: next_state<=s3;
 		s3: next_state<=s4;
-		s4: next_state<=s5;
 		default: next_state<=s1;
 	endcase
 
@@ -29,8 +28,7 @@ always @(negedge clk) begin
 			s1: Endereco<=9'd0;
 			s2: Endereco<=9'd2;
 			s3: Endereco<=9'd4;
-			s4: Endereco<=9'd6;
-			default: Endereco<=9'd8;
+			default: Endereco<=9'd6;
 		endcase
 		EnA<=1'b0;
 		EnB<=1'b1;
@@ -39,7 +37,7 @@ always @(negedge clk) begin
 	// fazer assim que ler o registrador B, ou enquanto estiver multiplicando (somando x vezes)
 	if(FimB || multp) begin
 	   // caso não seja multiplicao
-		if(SEL==1'b0) begin
+		if(SELM==1'b0) begin
 			EnB<=1'b0;
 			EnC<=1'b1;
 		// caso seja multiplicacao
@@ -74,11 +72,10 @@ always @(negedge clk) begin
 	// fazer assim que terminar de ler o valor final
 	if(FimC) begin
 		case(state)
-			s1: begin Op<=1'b0; SEL<=1'b0; Endereco<=9'd1; end // subtracao
-			s2: begin Op<=1'b1; SEL<=1'b0; Endereco<=9'd3; end // soma
-			s3: begin Op<=1'b0; SEL<=1'b0; Endereco<=9'd5; end // subtracao
-			s4: begin Op<=1'b1; SEL<=1'b1; Endereco<=9'd7; end // multiplicacao
-			default: begin Op<=1'b1; SEL<=1'b0; Endereco<=9'd9; end // soma
+			s1: begin Op<=1'b1; SELM<=1'b0; Endereco<=9'd1; end // subtracao
+			s2: begin Op<=1'b0; SELM<=1'b0; Endereco<=9'd3; end // soma
+			s3: begin Op<=1'b1; SELM<=1'b1; Endereco<=9'd5; end // multiplicacao
+			default: begin Op<=1'b1; SELM<=1'b1; Endereco<=9'd7; end //
 		endcase
 		
 		EnA<=1'b1;
