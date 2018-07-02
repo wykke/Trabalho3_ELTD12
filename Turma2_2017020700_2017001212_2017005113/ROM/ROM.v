@@ -1,6 +1,6 @@
 module ROM (CLK, Endereco, Dados);
 
-input CLK; //ahdssd
+input CLK;
 input [8:0] Endereco;
 output reg [7:0] Dados;
 

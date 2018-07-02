@@ -7,10 +7,10 @@ module regC(entrada, EnC, clk, FimC, saidaC);
 
 always @(posedge clk)
 	begin
-			FimC<=1'b0;
 			if (EnC == 1'b1) begin
 				saidaC <= entrada; 
 				FimC <= 1'b1;
-			end
+			end else
+				FimC<=1'b0;
 	end
 endmodule

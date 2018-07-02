@@ -1,17 +1,13 @@
 module Controle(clk, FimA, FimB, FimC, FimResto, A, B, Quociente, Endereco, EnA, EnB, EnC, EnResto, Op, SELM, SELD, contador, menor, resetResto);
 input FimA, FimB, FimC, FimResto, clk;
-input [7:0] B, A;
-input [15:0] Quociente;
-output reg [8:0] Endereco;
+input [15:0] A, B, Quociente;
 output reg EnA, EnB, EnC, EnResto, Op, SELM, SELD, menor, resetResto;
 output reg [7:0] contador;
+output reg [8:0] Endereco;
 
 reg multp, DIV;
 reg [2:0] state, next_state;
-wire [15:0] gA;
 localparam s1=3'd0, s2=3'd1, s3=3'd2, s4=3'd3;
-
-assign gA={8'b0,A};
 
 //estados da maquina de estado
 always @(*)

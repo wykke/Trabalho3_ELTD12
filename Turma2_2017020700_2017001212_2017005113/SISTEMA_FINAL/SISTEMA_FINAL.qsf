@@ -61,15 +61,15 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id Sistema_TB
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "10 us" -section_id Sistema_TB
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME Sistema_TB -section_id Sistema_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE Sistema_TB.v -section_id Sistema_TB
+set_global_assignment -name VERILOG_FILE ../AntiLoopM/AntiLoopM.v
 set_global_assignment -name VERILOG_FILE ../RegResto/RegResto.v
 set_global_assignment -name VERILOG_FILE ../AntiLoopD/AntiLoopD.v
 set_global_assignment -name VERILOG_FILE ../ROM/ROM.v
 set_global_assignment -name VERILOG_FILE ../regC/regC.v
 set_global_assignment -name VERILOG_FILE ../regA/regA.v
 set_global_assignment -name VERILOG_FILE ../Controle/Controle.v
-set_global_assignment -name VERILOG_FILE ../AntiLoop/AntiLoop.v
 set_global_assignment -name VERILOG_FILE ../ALU/ALU.v
 set_global_assignment -name VERILOG_FILE SISTEMA_FINAL.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE SISTEMA_FINALWaveform.vwf
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINALWaveform.vwf"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

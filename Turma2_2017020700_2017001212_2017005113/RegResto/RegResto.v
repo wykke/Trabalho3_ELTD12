@@ -9,10 +9,10 @@ always @(posedge clk) begin
 	if(resetResto)
 		saidaResto<=16'b0;
 		else
-			FimResto<=1'b0;
 			if (EnResto == 1'b1) begin
 				saidaResto <= entrada; 
 				FimResto <= 1'b1;
-			end
+			end else
+				FimResto<=1'b0;
 end
 endmodule

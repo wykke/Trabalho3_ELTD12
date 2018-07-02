@@ -1,10 +1,10 @@
-module AntiLoopD(entrada, clk, saidaA);
+module AntiLoopD(entrada, clk, saidaALD);
 
 	input clk;
 	input [15:0] entrada;	 
-	output reg [15:0] saidaA;
+	output reg [15:0] saidaALD;
 
 always @(posedge clk)
-		saidaA <= entrada; 
+		saidaALD <= entrada;
 
 endmodule
