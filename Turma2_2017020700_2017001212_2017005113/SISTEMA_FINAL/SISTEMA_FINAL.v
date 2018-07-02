@@ -4,7 +4,7 @@ output [15:0] saida, saidaResto, SaidaAlu, ffald;
 output [7:0] contador;
 output FimB;
 
-wire FimA, FimB, FimC, EnA, EnB, EnC, Op, SELM, clk, FimResto, EnResto, menor;
+wire FimA, FimB, FimC, EnA, EnB, EnC, Op, SELM, clk, FimResto, EnResto, menor, resetResto;
 wire [7:0] DadosRom, contador;
 wire [8:0] Endereco;
 wire [15:0] SaidaAlu, saida, ffal, ffald, A, B;
@@ -12,7 +12,7 @@ reg [15:0] SaidaMuxM, SaidaMuxD, resultado;
 reg [7:0] SaidaMuxMenor;
 
 // Componente
-Controle controle(clk, FimA, FimB, FimC, FimResto, A, B, SaidaAlu, Endereco, EnA, EnB, EnC, EnResto, Op, SELM, SELD, contador, menor);
+Controle controle(clk, FimA, FimB, FimC, FimResto, A, B, SaidaAlu, Endereco, EnA, EnB, EnC, EnResto, Op, SELM, SELD, contador, menor, resetResto);
 ALU alu(SaidaMuxD, SaidaMuxM, Op, SaidaAlu);
 ROM rom(clk, Endereco, DadosRom);
 
@@ -22,7 +22,7 @@ regA regb(DadosRom, EnB, clk, FimB, B); // regB
 regC regc(resultado, EnC, clk, FimC, saida); // regC
 
 // necessarios para a divisao
-RegResto regResto(SaidaMuxMenor, EnResto, clk, FimResto, saidaResto);
+RegResto regResto(SaidaMuxMenor, EnResto, clk, resetResto, FimResto, saidaResto);
 AntiLoopD antiloopd (SaidaAlu, clk, ffald);
 
 // necessario para nao causar um loop infinito na multiplicacao

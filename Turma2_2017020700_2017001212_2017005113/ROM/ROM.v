@@ -8,22 +8,13 @@ reg [9:0] indice;
 reg [7:0] temp[0:511];
 
 initial begin
-	/*
+
 	temp[10'd0] <= 8'd50;
 	temp[10'd1] <= 8'd43;
 	temp[10'd2] <= 8'd33;
 	temp[10'd3] <= 8'd25;
 	temp[10'd4] <= 8'd15;
 	temp[10'd5] <= 8'd50;
-	temp[10'd6] <= 8'd255;
-	temp[10'd7] <= 8'd50;
-	*/
-	temp[10'd0] <= 8'd5;
-	temp[10'd1] <= 8'd7;
-	temp[10'd2] <= 8'd3;
-	temp[10'd3] <= 8'd5;
-	temp[10'd4] <= 8'd7;
-	temp[10'd5] <= 8'd15;
 	temp[10'd6] <= 8'd255;
 	temp[10'd7] <= 8'd50;
 	

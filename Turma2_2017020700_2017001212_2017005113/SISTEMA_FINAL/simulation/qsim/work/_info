@@ -4,23 +4,23 @@ K3
 cModel Technology
 Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\SISTEMA_FINAL\simulation\qsim
 vSISTEMA_FINAL
-Z1 !s100 8EOgaSm];4fZm_?D8:LJ?2
-Z2 I1N9EQO35dcUAXI=i0VlYS2
-Z3 V>:bM?7mEYESk?hYiAo?N?1
-Z4 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\qsim
-Z5 w1530552018
-Z6 8SISTEMA_FINAL.vo
-Z7 FSISTEMA_FINAL.vo
+Z1 I_VcRhJ1W28k?E=ZN3MUI<1
+Z2 V>:bM?7mEYESk?hYiAo?N?1
+Z3 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\qsim
+Z4 w1530552884
+Z5 8SISTEMA_FINAL.vo
+Z6 FSISTEMA_FINAL.vo
 L0 31
-Z8 OV;L;10.1d;51
+Z7 OV;L;10.1d;51
 r1
 31
-Z9 !s90 -work|work|SISTEMA_FINAL.vo|
-Z10 o-work work -O0
-Z11 n@s@i@s@t@e@m@a_@f@i@n@a@l
+Z8 !s90 -work|work|SISTEMA_FINAL.vo|
+Z9 o-work work -O0
+Z10 n@s@i@s@t@e@m@a_@f@i@n@a@l
 !i10b 1
+Z11 !s100 XC4mcgPAoUA[]zl;UXO[m1
 !s85 0
-Z12 !s108 1530552019.828000
+Z12 !s108 1530552885.647000
 Z13 !s107 SISTEMA_FINAL.vo|
 !s101 -O0
 vSISTEMA_FINAL_vlg_check_tst
@@ -28,32 +28,32 @@ vSISTEMA_FINAL_vlg_check_tst
 Z14 !s100 S3]b>VAhTeoZVd>=l?IN`0
 Z15 IjZj:4h5h1YiGOUSom@Xe51
 Z16 Vo12oE;CCD_ZImJCISn@h_2
-R4
-Z17 w1530552017
+R3
+Z17 w1530552883
 Z18 8SISTEMA_FINAL.vt
 Z19 FSISTEMA_FINAL.vt
 L0 57
-R8
+R7
 r1
 !s85 0
 31
-Z20 !s108 1530552020.147000
+Z20 !s108 1530552885.944000
 Z21 !s107 SISTEMA_FINAL.vt|
 Z22 !s90 -work|work|SISTEMA_FINAL.vt|
 !s101 -O0
-R10
+R9
 Z23 n@s@i@s@t@e@m@a_@f@i@n@a@l_vlg_check_tst
 vSISTEMA_FINAL_vlg_sample_tst
 !i10b 1
 Z24 !s100 1FWV8OLjXKmEd^gafda0F3
 Z25 IccT2Hcd9T1b_o2HBL3ELj0
 Z26 VZ=QY9dO9ZHmgDdEg4^a0b3
-R4
+R3
 R17
 R18
 R19
 L0 29
-R8
+R7
 r1
 !s85 0
 31
@@ -61,19 +61,19 @@ R20
 R21
 R22
 !s101 -O0
-R10
+R9
 Z27 n@s@i@s@t@e@m@a_@f@i@n@a@l_vlg_sample_tst
 vSISTEMA_FINAL_vlg_vec_tst
 !i10b 1
 Z28 !s100 U;7<cS[[>67mF]R[kBE_;2
 Z29 I]jJm11LFBzzTdBTae2>T21
 Z30 VNmhXC5lTF=Ha9aCBBcQjE0
-R4
+R3
 R17
 R18
 R19
 Z31 L0 1488
-R8
+R7
 r1
 !s85 0
 31
@@ -81,5 +81,5 @@ R20
 R21
 R22
 !s101 -O0
-R10
+R9
 Z32 n@s@i@s@t@e@m@a_@f@i@n@a@l_vlg_vec_tst
