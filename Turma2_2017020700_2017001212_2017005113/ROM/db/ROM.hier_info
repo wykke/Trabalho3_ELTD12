@@ -1,0 +1,28 @@
+|ROM
+CLK => Dados[0]~reg0.CLK
+CLK => Dados[1]~reg0.CLK
+CLK => Dados[2]~reg0.CLK
+CLK => Dados[3]~reg0.CLK
+CLK => Dados[4]~reg0.CLK
+CLK => Dados[5]~reg0.CLK
+CLK => Dados[6]~reg0.CLK
+CLK => Dados[7]~reg0.CLK
+Endereco[0] => temp.RADDR
+Endereco[1] => temp.RADDR1
+Endereco[2] => temp.RADDR2
+Endereco[3] => temp.RADDR3
+Endereco[4] => temp.RADDR4
+Endereco[5] => temp.RADDR5
+Endereco[6] => temp.RADDR6
+Endereco[7] => temp.RADDR7
+Endereco[8] => temp.RADDR8
+Dados[0] <= Dados[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dados[1] <= Dados[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dados[2] <= Dados[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dados[3] <= Dados[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dados[4] <= Dados[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dados[5] <= Dados[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dados[6] <= Dados[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Dados[7] <= Dados[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

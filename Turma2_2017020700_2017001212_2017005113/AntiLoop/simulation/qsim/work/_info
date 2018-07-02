@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\AntiLoop\simulation\qsim
+vAntiLoop
+Z1 I]1Ce7Y3jiM0`E3SlL8a<N1
+Z2 VEOWb:8fAI6H<Vi<o@FThU0
+Z3 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\AntiLoop\simulation\qsim
+Z4 w1529936671
+Z5 8AntiLoop.vo
+Z6 FAntiLoop.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@anti@loop
+!i10b 1
+Z10 !s100 o@12NQk:?:?Q`<dZ1hVO]1
+!s85 0
+Z11 !s108 1529936672.216000
+Z12 !s107 AntiLoop.vo|
+Z13 !s90 -work|work|AntiLoop.vo|
+!s101 -O0
+vAntiLoop_vlg_check_tst
+!i10b 1
+!s100 5ELo=<zD1fPXbezT0A_PN1
+IO=lb@7geANHDYPi`fNIln3
+VKN2FL>W]Q;iONP<QJAjW_2
+R3
+Z14 w1529936670
+Z15 8AntiLoop.vt
+Z16 FAntiLoop.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1529936672.426000
+Z18 !s107 AntiLoop.vt|
+Z19 !s90 -work|work|AntiLoop.vt|
+!s101 -O0
+R8
+n@anti@loop_vlg_check_tst
+vAntiLoop_vlg_sample_tst
+!i10b 1
+!s100 @Rc8O3z:95D_3dCbVH0jM0
+I^Pl[idM:okDdcDC18geYn3
+Vol6ganE9Yb74EjY5HJj@R3
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@anti@loop_vlg_sample_tst
+vAntiLoop_vlg_vec_tst
+!i10b 1
+!s100 :iKn83mCQCL]dSMHTADjG2
+IEW=8l7?n9FM0m5M2EGkOn2
+V5?0n;F7DJWhGoOiaQ02FW1
+R3
+R14
+R15
+R16
+L0 425
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@anti@loop_vlg_vec_tst

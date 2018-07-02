@@ -1,0 +1,40 @@
+module SISTEMA_FINAL(clk, saida);
+input clk;
+output [15:0] saida; //A, B, SaidaAlu, ffal beta
+
+wire FimA, FimB, FimC, EnA, EnB, EnC, Op, SEL, clk;
+wire [7:0] A, B, DadosRom, contador;
+wire [8:0] Endereco;
+wire [15:0] SaidaAlu, saida, ffal;
+reg [15:0] SaidaMux, resultado;
+
+
+
+//Controle(FimA, FimB, FimC, B, Endereco, EnA, EnB, EnC, Op, SEL);
+Controle controle(clk, FimA, FimB, FimC, B, Endereco, EnA, EnB, EnC, Op, SEL, contador); //contador beta
+
+//ALU(A,B,Op,S);
+ALU alu(A, SaidaMux, Op, SaidaAlu);
+
+//ROM (CLK, Endereco, Dados);
+ROM rom(clk, Endereco, DadosRom);
+
+//regA(entrada, EnA, clk, FimA, saidaA);
+regA rega(DadosRom, EnA, clk, FimA, A);
+regA regb(DadosRom, EnB, clk, FimB, B);
+regC regc(resultado, EnC, clk, FimC, saida);
+
+//AntiLoop(entrada, EnA, clk, reset, saidaA);
+AntiLoop antiloop (SaidaAlu, contador, clk, ffal);
+
+always @(A, B, SEL)
+	if(SEL) begin
+		SaidaMux<=ffal;
+		resultado<=ffal;
+	end else begin
+		SaidaMux<=B;
+		resultado<=SaidaAlu;
+		end
+
+
+endmodule
