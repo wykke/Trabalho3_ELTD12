@@ -139,6 +139,7 @@ always @(negedge clk) begin
 		endcase
 		
 		// variaveis de inicio de ciclo
+		contador<=8'd0;
 		resetResto<=1'b0;
 		EnA<=1'b1;
 		EnC<=1'b0;

@@ -1,5 +1,5 @@
 EDA Netlist Writer report for SISTEMA_FINAL
-Mon Jul 02 15:12:39 2018
+Mon Jul 02 15:22:21 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Jul 02 15:12:39 2018 ;
+; EDA Netlist Writer Status ; Successful - Mon Jul 02 15:22:21 2018 ;
 ; Revision Name             ; SISTEMA_FINAL                         ;
 ; Top-level Entity Name     ; SISTEMA_FINAL                         ;
 ; Family                    ; Cyclone II                            ;
@@ -80,13 +80,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Jul 02 15:12:37 2018
+    Info: Processing started: Mon Jul 02 15:22:20 2018
 Info: Command: quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog SISTEMA_FINAL -c SISTEMA_FINAL
 Info (204019): Generated file SISTEMA_FINAL.vo in folder "C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4536 megabytes
-    Info: Processing ended: Mon Jul 02 15:12:39 2018
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4535 megabytes
+    Info: Processing ended: Mon Jul 02 15:22:21 2018
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

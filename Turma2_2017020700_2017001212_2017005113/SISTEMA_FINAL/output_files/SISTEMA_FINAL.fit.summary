@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Jul 02 15:11:24 2018
+Fitter Status : Successful - Mon Jul 02 15:22:04 2018
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : SISTEMA_FINAL
 Top-level Entity Name : SISTEMA_FINAL
 Family : Cyclone II
 Device : EP2C20F484C7
 Timing Models : Final
-Total logic elements : 219 / 18,752 ( 1 % )
-    Total combinational functions : 210 / 18,752 ( 1 % )
+Total logic elements : 232 / 18,752 ( 1 % )
+    Total combinational functions : 218 / 18,752 ( 1 % )
     Dedicated logic registers : 101 / 18,752 ( < 1 % )
 Total registers : 101
 Total pins : 33 / 315 ( 10 % )
