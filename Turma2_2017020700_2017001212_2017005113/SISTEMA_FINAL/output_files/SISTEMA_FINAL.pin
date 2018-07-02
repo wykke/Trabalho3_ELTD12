@@ -75,19 +75,19 @@ GND*                         : A4        :        :                   :         
 GND*                         : A5        :        :                   :         : 3         :                
 GND*                         : A6        :        :                   :         : 3         :                
 GND*                         : A7        :        :                   :         : 3         :                
-contador[5]                  : A8        : output : 3.3-V LVTTL       :         : 3         : N              
-saidaResto[6]                : A9        : output : 3.3-V LVTTL       :         : 3         : N              
-saidaResto[8]                : A10       : output : 3.3-V LVTTL       :         : 3         : N              
-saidaResto[9]                : A11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : A8        :        :                   :         : 3         :                
+GND*                         : A9        :        :                   :         : 3         :                
+GND*                         : A10       :        :                   :         : 3         :                
+GND*                         : A11       :        :                   :         : 3         :                
 GND+                         : A12       :        :                   :         : 4         :                
-SaidaAlu[3]                  : A13       : output : 3.3-V LVTTL       :         : 4         : N              
-SaidaAlu[11]                 : A14       : output : 3.3-V LVTTL       :         : 4         : N              
-SaidaAlu[10]                 : A15       : output : 3.3-V LVTTL       :         : 4         : N              
-ffald[8]                     : A16       : output : 3.3-V LVTTL       :         : 4         : N              
-ffald[5]                     : A17       : output : 3.3-V LVTTL       :         : 4         : N              
-saida[4]                     : A18       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : A19       :        :                   :         : 4         :                
-GND*                         : A20       :        :                   :         : 4         :                
+GND*                         : A13       :        :                   :         : 4         :                
+GND*                         : A14       :        :                   :         : 4         :                
+contador[2]                  : A15       : output : 3.3-V LVTTL       :         : 4         : N              
+saida[4]                     : A16       : output : 3.3-V LVTTL       :         : 4         : N              
+contador[5]                  : A17       : output : 3.3-V LVTTL       :         : 4         : N              
+SaidaAlu[8]                  : A18       : output : 3.3-V LVTTL       :         : 4         : N              
+ffald[2]                     : A19       : output : 3.3-V LVTTL       :         : 4         : N              
+saida[8]                     : A20       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : A21       : power  :                   : 3.3V    : 4         :                
 GND                          : A22       : gnd    :                   :         :           :                
 VCCIO1                       : AA1       : power  :                   : 3.3V    : 1         :                
@@ -97,7 +97,7 @@ GND*                         : AA4       :        :                   :         
 GND*                         : AA5       :        :                   :         : 8         :                
 GND*                         : AA6       :        :                   :         : 8         :                
 GND*                         : AA7       :        :                   :         : 8         :                
-GND*                         : AA8       :        :                   :         : 8         :                
+saidaResto[13]               : AA8       : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AA9       :        :                   :         : 8         :                
 GND*                         : AA10      :        :                   :         : 8         :                
 GND*                         : AA11      :        :                   :         : 8         :                
@@ -107,7 +107,7 @@ GND*                         : AA14      :        :                   :         
 GND*                         : AA15      :        :                   :         : 7         :                
 GND*                         : AA16      :        :                   :         : 7         :                
 GND*                         : AA17      :        :                   :         : 7         :                
-GND*                         : AA18      :        :                   :         : 7         :                
+saidaResto[8]                : AA18      : output : 3.3-V LVTTL       :         : 7         : N              
 GND*                         : AA19      :        :                   :         : 7         :                
 GND*                         : AA20      :        :                   :         : 7         :                
 GND                          : AA21      : gnd    :                   :         :           :                
@@ -119,8 +119,8 @@ GND*                         : AB4       :        :                   :         
 GND*                         : AB5       :        :                   :         : 8         :                
 GND*                         : AB6       :        :                   :         : 8         :                
 GND*                         : AB7       :        :                   :         : 8         :                
-GND*                         : AB8       :        :                   :         : 8         :                
-GND*                         : AB9       :        :                   :         : 8         :                
+saidaResto[14]               : AB8       : output : 3.3-V LVTTL       :         : 8         : N              
+saidaResto[15]               : AB9       : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : AB10      :        :                   :         : 8         :                
 GND*                         : AB11      :        :                   :         : 8         :                
 GND*                         : AB12      :        :                   :         : 7         :                
@@ -142,18 +142,18 @@ GND*                         : B5        :        :                   :         
 GND*                         : B6        :        :                   :         : 3         :                
 GND*                         : B7        :        :                   :         : 3         :                
 GND*                         : B8        :        :                   :         : 3         :                
-saidaResto[0]                : B9        : output : 3.3-V LVTTL       :         : 3         : N              
-saidaResto[12]               : B10       : output : 3.3-V LVTTL       :         : 3         : N              
-saidaResto[2]                : B11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : B9        :        :                   :         : 3         :                
+GND*                         : B10       :        :                   :         : 3         :                
+GND*                         : B11       :        :                   :         : 3         :                
 GND+                         : B12       :        :                   :         : 4         :                
-contador[0]                  : B13       : output : 3.3-V LVTTL       :         : 4         : N              
-SaidaAlu[8]                  : B14       : output : 3.3-V LVTTL       :         : 4         : N              
-saida[8]                     : B15       : output : 3.3-V LVTTL       :         : 4         : N              
-ffald[15]                    : B16       : output : 3.3-V LVTTL       :         : 4         : N              
-ffald[13]                    : B17       : output : 3.3-V LVTTL       :         : 4         : N              
-saida[5]                     : B18       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : B19       :        :                   :         : 4         :                
-GND*                         : B20       :        :                   :         : 4         :                
+GND*                         : B13       :        :                   :         : 4         :                
+GND*                         : B14       :        :                   :         : 4         :                
+contador[7]                  : B15       : output : 3.3-V LVTTL       :         : 4         : N              
+saida[7]                     : B16       : output : 3.3-V LVTTL       :         : 4         : N              
+saida[1]                     : B17       : output : 3.3-V LVTTL       :         : 4         : N              
+contador[0]                  : B18       : output : 3.3-V LVTTL       :         : 4         : N              
+ffald[1]                     : B19       : output : 3.3-V LVTTL       :         : 4         : N              
+saida[14]                    : B20       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : B21       : gnd    :                   :         :           :                
 VCCIO5                       : B22       : power  :                   : 3.3V    : 5         :                
 GND*                         : C1        :        :                   :         : 2         :                
@@ -165,19 +165,19 @@ VCCIO3                       : C6        : power  :                   : 3.3V    
 GND*                         : C7        :        :                   :         : 3         :                
 GND                          : C8        : gnd    :                   :         :           :                
 GND*                         : C9        :        :                   :         : 3         :                
-ffald[9]                     : C10       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : C10       :        :                   :         : 3         :                
 VCCIO3                       : C11       : power  :                   : 3.3V    : 3         :                
 VCCIO4                       : C12       : power  :                   : 3.3V    : 4         :                
-SaidaAlu[13]                 : C13       : output : 3.3-V LVTTL       :         : 4         : N              
-saida[15]                    : C14       : output : 3.3-V LVTTL       :         : 4         : N              
+saida[0]                     : C13       : output : 3.3-V LVTTL       :         : 4         : N              
+contador[6]                  : C14       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : C15       : gnd    :                   :         :           :                
-ffald[4]                     : C16       : output : 3.3-V LVTTL       :         : 4         : N              
-GND*                         : C17       :        :                   :         : 4         :                
-GND*                         : C18       :        :                   :         : 4         :                
-GND*                         : C19       :        :                   :         : 5         :                
-GND*                         : C20       :        :                   :         : 5         :                
-GND*                         : C21       :        :                   :         : 5         :                
-GND*                         : C22       :        :                   :         : 5         :                
+saidaResto[3]                : C16       : output : 3.3-V LVTTL       :         : 4         : N              
+ffald[10]                    : C17       : output : 3.3-V LVTTL       :         : 4         : N              
+saidaResto[0]                : C18       : output : 3.3-V LVTTL       :         : 4         : N              
+saida[12]                    : C19       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[2]                  : C20       : output : 3.3-V LVTTL       :         : 5         : N              
+saida[13]                    : C21       : output : 3.3-V LVTTL       :         : 5         : N              
+FimB                         : C22       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : D1        :        :                   :         : 2         :                
 GND*                         : D2        :        :                   :         : 2         :                
 GND*                         : D3        :        :                   :         : 2         :                
@@ -185,21 +185,21 @@ GND*                         : D4        :        :                   :         
 GND*                         : D5        :        :                   :         : 2         :                
 GND*                         : D6        :        :                   :         : 2         :                
 GND*                         : D7        :        :                   :         : 3         :                
-GND*                         : D8        :        :                   :         : 3         :                
-contador[3]                  : D9        : output : 3.3-V LVTTL       :         : 3         : N              
+saidaResto[12]               : D8        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : D9        :        :                   :         : 3         :                
 GND                          : D10       : gnd    :                   :         :           :                
-contador[2]                  : D11       : output : 3.3-V LVTTL       :         : 3         : N              
+saidaResto[11]               : D11       : output : 3.3-V LVTTL       :         : 3         : N              
 GND+                         : D12       :        :                   :         : 3         :                
 GND                          : D13       : gnd    :                   :         :           :                
-ffald[0]                     : D14       : output : 3.3-V LVTTL       :         : 4         : N              
-saida[10]                    : D15       : output : 3.3-V LVTTL       :         : 4         : N              
-saida[0]                     : D16       : output : 3.3-V LVTTL       :         : 4         : N              
+contador[1]                  : D14       : output : 3.3-V LVTTL       :         : 4         : N              
+ffald[11]                    : D15       : output : 3.3-V LVTTL       :         : 4         : N              
+saidaResto[4]                : D16       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCIO4                       : D17       : power  :                   : 3.3V    : 4         :                
 GND                          : D18       : gnd    :                   :         :           :                
-GND*                         : D19       :        :                   :         : 5         :                
-GND*                         : D20       :        :                   :         : 5         :                
-SaidaAlu[7]                  : D21       : output : 3.3-V LVTTL       :         : 5         : N              
-saida[7]                     : D22       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[15]                 : D19       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[10]                 : D20       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[13]                 : D21       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[1]                  : D22       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : E1        :        :                   :         : 2         :                
 GND*                         : E2        :        :                   :         : 2         :                
 GND*                         : E3        :        :                   :         : 2         :                
@@ -208,20 +208,20 @@ VCCD_PLL3                    : E5        : power  :                   : 1.2V    
 VCCA_PLL3                    : E6        : power  :                   : 1.2V    :           :                
 GND*                         : E7        :        :                   :         : 3         :                
 GND*                         : E8        :        :                   :         : 3         :                
-contador[7]                  : E9        : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : E9        :        :                   :         : 3         :                
 VCCIO3                       : E10       : power  :                   : 3.3V    : 3         :                
-contador[1]                  : E11       : output : 3.3-V LVTTL       :         : 3         : N              
+GND*                         : E11       :        :                   :         : 3         :                
 GND+                         : E12       :        :                   :         : 3         :                
 VCCIO4                       : E13       : power  :                   : 3.3V    : 4         :                
-saida[13]                    : E14       : output : 3.3-V LVTTL       :         : 4         : N              
-saidaResto[10]               : E15       : output : 3.3-V LVTTL       :         : 4         : N              
+saida[3]                     : E14       : output : 3.3-V LVTTL       :         : 4         : N              
+saidaResto[6]                : E15       : output : 3.3-V LVTTL       :         : 4         : N              
 GNDA_PLL2                    : E16       : gnd    :                   :         :           :                
 GND_PLL2                     : E17       : gnd    :                   :         :           :                
-GND*                         : E18       :        :                   :         : 5         :                
-GND*                         : E19       :        :                   :         : 5         :                
-GND*                         : E20       :        :                   :         : 5         :                
-SaidaAlu[9]                  : E21       : output : 3.3-V LVTTL       :         : 5         : N              
-SaidaAlu[5]                  : E22       : output : 3.3-V LVTTL       :         : 5         : N              
+saida[9]                     : E18       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[7]                  : E19       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[5]                  : E20       : output : 3.3-V LVTTL       :         : 5         : N              
+saida[15]                    : E21       : output : 3.3-V LVTTL       :         : 5         : N              
+ffald[14]                    : E22       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : F1        :        :                   :         : 2         :                
 GND*                         : F2        :        :                   :         : 2         :                
 GND*                         : F3        :        :                   :         : 2         :                
@@ -231,19 +231,19 @@ GND_PLL3                     : F6        : gnd    :                   :         
 GNDA_PLL3                    : F7        : gnd    :                   :         :           :                
 GND*                         : F8        :        :                   :         : 3         :                
 GND*                         : F9        :        :                   :         : 3         :                
-saidaResto[7]                : F10       : output : 3.3-V LVTTL       :         : 3         : N              
-saidaResto[15]               : F11       : output : 3.3-V LVTTL       :         : 3         : N              
-SaidaAlu[14]                 : F12       : output : 3.3-V LVTTL       :         : 4         : N              
-SaidaAlu[6]                  : F13       : output : 3.3-V LVTTL       :         : 4         : N              
-SaidaAlu[0]                  : F14       : output : 3.3-V LVTTL       :         : 4         : N              
-saidaResto[13]               : F15       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : F10       :        :                   :         : 3         :                
+GND*                         : F11       :        :                   :         : 3         :                
+GND*                         : F12       :        :                   :         : 4         :                
+saidaResto[7]                : F13       : output : 3.3-V LVTTL       :         : 4         : N              
+saidaResto[2]                : F14       : output : 3.3-V LVTTL       :         : 4         : N              
+contador[3]                  : F15       : output : 3.3-V LVTTL       :         : 4         : N              
 VCCA_PLL2                    : F16       : power  :                   : 1.2V    :           :                
 VCCD_PLL2                    : F17       : power  :                   : 1.2V    :           :                
 GND_PLL2                     : F18       : gnd    :                   :         :           :                
 GND                          : F19       : gnd    :                   :         :           :                
-GND*                         : F20       :        :                   :         : 5         :                
-ffald[12]                    : F21       : output : 3.3-V LVTTL       :         : 5         : N              
-saida[9]                     : F22       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[4]                  : F20       : output : 3.3-V LVTTL       :         : 5         : N              
+ffald[13]                    : F21       : output : 3.3-V LVTTL       :         : 5         : N              
+ffald[7]                     : F22       : output : 3.3-V LVTTL       :         : 5         : N              
 NC                           : G1        :        :                   :         :           :                
 NC                           : G2        :        :                   :         :           :                
 GND*                         : G3        :        :                   :         : 2         :                
@@ -254,18 +254,18 @@ GND*                         : G7        :        :                   :         
 GND*                         : G8        :        :                   :         : 3         :                
 VCCIO3                       : G9        : power  :                   : 3.3V    : 3         :                
 GND                          : G10       : gnd    :                   :         :           :                
-ffald[10]                    : G11       : output : 3.3-V LVTTL       :         : 3         : N              
-saidaResto[5]                : G12       : output : 3.3-V LVTTL       :         : 4         : N              
+GND*                         : G11       :        :                   :         : 3         :                
+saida[5]                     : G12       : output : 3.3-V LVTTL       :         : 4         : N              
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO4                       : G14       : power  :                   : 3.3V    : 4         :                
-saidaResto[11]               : G15       : output : 3.3-V LVTTL       :         : 4         : N              
-saida[2]                     : G16       : output : 3.3-V LVTTL       :         : 4         : N              
-SaidaAlu[15]                 : G17       : output : 3.3-V LVTTL       :         : 5         : N              
-ffald[11]                    : G18       : output : 3.3-V LVTTL       :         : 5         : N              
+contador[4]                  : G15       : output : 3.3-V LVTTL       :         : 4         : N              
+SaidaAlu[11]                 : G16       : output : 3.3-V LVTTL       :         : 4         : N              
+SaidaAlu[0]                  : G17       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[6]                  : G18       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : G19       : power  :                   : 3.3V    : 5         :                
-GND*                         : G20       :        :                   :         : 5         :                
-contador[4]                  : G21       : output : 3.3-V LVTTL       :         : 5         : N              
-contador[6]                  : G22       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[3]                  : G20       : output : 3.3-V LVTTL       :         : 5         : N              
+ffald[6]                     : G21       : output : 3.3-V LVTTL       :         : 5         : N              
+ffald[9]                     : G22       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : H1        :        :                   :         : 2         :                
 GND*                         : H2        :        :                   :         : 2         :                
 GND*                         : H3        :        :                   :         : 2         :                
@@ -274,17 +274,17 @@ GND*                         : H5        :        :                   :         
 GND*                         : H6        :        :                   :         : 2         :                
 GND*                         : H7        :        :                   :         : 3         :                
 GND*                         : H8        :        :                   :         : 3         :                
-saidaResto[3]                : H9        : output : 3.3-V LVTTL       :         : 3         : N              
-saidaResto[1]                : H10       : output : 3.3-V LVTTL       :         : 3         : N              
-saida[14]                    : H11       : output : 3.3-V LVTTL       :         : 3         : N              
-SaidaAlu[12]                 : H12       : output : 3.3-V LVTTL       :         : 4         : N              
-saidaResto[14]               : H13       : output : 3.3-V LVTTL       :         : 4         : N              
-saida[1]                     : H14       : output : 3.3-V LVTTL       :         : 4         : N              
-saida[6]                     : H15       : output : 3.3-V LVTTL       :         : 4         : N              
-SaidaAlu[4]                  : H16       : output : 3.3-V LVTTL       :         : 5         : N              
-saida[12]                    : H17       : output : 3.3-V LVTTL       :         : 5         : N              
-saida[11]                    : H18       : output : 3.3-V LVTTL       :         : 5         : N              
-ffald[1]                     : H19       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : H9        :        :                   :         : 3         :                
+GND*                         : H10       :        :                   :         : 3         :                
+GND*                         : H11       :        :                   :         : 3         :                
+saida[6]                     : H12       : output : 3.3-V LVTTL       :         : 4         : N              
+saida[2]                     : H13       : output : 3.3-V LVTTL       :         : 4         : N              
+saidaResto[1]                : H14       : output : 3.3-V LVTTL       :         : 4         : N              
+SaidaAlu[14]                 : H15       : output : 3.3-V LVTTL       :         : 4         : N              
+ffald[5]                     : H16       : output : 3.3-V LVTTL       :         : 5         : N              
+ffald[4]                     : H17       : output : 3.3-V LVTTL       :         : 5         : N              
+saida[10]                    : H18       : output : 3.3-V LVTTL       :         : 5         : N              
+ffald[3]                     : H19       : output : 3.3-V LVTTL       :         : 5         : N              
 GND                          : H20       : gnd    :                   :         :           :                
 NC                           : H21       :        :                   :         :           :                
 NC                           : H22       :        :                   :         :           :                
@@ -301,15 +301,15 @@ VCCINT                       : J10       : power  :                   : 1.2V    
 VCCINT                       : J11       : power  :                   : 1.2V    :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
 VCCINT                       : J13       : power  :                   : 1.2V    :           :                
-saida[3]                     : J14       : output : 3.3-V LVTTL       :         : 4         : N              
-SaidaAlu[2]                  : J15       : output : 3.3-V LVTTL       :         : 5         : N              
+saidaResto[5]                : J14       : output : 3.3-V LVTTL       :         : 4         : N              
+ffald[15]                    : J15       : output : 3.3-V LVTTL       :         : 5         : N              
 VCCIO5                       : J16       : power  :                   : 3.3V    : 5         :                
-SaidaAlu[1]                  : J17       : output : 3.3-V LVTTL       :         : 5         : N              
-ffald[7]                     : J18       : output : 3.3-V LVTTL       :         : 5         : N              
-ffald[3]                     : J19       : output : 3.3-V LVTTL       :         : 5         : N              
-ffald[2]                     : J20       : output : 3.3-V LVTTL       :         : 5         : N              
-ffald[14]                    : J21       : output : 3.3-V LVTTL       :         : 5         : N              
-saidaResto[4]                : J22       : output : 3.3-V LVTTL       :         : 5         : N              
+ffald[12]                    : J17       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[9]                  : J18       : output : 3.3-V LVTTL       :         : 5         : N              
+SaidaAlu[12]                 : J19       : output : 3.3-V LVTTL       :         : 5         : N              
+ffald[8]                     : J20       : output : 3.3-V LVTTL       :         : 5         : N              
+GND*                         : J21       :        :                   :         : 5         :                
+ffald[0]                     : J22       : output : 3.3-V LVTTL       :         : 5         : N              
 nCE                          : K1        :        :                   :         : 2         :                
 TCK                          : K2        : input  :                   :         : 2         :                
 GND                          : K3        : gnd    :                   :         :           :                
@@ -329,7 +329,7 @@ GND                          : K16       : gnd    :                   :         
 NC                           : K17       :        :                   :         :           :                
 NC                           : K18       :        :                   :         :           :                
 GND                          : K19       : gnd    :                   :         :           :                
-ffald[6]                     : K20       : output : 3.3-V LVTTL       :         : 5         : N              
+saida[11]                    : K20       : output : 3.3-V LVTTL       :         : 5         : N              
 GND*                         : K21       :        :                   :         : 5         :                
 GND*                         : K22       :        :                   :         : 5         :                
 GND+                         : L1        :        :                   :         : 2         :                
@@ -514,7 +514,7 @@ GND*                         : W3        :        :                   :         
 GND*                         : W4        :        :                   :         : 1         :                
 GND*                         : W5        :        :                   :         : 1         :                
 VCCIO8                       : W6        : power  :                   : 3.3V    : 8         :                
-GND*                         : W7        :        :                   :         : 8         :                
+saidaResto[10]               : W7        : output : 3.3-V LVTTL       :         : 8         : N              
 GND*                         : W8        :        :                   :         : 8         :                
 GND*                         : W9        :        :                   :         : 8         :                
 GND                          : W10       : gnd    :                   :         :           :                
@@ -550,5 +550,5 @@ GND*                         : Y17       :        :                   :         
 GND*                         : Y18       :        :                   :         : 6         :                
 GND*                         : Y19       :        :                   :         : 6         :                
 GND*                         : Y20       :        :                   :         : 6         :                
-GND*                         : Y21       :        :                   :         : 6         :                
+saidaResto[9]                : Y21       : output : 3.3-V LVTTL       :         : 6         : N              
 GND*                         : Y22       :        :                   :         : 6         :                

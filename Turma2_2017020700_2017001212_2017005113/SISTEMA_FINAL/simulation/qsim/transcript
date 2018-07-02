@@ -2,13 +2,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # 
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# ** Warning: (vlog-6) -- Waiting for# 
-# Top level modules:
-# 	SISTEMA_FINAL
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module SISTEMA_FINAL_vlg_sample_tst
-# -- Compiling module SISTEMA_FINAL_vlg_check_tst
-# -- Compili# -- Compiling module SISTEMA_FINAL
+# -- Compiling module SISTEMA_FINAL
 # 
 # Top level modules:
 # 	SISTEMA_FINAL
@@ -38,5 +32,5 @@
 # Loading work.SISTEMA_FINAL_vlg_check_tst
 # Loading cycloneii_ver.CYCLONEII_PRIM_DFFE
 # Simulation passed !
-# ** Note: $finish    : SISTEMA_FINAL.vt(1457)
+# ** Note: $finish    : SISTEMA_FINAL.vt(1484)
 #    Time: 1 us  Iteration: 0  Instance: /SISTEMA_FINAL_vlg_vec_tst/tb_out

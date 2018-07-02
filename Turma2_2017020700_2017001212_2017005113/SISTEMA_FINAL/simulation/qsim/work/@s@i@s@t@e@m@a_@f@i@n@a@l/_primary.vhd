@@ -7,6 +7,7 @@ entity SISTEMA_FINAL is
         saidaResto      : out    vl_logic_vector(15 downto 0);
         contador        : out    vl_logic_vector(7 downto 0);
         SaidaAlu        : out    vl_logic_vector(15 downto 0);
-        ffald           : out    vl_logic_vector(15 downto 0)
+        ffald           : out    vl_logic_vector(15 downto 0);
+        FimB            : out    vl_logic
     );
 end SISTEMA_FINAL;

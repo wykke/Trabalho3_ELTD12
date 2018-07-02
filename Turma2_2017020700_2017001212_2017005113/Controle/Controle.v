@@ -1,14 +1,17 @@
-module Controle(clk, FimA, FimB, FimC, FimResto, B, Quociente, Endereco, EnA, EnB, EnC, EnResto, Op, SELM, SELD, contador);
+module Controle(clk, FimA, FimB, FimC, FimResto, A, B, Quociente, Endereco, EnA, EnB, EnC, EnResto, Op, SELM, SELD, contador, menor);
 input FimA, FimB, FimC, FimResto, clk;
-input [7:0] B;
+input [7:0] B, A;
 input [15:0] Quociente;
 output reg [8:0] Endereco;
-output reg EnA, EnB, EnC, EnResto, Op, SELM, SELD;
+output reg EnA, EnB, EnC, EnResto, Op, SELM, SELD, menor;
 output reg [7:0] contador;
 
 reg multp, DIV;
 reg [2:0] state, next_state;
+wire [15:0] gA;
 localparam s1=3'd0, s2=3'd1, s3=3'd2, s4=3'd3;
+
+assign gA={8'b0,A};
 
 //estados da maquina de estado
 always @(*)
@@ -74,11 +77,24 @@ always @(negedge clk) begin
 			// caso seja divisao
 			//if(SELD==1'b1) begin
 			else begin
+				// vendo se A = 0, ou A < B
+				if((A==8'b0)||(A<B)) begin
+					contador<=8'd0;
+					menor<=1'b1;
+					SELD<=1'b1;
+					multp<=1'b0;
+					EnB<=1'b0;
+					EnResto<=1'b1;
+				end else
+				
 				// primeira vez subtraindo
 				if(multp==1'b0) begin 
 					// caso esteja dividindo por zero
-					if(B!=1'b0) begin contador<=8'd2; multp<=1'b1; EnB<=1'b0; end				
-					else begin EnB<=1'b0; EnResto<=1'b1; end
+					if((B!=1'b0)&&(Quociente>B)) begin contador<=8'd2; multp<=1'b1; EnB<=1'b0; end				
+					else begin
+						EnB<=1'b0; EnResto<=1'b1; contador<=8'd1;
+						if(B==0) contador<=8'd0;
+					end
 				end
 					// contando
 					else begin
@@ -91,7 +107,7 @@ always @(negedge clk) begin
 							multp<=1'b0;
 							EnB<=1'b0;
 							EnResto<=1'b1;
-					end
+						end
 				end
 			end // fim if(SELM==1'b1), fim da divisao
 		end
@@ -101,20 +117,22 @@ always @(negedge clk) begin
 	if(FimResto) begin
 		EnResto<=1'b0;
 		EnC<=1'b1;
+		SELD<=1'b1;
 	end else
 	
 	// fazer assim que terminar de ler o valor final
 	if(FimC) begin
 		case(state)
-			s1: begin Op<=1'b1; SELM<=1'b0; DIV<=1'b0; Endereco<=9'd1; end // soma
-			s2: begin Op<=1'b0; SELM<=1'b0; DIV<=1'b0; Endereco<=9'd3; end // subtração
-			s3: begin Op<=1'b1; SELM<=1'b1; DIV<=1'b0; Endereco<=9'd5; end // multiplicacao
+			s1: begin Op<=1'b0; SELM<=1'b0; DIV<=1'b1; Endereco<=9'd1; end // soma
+			s2: begin Op<=1'b1; SELM<=1'b1; DIV<=1'b0; Endereco<=9'd3; end // subtração
+			s3: begin Op<=1'b0; SELM<=1'b0; DIV<=1'b1; Endereco<=9'd5; end // multiplicacao
 			default: begin Op<=1'b0; SELM<=1'b0; DIV<=1'b1; Endereco<=9'd7; end //divisao
 		endcase
 		
 		EnA<=1'b1;
 		EnC<=1'b0;
 		SELD<=1'b0;
+		menor<=1'b0;
 		// ir para proximo estado
 		state<=next_state;
 		
@@ -124,6 +142,7 @@ always @(negedge clk) begin
 		EnC<=1'b1;
 		multp<=1'b0;
 		SELD<=1'b0;
+		menor<=1'b0;
 	end
 end
 
