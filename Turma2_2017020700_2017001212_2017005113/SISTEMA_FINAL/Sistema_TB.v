@@ -2,11 +2,12 @@
 module Sistema_TB ;
 	
 	reg clk;
-	wire [15:0] saida;
+	wire [15:0] saida, saidaResto;
 	
 	SISTEMA_FINAL S0 (
 	.clk 		(clk),
-	.saida	(saida)
+	.saida	(saida),
+	.saidaResto (saidaResto)
 	);
 	
 	//integer repeticoes;
@@ -23,8 +24,8 @@ module Sistema_TB ;
 	end
 	
 	initial begin
-		$display("\t\ttime,\tclk,\tSaida");
-		$monitor("%d, \t%b, \t%d", $time, clk, saida); 
+		$display("\t\ttime,\tclk,\tSaida,\tResto");
+		$monitor("%d, \t%b, \t%d, \t%d", $time, clk, saida, saidaResto); 
 	end
 	
 	initial

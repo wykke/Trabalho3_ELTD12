@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
 
-// DATE "07/02/2018 15:53:48"
+// DATE "07/02/2018 16:06:12"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -389,13 +389,13 @@ wire \regResto|saidaResto~13_combout ;
 wire \regResto|saidaResto~14_combout ;
 wire \regResto|saidaResto~15_combout ;
 wire \regResto|saidaResto~16_combout ;
-wire [15:0] \regb|saidaA ;
 wire [7:0] \controle|contador ;
-wire [8:0] \controle|Endereco ;
-wire [15:0] \rega|saidaA ;
 wire [15:0] \regc|saidaC ;
 wire [15:0] \antiloopd|saidaALD ;
+wire [8:0] \controle|Endereco ;
+wire [15:0] \regb|saidaA ;
 wire [15:0] \antiloopm|saidaALM ;
+wire [15:0] \rega|saidaA ;
 wire [15:0] \regResto|saidaResto ;
 
 wire [7:0] \rom|temp_rtl_0|auto_generated|ram_block1a0_PORTADATAOUT_bus ;
