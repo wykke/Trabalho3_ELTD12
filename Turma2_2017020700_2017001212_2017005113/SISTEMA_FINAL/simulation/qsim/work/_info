@@ -4,11 +4,11 @@ K3
 cModel Technology
 Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 2\SISTEMA_FINAL\simulation\qsim
 vSISTEMA_FINAL
-Z1 !s100 UjMXBLDki<=`FSQdeo72A1
-Z2 I_4egZ0Z=LP?Oc=Qd6P6mW2
-Z3 V@fS=XeM3mGP>fgn^R1]P12
+Z1 !s100 24DWPlXY2KO;M0=_KZ`aT2
+Z2 IFAdfljme=9?1FT0P7e^@D1
+Z3 VQShi2hEP<5o8=@fo2D:Lf0
 Z4 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\git\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\qsim
-Z5 w1530558372
+Z5 w1530660954
 Z6 8SISTEMA_FINAL.vo
 Z7 FSISTEMA_FINAL.vo
 L0 31
@@ -20,24 +20,24 @@ Z10 o-work work -O0
 Z11 n@s@i@s@t@e@m@a_@f@i@n@a@l
 !i10b 1
 !s85 0
-Z12 !s108 1530558373.507000
+Z12 !s108 1530660956.910000
 Z13 !s107 SISTEMA_FINAL.vo|
 !s101 -O0
 vSISTEMA_FINAL_vlg_check_tst
 !i10b 1
-Z14 !s100 3RPLflPcjbWU8FVmf93V51
-Z15 I[3?<94Yij90oEzH[i1C1?2
+Z14 !s100 b0nd=Xzj:J>fCkgE3[BfU1
+Z15 Iac6gW7^8k>oGHoS]oO<5m3
 Z16 VQ6PT2R[9OVYTEJ9ZmK:Rb3
 R4
-Z17 w1530558370
+Z17 w1530660953
 Z18 8SISTEMA_FINAL.vt
 Z19 FSISTEMA_FINAL.vt
-L0 57
+L0 59
 R8
 r1
 !s85 0
 31
-Z20 !s108 1530558373.908000
+Z20 !s108 1530660957.682000
 Z21 !s107 SISTEMA_FINAL.vt|
 Z22 !s90 -work|work|SISTEMA_FINAL.vt|
 !s101 -O0
@@ -45,9 +45,9 @@ R10
 Z23 n@s@i@s@t@e@m@a_@f@i@n@a@l_vlg_check_tst
 vSISTEMA_FINAL_vlg_sample_tst
 !i10b 1
-Z24 !s100 1FWV8OLjXKmEd^gafda0F3
-Z25 IccT2Hcd9T1b_o2HBL3ELj0
-Z26 VZ=QY9dO9ZHmgDdEg4^a0b3
+Z24 !s100 9RH8=6bBnL`LBeLNcd6M`0
+Z25 IS<YQWeccM>CYenJTZ33`H0
+Z26 V6dFTPE_F_[f[dcz;VBV;b2
 R4
 R17
 R18
@@ -65,14 +65,14 @@ R10
 Z27 n@s@i@s@t@e@m@a_@f@i@n@a@l_vlg_sample_tst
 vSISTEMA_FINAL_vlg_vec_tst
 !i10b 1
-Z28 !s100 ;ln71]L2VT?ZQf9;N0jX@1
-Z29 ILO<=4CVV8naHFb9`>ZdGW3
+Z28 !s100 iD09N][XH7__dUf59n_d01
+Z29 I@Vk=PbOJ^cMWmUSa37k5;2
 Z30 VNmhXC5lTF=Ha9aCBBcQjE0
 R4
 R17
 R18
 R19
-Z31 L0 717
+Z31 L0 719
 R8
 r1
 !s85 0

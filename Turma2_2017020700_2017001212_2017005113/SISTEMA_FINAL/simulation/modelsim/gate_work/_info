@@ -2,12 +2,12 @@ m255
 K3
 13
 cModel Technology
-Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\modelsim
+Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\git\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\modelsim
 vSISTEMA_FINAL
-I?g;EgWl615ERRHn1hHJ9n2
-V>LLJ_mJJKU_Cld05zjWIz2
-Z1 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\modelsim
-w1530468984
+I<i<o?z=cACDBA9zmVRD3i1
+VQShi2hEP<5o8=@fo2D:Lf0
+Z1 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\git\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\modelsim
+w1530661406
 8SISTEMA_FINAL.vo
 FSISTEMA_FINAL.vo
 L0 31
@@ -17,31 +17,31 @@ r1
 Z3 o-vlog01compat -work work -O0
 n@s@i@s@t@e@m@a_@f@i@n@a@l
 !i10b 1
-!s100 L>:=?i:nnB4^9zR>mEDh^3
+!s100 5P:RFWa5>N0@;k:JF8NXU0
 !s85 0
-!s108 1530469123.937000
+!s108 1530662788.329000
 !s107 SISTEMA_FINAL.vo|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|SISTEMA_FINAL.vo|
 !s101 -O0
 !s92 -vlog01compat -work work +incdir+. -O0
 vSistema_TB
 !i10b 1
-!s100 R6<>jSGo7A7FXE62SQl5^3
-IQzaC5ZAj4DdWJ7onm6CUI2
+!s100 KL5@SGWW2GMRQYRhd3VE31
+I>_hQR:]PEDB[nn_zEV5Am0
 V7>?a=E0EQ3V9KL0oFi?de2
 R1
-w1529978059
-8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v
-FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v
+w1530661624
+8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v
+FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v
 L0 2
 R2
 r1
 !s85 0
 31
-!s108 1530469124.212000
-!s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v|
+!s108 1530662788.639000
+!s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v|
 !s101 -O0
 R3
-!s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL} -O0
+!s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL} -O0
 n@sistema_@t@b

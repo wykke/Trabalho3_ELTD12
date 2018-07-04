@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for SISTEMA_FINAL
-Mon Jul 02 15:53:46 2018
+Tue Jul 03 21:22:19 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -19,27 +19,33 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
  11. Slow Model Setup: 'clk'
  12. Slow Model Hold: 'clk'
  13. Slow Model Minimum Pulse Width: 'clk'
- 14. Clock to Output Times
- 15. Minimum Clock to Output Times
- 16. Fast Model Setup Summary
- 17. Fast Model Hold Summary
- 18. Fast Model Recovery Summary
- 19. Fast Model Removal Summary
- 20. Fast Model Minimum Pulse Width Summary
- 21. Fast Model Setup: 'clk'
- 22. Fast Model Hold: 'clk'
- 23. Fast Model Minimum Pulse Width: 'clk'
- 24. Clock to Output Times
- 25. Minimum Clock to Output Times
- 26. Multicorner Timing Analysis Summary
- 27. Clock to Output Times
- 28. Minimum Clock to Output Times
- 29. Setup Transfers
- 30. Hold Transfers
- 31. Report TCCS
- 32. Report RSKM
- 33. Unconstrained Paths
- 34. TimeQuest Timing Analyzer Messages
+ 14. Setup Times
+ 15. Hold Times
+ 16. Clock to Output Times
+ 17. Minimum Clock to Output Times
+ 18. Fast Model Setup Summary
+ 19. Fast Model Hold Summary
+ 20. Fast Model Recovery Summary
+ 21. Fast Model Removal Summary
+ 22. Fast Model Minimum Pulse Width Summary
+ 23. Fast Model Setup: 'clk'
+ 24. Fast Model Hold: 'clk'
+ 25. Fast Model Minimum Pulse Width: 'clk'
+ 26. Setup Times
+ 27. Hold Times
+ 28. Clock to Output Times
+ 29. Minimum Clock to Output Times
+ 30. Multicorner Timing Analysis Summary
+ 31. Setup Times
+ 32. Hold Times
+ 33. Clock to Output Times
+ 34. Minimum Clock to Output Times
+ 35. Setup Transfers
+ 36. Hold Transfers
+ 37. Report TCCS
+ 38. Report RSKM
+ 39. Unconstrained Paths
+ 40. TimeQuest Timing Analyzer Messages
 
 
 
@@ -84,12 +90,11 @@ applicable agreement for further details.
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -102,13 +107,13 @@ applicable agreement for further details.
 +------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
 
 
-+-------------------------------------------------+
-; Slow Model Fmax Summary                         ;
-+-----------+-----------------+------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
-+-----------+-----------------+------------+------+
-; 51.11 MHz ; 51.11 MHz       ; clk        ;      ;
-+-----------+-----------------+------------+------+
++------------------------------------------------+
+; Slow Model Fmax Summary                        ;
++----------+-----------------+------------+------+
+; Fmax     ; Restricted Fmax ; Clock Name ; Note ;
++----------+-----------------+------------+------+
+; 49.0 MHz ; 49.0 MHz        ; clk        ;      ;
++----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -117,7 +122,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -9.983 ; -669.882      ;
+; clk   ; -9.839 ; -661.593      ;
 +-------+--------+---------------+
 
 
@@ -156,106 +161,106 @@ No paths to report.
 +--------+---------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                       ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
-; -9.983 ; Controle:controle|SELD          ; Controle:controle|contador[4] ; clk          ; clk         ; 1.000        ; 0.000      ; 11.021     ;
-; -9.783 ; Controle:controle|SELM          ; Controle:controle|contador[4] ; clk          ; clk         ; 1.000        ; -0.003     ; 10.818     ;
-; -9.759 ; Controle:controle|SELD          ; Controle:controle|contador[2] ; clk          ; clk         ; 1.000        ; -0.001     ; 10.796     ;
-; -9.759 ; Controle:controle|SELD          ; Controle:controle|contador[3] ; clk          ; clk         ; 1.000        ; -0.001     ; 10.796     ;
-; -9.759 ; Controle:controle|SELD          ; Controle:controle|contador[5] ; clk          ; clk         ; 1.000        ; -0.001     ; 10.796     ;
-; -9.759 ; Controle:controle|SELD          ; Controle:controle|contador[6] ; clk          ; clk         ; 1.000        ; -0.001     ; 10.796     ;
-; -9.759 ; Controle:controle|SELD          ; Controle:controle|contador[7] ; clk          ; clk         ; 1.000        ; -0.001     ; 10.796     ;
-; -9.559 ; Controle:controle|SELM          ; Controle:controle|contador[2] ; clk          ; clk         ; 1.000        ; -0.004     ; 10.593     ;
-; -9.559 ; Controle:controle|SELM          ; Controle:controle|contador[3] ; clk          ; clk         ; 1.000        ; -0.004     ; 10.593     ;
-; -9.559 ; Controle:controle|SELM          ; Controle:controle|contador[5] ; clk          ; clk         ; 1.000        ; -0.004     ; 10.593     ;
-; -9.559 ; Controle:controle|SELM          ; Controle:controle|contador[6] ; clk          ; clk         ; 1.000        ; -0.004     ; 10.593     ;
-; -9.559 ; Controle:controle|SELM          ; Controle:controle|contador[7] ; clk          ; clk         ; 1.000        ; -0.004     ; 10.593     ;
-; -9.283 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; -0.002     ; 9.819      ;
-; -9.276 ; regA:rega|saidaA[0]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.821      ;
-; -9.190 ; regA:rega|saidaA[6]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.734      ;
-; -9.184 ; regA:regb|saidaA[2]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.728      ;
-; -9.169 ; Controle:controle|SELD          ; Controle:controle|multp       ; clk          ; clk         ; 1.000        ; -0.001     ; 10.206     ;
-; -9.168 ; Controle:controle|SELD          ; Controle:controle|EnResto     ; clk          ; clk         ; 1.000        ; -0.001     ; 10.205     ;
-; -9.156 ; Controle:controle|SELD          ; Controle:controle|contador[1] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.194     ;
-; -9.146 ; regA:rega|saidaA[2]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.690      ;
-; -9.131 ; regA:regb|saidaA[6]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; -0.002     ; 9.667      ;
-; -9.114 ; regA:regb|saidaA[4]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.658      ;
-; -9.103 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.647      ;
-; -9.087 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.632      ;
-; -9.087 ; AntiLoopM:antiloopm|saidaALM[7] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.631      ;
-; -9.084 ; regA:regb|saidaA[3]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.628      ;
-; -9.059 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; -0.003     ; 9.594      ;
-; -9.059 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; -0.003     ; 9.594      ;
-; -9.059 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; -0.003     ; 9.594      ;
-; -9.059 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; -0.003     ; 9.594      ;
-; -9.059 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; -0.003     ; 9.594      ;
-; -9.052 ; regA:rega|saidaA[0]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.596      ;
-; -9.052 ; regA:rega|saidaA[0]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.596      ;
-; -9.052 ; regA:rega|saidaA[0]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.596      ;
-; -9.052 ; regA:rega|saidaA[0]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.596      ;
-; -9.052 ; regA:rega|saidaA[0]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.596      ;
-; -9.027 ; regA:regb|saidaA[1]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.571      ;
-; -9.024 ; AntiLoopM:antiloopm|saidaALM[5] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.568      ;
-; -9.004 ; Controle:controle|SELD          ; Controle:controle|contador[0] ; clk          ; clk         ; 1.000        ; 0.000      ; 10.042     ;
-; -9.002 ; regA:rega|saidaA[5]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.546      ;
-; -8.969 ; Controle:controle|SELM          ; Controle:controle|multp       ; clk          ; clk         ; 1.000        ; -0.004     ; 10.003     ;
-; -8.968 ; Controle:controle|SELM          ; Controle:controle|EnResto     ; clk          ; clk         ; 1.000        ; -0.004     ; 10.002     ;
-; -8.966 ; regA:rega|saidaA[6]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.509      ;
-; -8.966 ; regA:rega|saidaA[6]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.509      ;
-; -8.966 ; regA:rega|saidaA[6]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.509      ;
-; -8.966 ; regA:rega|saidaA[6]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.509      ;
-; -8.966 ; regA:rega|saidaA[6]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.509      ;
-; -8.960 ; regA:regb|saidaA[2]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.503      ;
-; -8.960 ; regA:regb|saidaA[2]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.503      ;
-; -8.960 ; regA:regb|saidaA[2]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.503      ;
-; -8.960 ; regA:regb|saidaA[2]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.503      ;
-; -8.960 ; regA:regb|saidaA[2]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.503      ;
-; -8.956 ; Controle:controle|SELM          ; Controle:controle|contador[1] ; clk          ; clk         ; 1.000        ; -0.003     ; 9.991      ;
-; -8.929 ; regA:rega|saidaA[1]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.473      ;
-; -8.928 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.472      ;
-; -8.922 ; regA:rega|saidaA[2]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.465      ;
-; -8.922 ; regA:rega|saidaA[2]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.465      ;
-; -8.922 ; regA:rega|saidaA[2]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.465      ;
-; -8.922 ; regA:rega|saidaA[2]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.465      ;
-; -8.922 ; regA:rega|saidaA[2]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.465      ;
-; -8.919 ; regA:regb|saidaA[0]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.463      ;
-; -8.907 ; regA:regb|saidaA[6]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; -0.003     ; 9.442      ;
-; -8.907 ; regA:regb|saidaA[6]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; -0.003     ; 9.442      ;
-; -8.907 ; regA:regb|saidaA[6]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; -0.003     ; 9.442      ;
-; -8.907 ; regA:regb|saidaA[6]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; -0.003     ; 9.442      ;
-; -8.907 ; regA:regb|saidaA[6]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; -0.003     ; 9.442      ;
-; -8.890 ; regA:regb|saidaA[4]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.433      ;
-; -8.890 ; regA:regb|saidaA[4]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.433      ;
-; -8.890 ; regA:regb|saidaA[4]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.433      ;
-; -8.890 ; regA:regb|saidaA[4]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.433      ;
-; -8.890 ; regA:regb|saidaA[4]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.433      ;
-; -8.879 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.422      ;
-; -8.879 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.422      ;
-; -8.879 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.422      ;
-; -8.879 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.422      ;
-; -8.879 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.422      ;
-; -8.863 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.407      ;
-; -8.863 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.407      ;
-; -8.863 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.407      ;
-; -8.863 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.407      ;
-; -8.863 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.407      ;
-; -8.863 ; AntiLoopM:antiloopm|saidaALM[7] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.406      ;
-; -8.863 ; AntiLoopM:antiloopm|saidaALM[7] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.406      ;
-; -8.863 ; AntiLoopM:antiloopm|saidaALM[7] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.406      ;
-; -8.863 ; AntiLoopM:antiloopm|saidaALM[7] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.406      ;
-; -8.863 ; AntiLoopM:antiloopm|saidaALM[7] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.406      ;
-; -8.861 ; regA:regb|saidaA[5]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.405      ;
-; -8.860 ; regA:regb|saidaA[3]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.403      ;
-; -8.860 ; regA:regb|saidaA[3]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.403      ;
-; -8.860 ; regA:regb|saidaA[3]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.403      ;
-; -8.860 ; regA:regb|saidaA[3]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.403      ;
-; -8.860 ; regA:regb|saidaA[3]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.403      ;
-; -8.848 ; Controle:controle|SELD          ; Controle:controle|EnB         ; clk          ; clk         ; 1.000        ; -0.006     ; 9.880      ;
-; -8.841 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.385      ;
-; -8.817 ; regA:rega|saidaA[4]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.361      ;
-; -8.816 ; AntiLoopD:antiloopd|saidaALD[5] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 9.360      ;
-; -8.803 ; regA:regb|saidaA[1]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.346      ;
-; -8.803 ; regA:regb|saidaA[1]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.346      ;
-; -8.803 ; regA:regb|saidaA[1]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.346      ;
-; -8.803 ; regA:regb|saidaA[1]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 9.346      ;
+; -9.839 ; Controle:controle|SELM          ; Controle:controle|contador[2] ; clk          ; clk         ; 1.000        ; -0.003     ; 10.874     ;
+; -9.839 ; Controle:controle|SELM          ; Controle:controle|contador[3] ; clk          ; clk         ; 1.000        ; -0.003     ; 10.874     ;
+; -9.839 ; Controle:controle|SELM          ; Controle:controle|contador[4] ; clk          ; clk         ; 1.000        ; -0.003     ; 10.874     ;
+; -9.839 ; Controle:controle|SELM          ; Controle:controle|contador[5] ; clk          ; clk         ; 1.000        ; -0.003     ; 10.874     ;
+; -9.839 ; Controle:controle|SELM          ; Controle:controle|contador[6] ; clk          ; clk         ; 1.000        ; -0.003     ; 10.874     ;
+; -9.839 ; Controle:controle|SELM          ; Controle:controle|contador[7] ; clk          ; clk         ; 1.000        ; -0.003     ; 10.874     ;
+; -9.704 ; regA:regb|saidaA[0]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.002      ; 10.244     ;
+; -9.704 ; regA:regb|saidaA[0]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.002      ; 10.244     ;
+; -9.704 ; regA:regb|saidaA[0]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.002      ; 10.244     ;
+; -9.704 ; regA:regb|saidaA[0]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.002      ; 10.244     ;
+; -9.704 ; regA:regb|saidaA[0]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.002      ; 10.244     ;
+; -9.704 ; regA:regb|saidaA[0]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.002      ; 10.244     ;
+; -9.649 ; Controle:controle|SELM          ; Controle:controle|EnB         ; clk          ; clk         ; 1.000        ; 0.000      ; 10.687     ;
+; -9.602 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.003      ; 10.143     ;
+; -9.602 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.003      ; 10.143     ;
+; -9.602 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.003      ; 10.143     ;
+; -9.602 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.003      ; 10.143     ;
+; -9.602 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.003      ; 10.143     ;
+; -9.602 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.003      ; 10.143     ;
+; -9.514 ; regA:regb|saidaA[0]             ; Controle:controle|EnB         ; clk          ; clk         ; 0.500        ; 0.005      ; 10.057     ;
+; -9.486 ; Controle:controle|SELM          ; Controle:controle|EnResto     ; clk          ; clk         ; 1.000        ; -0.002     ; 10.522     ;
+; -9.485 ; Controle:controle|SELM          ; Controle:controle|multp       ; clk          ; clk         ; 1.000        ; -0.002     ; 10.521     ;
+; -9.446 ; Controle:controle|SELD          ; Controle:controle|contador[2] ; clk          ; clk         ; 1.000        ; 0.003      ; 10.487     ;
+; -9.446 ; Controle:controle|SELD          ; Controle:controle|contador[3] ; clk          ; clk         ; 1.000        ; 0.003      ; 10.487     ;
+; -9.446 ; Controle:controle|SELD          ; Controle:controle|contador[4] ; clk          ; clk         ; 1.000        ; 0.003      ; 10.487     ;
+; -9.446 ; Controle:controle|SELD          ; Controle:controle|contador[5] ; clk          ; clk         ; 1.000        ; 0.003      ; 10.487     ;
+; -9.446 ; Controle:controle|SELD          ; Controle:controle|contador[6] ; clk          ; clk         ; 1.000        ; 0.003      ; 10.487     ;
+; -9.446 ; Controle:controle|SELD          ; Controle:controle|contador[7] ; clk          ; clk         ; 1.000        ; 0.003      ; 10.487     ;
+; -9.412 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|EnB         ; clk          ; clk         ; 0.500        ; 0.006      ; 9.956      ;
+; -9.373 ; regA:regb|saidaA[4]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.913      ;
+; -9.373 ; regA:regb|saidaA[4]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.913      ;
+; -9.373 ; regA:regb|saidaA[4]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.913      ;
+; -9.373 ; regA:regb|saidaA[4]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.913      ;
+; -9.373 ; regA:regb|saidaA[4]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.913      ;
+; -9.373 ; regA:regb|saidaA[4]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.913      ;
+; -9.351 ; regA:regb|saidaA[0]             ; Controle:controle|EnResto     ; clk          ; clk         ; 0.500        ; 0.003      ; 9.892      ;
+; -9.350 ; regA:regb|saidaA[0]             ; Controle:controle|multp       ; clk          ; clk         ; 0.500        ; 0.003      ; 9.891      ;
+; -9.339 ; regA:regb|saidaA[5]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.879      ;
+; -9.339 ; regA:regb|saidaA[5]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.879      ;
+; -9.339 ; regA:regb|saidaA[5]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.879      ;
+; -9.339 ; regA:regb|saidaA[5]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.879      ;
+; -9.339 ; regA:regb|saidaA[5]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.879      ;
+; -9.339 ; regA:regb|saidaA[5]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.879      ;
+; -9.319 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.864      ;
+; -9.319 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.864      ;
+; -9.319 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.864      ;
+; -9.319 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.864      ;
+; -9.319 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.864      ;
+; -9.319 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.864      ;
+; -9.291 ; Controle:controle|SELM          ; Controle:controle|contador[0] ; clk          ; clk         ; 1.000        ; -0.002     ; 10.327     ;
+; -9.282 ; regA:rega|saidaA[0]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.828      ;
+; -9.282 ; regA:rega|saidaA[0]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.828      ;
+; -9.282 ; regA:rega|saidaA[0]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.828      ;
+; -9.282 ; regA:rega|saidaA[0]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.828      ;
+; -9.282 ; regA:rega|saidaA[0]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.828      ;
+; -9.282 ; regA:rega|saidaA[0]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.828      ;
+; -9.282 ; Controle:controle|SELM          ; Controle:controle|contador[1] ; clk          ; clk         ; 1.000        ; -0.002     ; 10.318     ;
+; -9.260 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.003      ; 9.801      ;
+; -9.260 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.003      ; 9.801      ;
+; -9.260 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.003      ; 9.801      ;
+; -9.260 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.003      ; 9.801      ;
+; -9.260 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.003      ; 9.801      ;
+; -9.260 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.003      ; 9.801      ;
+; -9.256 ; Controle:controle|SELD          ; Controle:controle|EnB         ; clk          ; clk         ; 1.000        ; 0.006      ; 10.300     ;
+; -9.249 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|EnResto     ; clk          ; clk         ; 0.500        ; 0.004      ; 9.791      ;
+; -9.248 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|multp       ; clk          ; clk         ; 0.500        ; 0.004      ; 9.790      ;
+; -9.245 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.791      ;
+; -9.245 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.791      ;
+; -9.245 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.791      ;
+; -9.245 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.791      ;
+; -9.245 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.791      ;
+; -9.245 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.791      ;
+; -9.212 ; regA:rega|saidaA[6]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.758      ;
+; -9.212 ; regA:rega|saidaA[6]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.758      ;
+; -9.212 ; regA:rega|saidaA[6]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.758      ;
+; -9.212 ; regA:rega|saidaA[6]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.758      ;
+; -9.212 ; regA:rega|saidaA[6]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.758      ;
+; -9.212 ; regA:rega|saidaA[6]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.008      ; 9.758      ;
+; -9.198 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.738      ;
+; -9.198 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.738      ;
+; -9.198 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.738      ;
+; -9.198 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.738      ;
+; -9.198 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.738      ;
+; -9.198 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.002      ; 9.738      ;
+; -9.183 ; regA:regb|saidaA[4]             ; Controle:controle|EnB         ; clk          ; clk         ; 0.500        ; 0.005      ; 9.726      ;
+; -9.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.724      ;
+; -9.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.724      ;
+; -9.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.724      ;
+; -9.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.724      ;
+; -9.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.724      ;
+; -9.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.724      ;
+; -9.156 ; regA:regb|saidaA[0]             ; Controle:controle|contador[0] ; clk          ; clk         ; 0.500        ; 0.003      ; 9.697      ;
+; -9.152 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.697      ;
+; -9.152 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.697      ;
+; -9.152 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.697      ;
+; -9.152 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.697      ;
+; -9.152 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.697      ;
+; -9.152 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.007      ; 9.697      ;
+; -9.149 ; regA:regb|saidaA[5]             ; Controle:controle|EnB         ; clk          ; clk         ; 0.500        ; 0.005      ; 9.692      ;
+; -9.147 ; regA:regb|saidaA[0]             ; Controle:controle|contador[1] ; clk          ; clk         ; 0.500        ; 0.003      ; 9.688      ;
 +--------+---------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -264,106 +269,106 @@ No paths to report.
 +-------+----------------------------------+----------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                        ; To Node                                                                                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------------------+----------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.445 ; RegResto:regResto|FimResto       ; RegResto:regResto|FimResto                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
-; 0.445 ; Controle:controle|resetResto     ; Controle:controle|resetResto                                                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.445 ; Controle:controle|Endereco[1]    ; Controle:controle|Endereco[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
 ; 0.445 ; Controle:controle|EnB            ; Controle:controle|EnB                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
 ; 0.445 ; Controle:controle|EnA            ; Controle:controle|EnA                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
-; 0.629 ; AntiLoopM:antiloopm|saidaALM[13] ; regC:regc|saidaC[13]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.915      ;
-; 0.629 ; Controle:controle|state.s1       ; Controle:controle|Endereco[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.915      ;
-; 0.778 ; Controle:controle|state.s3       ; Controle:controle|state.s4                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.064      ;
-; 0.817 ; AntiLoopM:antiloopm|saidaALM[15] ; regC:regc|saidaC[15]                                                                         ; clk          ; clk         ; 0.000        ; -0.001     ; 1.102      ;
-; 0.849 ; Controle:controle|state.s3       ; Controle:controle|SELM                                                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.135      ;
-; 0.852 ; Controle:controle|state.s4       ; Controle:controle|DIV                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.138      ;
-; 0.878 ; AntiLoopM:antiloopm|saidaALM[11] ; regC:regc|saidaC[11]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.164      ;
-; 0.878 ; Controle:controle|state.s2       ; Controle:controle|Endereco[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.164      ;
-; 0.884 ; Controle:controle|state.s1       ; Controle:controle|state.s2                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.170      ;
-; 0.920 ; Controle:controle|state.s4       ; Controle:controle|state.s1                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.206      ;
-; 0.938 ; Controle:controle|state.s2       ; Controle:controle|state.s3                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.224      ;
-; 0.980 ; AntiLoopM:antiloopm|saidaALM[14] ; regC:regc|saidaC[14]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.266      ;
-; 1.038 ; Controle:controle|multp          ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.324      ;
-; 1.059 ; Controle:controle|multp          ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.345      ;
-; 1.061 ; Controle:controle|multp          ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.347      ;
-; 1.068 ; Controle:controle|multp          ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.354      ;
-; 1.069 ; Controle:controle|multp          ; Controle:controle|contador[7]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.355      ;
-; 1.121 ; Controle:controle|EnA            ; regA:rega|FimA                                                                               ; clk          ; clk         ; -0.500       ; 0.000      ; 0.907      ;
-; 1.208 ; Controle:controle|state.s3       ; Controle:controle|Endereco[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.494      ;
-; 1.219 ; Controle:controle|multp          ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; 0.001      ; 1.506      ;
-; 1.225 ; AntiLoopM:antiloopm|saidaALM[12] ; regC:regc|saidaC[12]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.511      ;
-; 1.229 ; AntiLoopM:antiloopm|saidaALM[10] ; regC:regc|saidaC[10]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.515      ;
-; 1.245 ; Controle:controle|EnC            ; Controle:controle|EnC                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.531      ;
-; 1.337 ; Controle:controle|multp          ; Controle:controle|SELD                                                                       ; clk          ; clk         ; 0.000        ; 0.001      ; 1.624      ;
-; 1.340 ; regA:rega|saidaA[5]              ; RegResto:regResto|saidaResto[5]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 1.630      ;
+; 0.445 ; Controle:controle|menor          ; Controle:controle|menor                                                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.731      ;
+; 0.621 ; Controle:controle|state.s4       ; Controle:controle|state.s1                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.907      ;
+; 0.774 ; AntiLoopM:antiloopm|saidaALM[13] ; regC:regc|saidaC[13]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.060      ;
+; 0.799 ; Controle:controle|state.s1       ; Controle:controle|Endereco[2]                                                                ; clk          ; clk         ; 0.000        ; 0.002      ; 1.087      ;
+; 0.850 ; AntiLoopM:antiloopm|saidaALM[8]  ; regC:regc|saidaC[8]                                                                          ; clk          ; clk         ; 0.000        ; -0.001     ; 1.135      ;
+; 0.927 ; Controle:controle|state.s1       ; Controle:controle|state.s2                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.213      ;
+; 0.971 ; AntiLoopM:antiloopm|saidaALM[14] ; regC:regc|saidaC[14]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.257      ;
+; 0.985 ; Controle:controle|state.s3       ; Controle:controle|state.s4                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.271      ;
+; 1.013 ; Controle:controle|state.s2       ; Controle:controle|state.s3                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 1.299      ;
+; 1.019 ; AntiLoopM:antiloopm|saidaALM[10] ; regC:regc|saidaC[10]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.305      ;
+; 1.116 ; Controle:controle|state.s2       ; Controle:controle|Endereco[2]                                                                ; clk          ; clk         ; 0.000        ; 0.002      ; 1.404      ;
+; 1.129 ; AntiLoopM:antiloopm|saidaALM[1]  ; regC:regc|saidaC[1]                                                                          ; clk          ; clk         ; 0.000        ; 0.005      ; 1.420      ;
+; 1.130 ; Controle:controle|state.s3       ; Controle:controle|SELM                                                                       ; clk          ; clk         ; 0.000        ; 0.006      ; 1.422      ;
+; 1.139 ; AntiLoopM:antiloopm|saidaALM[11] ; regC:regc|saidaC[11]                                                                         ; clk          ; clk         ; 0.000        ; -0.001     ; 1.424      ;
+; 1.141 ; regC:regc|FimC                   ; Controle:controle|EnC                                                                        ; clk          ; clk         ; -0.500       ; 0.000      ; 0.927      ;
+; 1.156 ; AntiLoopM:antiloopm|saidaALM[9]  ; regC:regc|saidaC[9]                                                                          ; clk          ; clk         ; 0.000        ; -0.001     ; 1.441      ;
+; 1.236 ; AntiLoopM:antiloopm|saidaALM[0]  ; regC:regc|saidaC[0]                                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.522      ;
+; 1.245 ; Controle:controle|multp          ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; -0.001     ; 1.530      ;
+; 1.248 ; Controle:controle|multp          ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; -0.001     ; 1.533      ;
+; 1.252 ; Controle:controle|multp          ; Controle:controle|contador[7]                                                                ; clk          ; clk         ; 0.000        ; -0.001     ; 1.537      ;
+; 1.254 ; regA:rega|saidaA[0]              ; RegResto:regResto|saidaResto[0]                                                              ; clk          ; clk         ; 0.000        ; 0.012      ; 1.552      ;
+; 1.276 ; Controle:controle|multp          ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; -0.001     ; 1.561      ;
+; 1.279 ; Controle:controle|multp          ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; -0.001     ; 1.564      ;
+; 1.280 ; Controle:controle|multp          ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; -0.001     ; 1.565      ;
+; 1.281 ; Controle:controle|state.s4       ; Controle:controle|DIV                                                                        ; clk          ; clk         ; 0.000        ; 0.006      ; 1.573      ;
+; 1.344 ; AntiLoopM:antiloopm|saidaALM[15] ; regC:regc|saidaC[15]                                                                         ; clk          ; clk         ; 0.000        ; 0.007      ; 1.637      ;
+; 1.347 ; AntiLoopM:antiloopm|saidaALM[12] ; regC:regc|saidaC[12]                                                                         ; clk          ; clk         ; 0.000        ; 0.007      ; 1.640      ;
 ; 1.417 ; regA:rega|FimA                   ; Controle:controle|EnA                                                                        ; clk          ; clk         ; -0.500       ; 0.000      ; 1.203      ;
-; 1.450 ; Controle:controle|state.s1       ; Controle:controle|Endereco[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.736      ;
-; 1.465 ; Controle:controle|contador[1]    ; Controle:controle|contador[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.751      ;
-; 1.496 ; AntiLoopM:antiloopm|saidaALM[9]  ; regC:regc|saidaC[9]                                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.782      ;
-; 1.527 ; AntiLoopM:antiloopm|saidaALM[8]  ; regC:regc|saidaC[8]                                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.813      ;
-; 1.540 ; Controle:controle|multp          ; Controle:controle|EnResto                                                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.826      ;
-; 1.541 ; Controle:controle|multp          ; Controle:controle|multp                                                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.827      ;
-; 1.579 ; Controle:controle|DIV            ; Controle:controle|EnB                                                                        ; clk          ; clk         ; 0.000        ; -0.009     ; 1.856      ;
-; 1.583 ; Controle:controle|state.s3       ; Controle:controle|Op                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.869      ;
-; 1.584 ; regA:rega|saidaA[7]              ; RegResto:regResto|saidaResto[7]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 1.874      ;
-; 1.634 ; Controle:controle|EnA            ; ROM:rom|altsyncram:temp_rtl_0|altsyncram_2q61:auto_generated|ram_block1a0~porta_address_reg0 ; clk          ; clk         ; -0.500       ; 0.078      ; 1.462      ;
-; 1.656 ; Controle:controle|SELD           ; Controle:controle|SELD                                                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.942      ;
-; 1.660 ; regA:rega|saidaA[2]              ; RegResto:regResto|saidaResto[2]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 1.950      ;
-; 1.778 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[13]                                                             ; clk          ; clk         ; -0.500       ; -0.002     ; 1.562      ;
-; 1.779 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[6]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.563      ;
-; 1.781 ; Controle:controle|contador[5]    ; regC:regc|saidaC[5]                                                                          ; clk          ; clk         ; -0.500       ; -0.001     ; 1.566      ;
-; 1.782 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[9]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.566      ;
-; 1.782 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[12]                                                             ; clk          ; clk         ; -0.500       ; -0.002     ; 1.566      ;
-; 1.790 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[7]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.574      ;
-; 1.791 ; Controle:controle|contador[6]    ; regC:regc|saidaC[6]                                                                          ; clk          ; clk         ; -0.500       ; -0.001     ; 1.576      ;
-; 1.791 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[1]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.575      ;
-; 1.792 ; Controle:controle|contador[3]    ; regC:regc|saidaC[3]                                                                          ; clk          ; clk         ; -0.500       ; -0.001     ; 1.577      ;
-; 1.794 ; Controle:controle|contador[7]    ; regC:regc|saidaC[7]                                                                          ; clk          ; clk         ; -0.500       ; -0.001     ; 1.579      ;
-; 1.795 ; Controle:controle|contador[2]    ; regC:regc|saidaC[2]                                                                          ; clk          ; clk         ; -0.500       ; -0.001     ; 1.580      ;
-; 1.796 ; Controle:controle|EnResto        ; Controle:controle|EnResto                                                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 2.082      ;
-; 1.797 ; Controle:controle|contador[4]    ; regC:regc|saidaC[4]                                                                          ; clk          ; clk         ; -0.500       ; -0.002     ; 1.581      ;
-; 1.801 ; Controle:controle|menor          ; Controle:controle|menor                                                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.087      ;
-; 1.806 ; Controle:controle|contador[1]    ; regC:regc|saidaC[1]                                                                          ; clk          ; clk         ; -0.500       ; -0.002     ; 1.590      ;
-; 1.816 ; regA:rega|saidaA[6]              ; RegResto:regResto|saidaResto[6]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 2.106      ;
-; 1.823 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[14]                                                             ; clk          ; clk         ; -0.500       ; -0.002     ; 1.607      ;
-; 1.825 ; Controle:controle|state.s1       ; Controle:controle|Op                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.111      ;
-; 1.828 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[8]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.612      ;
-; 1.830 ; AntiLoopM:antiloopm|saidaALM[0]  ; regC:regc|saidaC[0]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 2.120      ;
-; 1.840 ; regA:rega|saidaA[1]              ; RegResto:regResto|saidaResto[1]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 2.130      ;
-; 1.847 ; AntiLoopM:antiloopm|saidaALM[2]  ; regC:regc|saidaC[2]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 2.137      ;
-; 1.849 ; AntiLoopM:antiloopm|saidaALM[1]  ; regC:regc|saidaC[1]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 2.139      ;
-; 1.849 ; Controle:controle|EnC            ; regC:regc|FimC                                                                               ; clk          ; clk         ; -0.500       ; -0.005     ; 1.630      ;
-; 1.851 ; AntiLoopM:antiloopm|saidaALM[4]  ; regC:regc|saidaC[4]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 2.141      ;
-; 1.869 ; Controle:controle|contador[4]    ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.155      ;
-; 1.877 ; Controle:controle|SELM           ; regC:regc|saidaC[8]                                                                          ; clk          ; clk         ; -0.500       ; -0.001     ; 1.662      ;
-; 1.877 ; Controle:controle|SELM           ; regC:regc|saidaC[10]                                                                         ; clk          ; clk         ; -0.500       ; -0.001     ; 1.662      ;
-; 1.879 ; AntiLoopM:antiloopm|saidaALM[5]  ; regC:regc|saidaC[5]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 2.169      ;
-; 1.885 ; Controle:controle|SELM           ; regC:regc|saidaC[12]                                                                         ; clk          ; clk         ; -0.500       ; -0.001     ; 1.670      ;
-; 1.892 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[10]                                                             ; clk          ; clk         ; -0.500       ; 0.002      ; 1.680      ;
-; 1.935 ; AntiLoopD:antiloopd|saidaALD[14] ; AntiLoopD:antiloopd|saidaALD[14]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 2.221      ;
-; 1.936 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[11]                                                             ; clk          ; clk         ; -0.500       ; 0.002      ; 1.724      ;
-; 1.936 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[15]                                                             ; clk          ; clk         ; -0.500       ; 0.002      ; 1.724      ;
-; 1.944 ; Controle:controle|SELM           ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; -0.004     ; 2.226      ;
-; 1.944 ; Controle:controle|SELM           ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; -0.004     ; 2.226      ;
-; 1.944 ; Controle:controle|SELM           ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; -0.004     ; 2.226      ;
-; 1.944 ; Controle:controle|SELM           ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; -0.004     ; 2.226      ;
-; 1.944 ; Controle:controle|SELM           ; Controle:controle|contador[7]                                                                ; clk          ; clk         ; 0.000        ; -0.004     ; 2.226      ;
-; 1.944 ; Controle:controle|DIV            ; Controle:controle|menor                                                                      ; clk          ; clk         ; 0.000        ; -0.003     ; 2.227      ;
-; 1.949 ; regA:rega|saidaA[4]              ; RegResto:regResto|saidaResto[4]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 2.239      ;
-; 1.956 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[0]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.740      ;
-; 1.956 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[1]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.740      ;
-; 1.956 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[2]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.740      ;
-; 1.956 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[3]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.740      ;
-; 1.956 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[4]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.740      ;
-; 1.956 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[5]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.740      ;
-; 1.956 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[6]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.740      ;
-; 1.956 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[7]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.740      ;
-; 1.964 ; Controle:controle|Endereco[2]    ; ROM:rom|altsyncram:temp_rtl_0|altsyncram_2q61:auto_generated|ram_block1a0~porta_address_reg2 ; clk          ; clk         ; -0.500       ; 0.070      ; 1.784      ;
-; 1.970 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[13]                                                             ; clk          ; clk         ; -0.500       ; -0.002     ; 1.754      ;
-; 1.971 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[12]                                                             ; clk          ; clk         ; -0.500       ; -0.002     ; 1.755      ;
-; 1.972 ; Controle:controle|Endereco[1]    ; ROM:rom|altsyncram:temp_rtl_0|altsyncram_2q61:auto_generated|ram_block1a0~porta_address_reg1 ; clk          ; clk         ; -0.500       ; 0.070      ; 1.792      ;
-; 1.972 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[9]                                                              ; clk          ; clk         ; -0.500       ; -0.002     ; 1.756      ;
-; 1.977 ; Controle:controle|multp          ; Controle:controle|resetResto                                                                 ; clk          ; clk         ; 0.000        ; 0.001      ; 2.264      ;
-; 1.979 ; AntiLoopM:antiloopm|saidaALM[11] ; AntiLoopD:antiloopd|saidaALD[11]                                                             ; clk          ; clk         ; 0.000        ; -0.003     ; 2.262      ;
-; 1.994 ; Controle:controle|SELM           ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; -0.003     ; 2.277      ;
-; 1.996 ; AntiLoopM:antiloopm|saidaALM[7]  ; regC:regc|saidaC[7]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 2.286      ;
+; 1.436 ; Controle:controle|multp          ; Controle:controle|contador[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.722      ;
+; 1.455 ; Controle:controle|state.s3       ; Controle:controle|Endereco[1]                                                                ; clk          ; clk         ; 0.000        ; 0.002      ; 1.743      ;
+; 1.470 ; regA:rega|saidaA[5]              ; RegResto:regResto|saidaResto[5]                                                              ; clk          ; clk         ; 0.000        ; 0.011      ; 1.767      ;
+; 1.474 ; Controle:controle|contador[7]    ; Controle:controle|contador[7]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.760      ;
+; 1.481 ; Controle:controle|EnB            ; regA:regb|FimA                                                                               ; clk          ; clk         ; -0.500       ; 0.000      ; 1.267      ;
+; 1.511 ; AntiLoopM:antiloopm|saidaALM[4]  ; regC:regc|saidaC[4]                                                                          ; clk          ; clk         ; 0.000        ; 0.000      ; 1.797      ;
+; 1.514 ; AntiLoopM:antiloopm|saidaALM[2]  ; regC:regc|saidaC[2]                                                                          ; clk          ; clk         ; 0.000        ; -0.001     ; 1.799      ;
+; 1.519 ; Controle:controle|EnC            ; regC:regc|FimC                                                                               ; clk          ; clk         ; -0.500       ; 0.000      ; 1.305      ;
+; 1.543 ; RegResto:regResto|FimResto       ; Controle:controle|EnC                                                                        ; clk          ; clk         ; -0.500       ; 0.000      ; 1.329      ;
+; 1.548 ; AntiLoopM:antiloopm|saidaALM[6]  ; regC:regc|saidaC[6]                                                                          ; clk          ; clk         ; 0.000        ; 0.005      ; 1.839      ;
+; 1.551 ; Controle:controle|EnC            ; Controle:controle|EnC                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 1.837      ;
+; 1.587 ; Controle:controle|Endereco[2]    ; ROM:rom|altsyncram:temp_rtl_0|altsyncram_2q61:auto_generated|ram_block1a0~porta_address_reg2 ; clk          ; clk         ; -0.500       ; 0.083      ; 1.420      ;
+; 1.588 ; Controle:controle|Endereco[1]    ; ROM:rom|altsyncram:temp_rtl_0|altsyncram_2q61:auto_generated|ram_block1a0~porta_address_reg1 ; clk          ; clk         ; -0.500       ; 0.083      ; 1.421      ;
+; 1.589 ; Controle:controle|contador[5]    ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.875      ;
+; 1.635 ; Controle:controle|resetResto     ; RegResto:regResto|FimResto                                                                   ; clk          ; clk         ; -0.500       ; 0.006      ; 1.427      ;
+; 1.639 ; Controle:controle|EnResto        ; Controle:controle|EnResto                                                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 1.925      ;
+; 1.642 ; Controle:controle|contador[2]    ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.928      ;
+; 1.650 ; Controle:controle|contador[6]    ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.936      ;
+; 1.654 ; regA:rega|saidaA[7]              ; RegResto:regResto|saidaResto[7]                                                              ; clk          ; clk         ; 0.000        ; 0.012      ; 1.952      ;
+; 1.674 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[9]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.467      ;
+; 1.674 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[10]                                                             ; clk          ; clk         ; -0.500       ; 0.007      ; 1.467      ;
+; 1.677 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[6]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.470      ;
+; 1.677 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[13]                                                             ; clk          ; clk         ; -0.500       ; 0.007      ; 1.470      ;
+; 1.677 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[14]                                                             ; clk          ; clk         ; -0.500       ; 0.007      ; 1.470      ;
+; 1.678 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[3]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.471      ;
+; 1.680 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[2]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.473      ;
+; 1.694 ; Controle:controle|state.s1       ; Controle:controle|Endereco[1]                                                                ; clk          ; clk         ; 0.000        ; 0.002      ; 1.982      ;
+; 1.761 ; Controle:controle|EnA            ; regA:rega|FimA                                                                               ; clk          ; clk         ; -0.500       ; 0.000      ; 1.547      ;
+; 1.791 ; AntiLoopM:antiloopm|saidaALM[3]  ; regC:regc|saidaC[3]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 2.081      ;
+; 1.801 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[8]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.594      ;
+; 1.802 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[15]                                                             ; clk          ; clk         ; -0.500       ; 0.007      ; 1.595      ;
+; 1.803 ; Controle:controle|contador[7]    ; regC:regc|saidaC[7]                                                                          ; clk          ; clk         ; -0.500       ; 0.001      ; 1.590      ;
+; 1.803 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[12]                                                             ; clk          ; clk         ; -0.500       ; 0.007      ; 1.596      ;
+; 1.805 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[11]                                                             ; clk          ; clk         ; -0.500       ; 0.007      ; 1.598      ;
+; 1.812 ; Controle:controle|SELD           ; regC:regc|saidaC[0]                                                                          ; clk          ; clk         ; -0.500       ; 0.000      ; 1.598      ;
+; 1.812 ; Controle:controle|SELD           ; regC:regc|saidaC[1]                                                                          ; clk          ; clk         ; -0.500       ; 0.000      ; 1.598      ;
+; 1.812 ; Controle:controle|SELD           ; regC:regc|saidaC[2]                                                                          ; clk          ; clk         ; -0.500       ; 0.000      ; 1.598      ;
+; 1.812 ; Controle:controle|SELD           ; regC:regc|saidaC[3]                                                                          ; clk          ; clk         ; -0.500       ; 0.000      ; 1.598      ;
+; 1.812 ; Controle:controle|SELD           ; regC:regc|saidaC[4]                                                                          ; clk          ; clk         ; -0.500       ; 0.000      ; 1.598      ;
+; 1.812 ; Controle:controle|SELD           ; regC:regc|saidaC[5]                                                                          ; clk          ; clk         ; -0.500       ; 0.000      ; 1.598      ;
+; 1.812 ; Controle:controle|SELD           ; regC:regc|saidaC[6]                                                                          ; clk          ; clk         ; -0.500       ; 0.000      ; 1.598      ;
+; 1.820 ; regC:regc|FimC                   ; Controle:controle|state.s4                                                                   ; clk          ; clk         ; -0.500       ; -0.006     ; 1.600      ;
+; 1.821 ; regC:regc|FimC                   ; Controle:controle|state.s3                                                                   ; clk          ; clk         ; -0.500       ; -0.006     ; 1.601      ;
+; 1.823 ; regC:regc|FimC                   ; Controle:controle|state.s1                                                                   ; clk          ; clk         ; -0.500       ; -0.006     ; 1.603      ;
+; 1.825 ; regC:regc|FimC                   ; Controle:controle|state.s2                                                                   ; clk          ; clk         ; -0.500       ; -0.006     ; 1.605      ;
+; 1.835 ; Controle:controle|contador[3]    ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 2.121      ;
+; 1.838 ; Controle:controle|contador[6]    ; regC:regc|saidaC[6]                                                                          ; clk          ; clk         ; -0.500       ; -0.003     ; 1.621      ;
+; 1.842 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[5]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.635      ;
+; 1.843 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[4]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.636      ;
+; 1.844 ; regA:rega|saidaA[3]              ; RegResto:regResto|saidaResto[3]                                                              ; clk          ; clk         ; 0.000        ; 0.012      ; 2.142      ;
+; 1.845 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[0]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.638      ;
+; 1.846 ; regA:rega|FimA                   ; Controle:controle|EnB                                                                        ; clk          ; clk         ; -0.500       ; 0.000      ; 1.632      ;
+; 1.850 ; Controle:controle|state.s3       ; Controle:controle|Op                                                                         ; clk          ; clk         ; 0.000        ; 0.006      ; 2.142      ;
+; 1.854 ; Controle:controle|contador[4]    ; regC:regc|saidaC[4]                                                                          ; clk          ; clk         ; -0.500       ; -0.003     ; 1.637      ;
+; 1.859 ; Controle:controle|contador[5]    ; regC:regc|saidaC[5]                                                                          ; clk          ; clk         ; -0.500       ; -0.003     ; 1.642      ;
+; 1.868 ; regA:rega|saidaA[4]              ; RegResto:regResto|saidaResto[4]                                                              ; clk          ; clk         ; 0.000        ; 0.011      ; 2.165      ;
+; 1.871 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[1]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.664      ;
+; 1.873 ; Controle:controle|menor          ; RegResto:regResto|saidaResto[7]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.666      ;
+; 1.891 ; regA:rega|saidaA[6]              ; RegResto:regResto|saidaResto[6]                                                              ; clk          ; clk         ; 0.000        ; 0.012      ; 2.189      ;
+; 1.898 ; Controle:controle|EnA            ; ROM:rom|altsyncram:temp_rtl_0|altsyncram_2q61:auto_generated|ram_block1a0~porta_address_reg0 ; clk          ; clk         ; -0.500       ; 0.079      ; 1.727      ;
+; 1.921 ; AntiLoopD:antiloopd|saidaALD[10] ; AntiLoopD:antiloopd|saidaALD[10]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 2.207      ;
+; 1.977 ; regA:rega|FimA                   ; Controle:controle|resetResto                                                                 ; clk          ; clk         ; -0.500       ; -0.006     ; 1.757      ;
+; 1.978 ; regA:regb|saidaA[4]              ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; -0.500       ; 0.002      ; 1.766      ;
+; 1.986 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[0]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.779      ;
+; 1.986 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[1]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.779      ;
+; 1.986 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[2]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.779      ;
+; 1.986 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[3]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.779      ;
+; 1.986 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[4]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.779      ;
+; 1.986 ; Controle:controle|resetResto     ; RegResto:regResto|saidaResto[5]                                                              ; clk          ; clk         ; -0.500       ; 0.007      ; 1.779      ;
 +-------+----------------------------------+----------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -475,45 +480,65 @@ No paths to report.
 +--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; reset     ; clk        ; 7.057 ; 7.057 ; Rise       ; clk             ;
+; reset     ; clk        ; 6.311 ; 6.311 ; Fall       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; reset     ; clk        ; -3.341 ; -3.341 ; Rise       ; clk             ;
+; reset     ; clk        ; -3.555 ; -3.555 ; Fall       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
 +-----------------------------------------------------------------------------+
 ; Clock to Output Times                                                       ;
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; saida[*]        ; clk        ; 7.821 ; 7.821 ; Rise       ; clk             ;
-;  saida[0]       ; clk        ; 6.945 ; 6.945 ; Rise       ; clk             ;
-;  saida[1]       ; clk        ; 7.821 ; 7.821 ; Rise       ; clk             ;
-;  saida[2]       ; clk        ; 6.967 ; 6.967 ; Rise       ; clk             ;
-;  saida[3]       ; clk        ; 7.806 ; 7.806 ; Rise       ; clk             ;
-;  saida[4]       ; clk        ; 6.952 ; 6.952 ; Rise       ; clk             ;
-;  saida[5]       ; clk        ; 7.237 ; 7.237 ; Rise       ; clk             ;
-;  saida[6]       ; clk        ; 6.957 ; 6.957 ; Rise       ; clk             ;
-;  saida[7]       ; clk        ; 7.782 ; 7.782 ; Rise       ; clk             ;
-;  saida[8]       ; clk        ; 7.488 ; 7.488 ; Rise       ; clk             ;
-;  saida[9]       ; clk        ; 6.932 ; 6.932 ; Rise       ; clk             ;
-;  saida[10]      ; clk        ; 7.222 ; 7.222 ; Rise       ; clk             ;
-;  saida[11]      ; clk        ; 6.927 ; 6.927 ; Rise       ; clk             ;
-;  saida[12]      ; clk        ; 7.788 ; 7.788 ; Rise       ; clk             ;
-;  saida[13]      ; clk        ; 7.516 ; 7.516 ; Rise       ; clk             ;
-;  saida[14]      ; clk        ; 7.801 ; 7.801 ; Rise       ; clk             ;
-;  saida[15]      ; clk        ; 7.500 ; 7.500 ; Rise       ; clk             ;
-; saidaResto[*]   ; clk        ; 7.712 ; 7.712 ; Rise       ; clk             ;
-;  saidaResto[0]  ; clk        ; 7.211 ; 7.211 ; Rise       ; clk             ;
-;  saidaResto[1]  ; clk        ; 7.712 ; 7.712 ; Rise       ; clk             ;
-;  saidaResto[2]  ; clk        ; 7.217 ; 7.217 ; Rise       ; clk             ;
-;  saidaResto[3]  ; clk        ; 7.568 ; 7.568 ; Rise       ; clk             ;
-;  saidaResto[4]  ; clk        ; 7.515 ; 7.515 ; Rise       ; clk             ;
-;  saidaResto[5]  ; clk        ; 7.340 ; 7.340 ; Rise       ; clk             ;
-;  saidaResto[6]  ; clk        ; 6.980 ; 6.980 ; Rise       ; clk             ;
-;  saidaResto[7]  ; clk        ; 7.232 ; 7.232 ; Rise       ; clk             ;
-;  saidaResto[8]  ; clk        ; 6.939 ; 6.939 ; Rise       ; clk             ;
-;  saidaResto[9]  ; clk        ; 7.222 ; 7.222 ; Rise       ; clk             ;
-;  saidaResto[10] ; clk        ; 7.287 ; 7.287 ; Rise       ; clk             ;
-;  saidaResto[11] ; clk        ; 6.932 ; 6.932 ; Rise       ; clk             ;
-;  saidaResto[12] ; clk        ; 7.534 ; 7.534 ; Rise       ; clk             ;
-;  saidaResto[13] ; clk        ; 7.546 ; 7.546 ; Rise       ; clk             ;
-;  saidaResto[14] ; clk        ; 7.193 ; 7.193 ; Rise       ; clk             ;
-;  saidaResto[15] ; clk        ; 6.928 ; 6.928 ; Rise       ; clk             ;
+; saida[*]        ; clk        ; 7.436 ; 7.436 ; Rise       ; clk             ;
+;  saida[0]       ; clk        ; 7.221 ; 7.221 ; Rise       ; clk             ;
+;  saida[1]       ; clk        ; 6.980 ; 6.980 ; Rise       ; clk             ;
+;  saida[2]       ; clk        ; 7.251 ; 7.251 ; Rise       ; clk             ;
+;  saida[3]       ; clk        ; 6.944 ; 6.944 ; Rise       ; clk             ;
+;  saida[4]       ; clk        ; 7.208 ; 7.208 ; Rise       ; clk             ;
+;  saida[5]       ; clk        ; 7.211 ; 7.211 ; Rise       ; clk             ;
+;  saida[6]       ; clk        ; 6.951 ; 6.951 ; Rise       ; clk             ;
+;  saida[7]       ; clk        ; 7.436 ; 7.436 ; Rise       ; clk             ;
+;  saida[8]       ; clk        ; 6.861 ; 6.861 ; Rise       ; clk             ;
+;  saida[9]       ; clk        ; 6.859 ; 6.859 ; Rise       ; clk             ;
+;  saida[10]      ; clk        ; 7.157 ; 7.157 ; Rise       ; clk             ;
+;  saida[11]      ; clk        ; 6.871 ; 6.871 ; Rise       ; clk             ;
+;  saida[12]      ; clk        ; 7.124 ; 7.124 ; Rise       ; clk             ;
+;  saida[13]      ; clk        ; 7.145 ; 7.145 ; Rise       ; clk             ;
+;  saida[14]      ; clk        ; 6.900 ; 6.900 ; Rise       ; clk             ;
+;  saida[15]      ; clk        ; 7.136 ; 7.136 ; Rise       ; clk             ;
+; saidaResto[*]   ; clk        ; 7.822 ; 7.822 ; Rise       ; clk             ;
+;  saidaResto[0]  ; clk        ; 7.484 ; 7.484 ; Rise       ; clk             ;
+;  saidaResto[1]  ; clk        ; 6.976 ; 6.976 ; Rise       ; clk             ;
+;  saidaResto[2]  ; clk        ; 7.781 ; 7.781 ; Rise       ; clk             ;
+;  saidaResto[3]  ; clk        ; 6.917 ; 6.917 ; Rise       ; clk             ;
+;  saidaResto[4]  ; clk        ; 7.822 ; 7.822 ; Rise       ; clk             ;
+;  saidaResto[5]  ; clk        ; 6.895 ; 6.895 ; Rise       ; clk             ;
+;  saidaResto[6]  ; clk        ; 7.209 ; 7.209 ; Rise       ; clk             ;
+;  saidaResto[7]  ; clk        ; 7.484 ; 7.484 ; Rise       ; clk             ;
+;  saidaResto[8]  ; clk        ; 7.516 ; 7.516 ; Rise       ; clk             ;
+;  saidaResto[9]  ; clk        ; 7.519 ; 7.519 ; Rise       ; clk             ;
+;  saidaResto[10] ; clk        ; 7.490 ; 7.490 ; Rise       ; clk             ;
+;  saidaResto[11] ; clk        ; 7.227 ; 7.227 ; Rise       ; clk             ;
+;  saidaResto[12] ; clk        ; 7.473 ; 7.473 ; Rise       ; clk             ;
+;  saidaResto[13] ; clk        ; 7.274 ; 7.274 ; Rise       ; clk             ;
+;  saidaResto[14] ; clk        ; 7.511 ; 7.511 ; Rise       ; clk             ;
+;  saidaResto[15] ; clk        ; 6.962 ; 6.962 ; Rise       ; clk             ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -522,40 +547,40 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; saida[*]        ; clk        ; 6.927 ; 6.927 ; Rise       ; clk             ;
-;  saida[0]       ; clk        ; 6.945 ; 6.945 ; Rise       ; clk             ;
-;  saida[1]       ; clk        ; 7.821 ; 7.821 ; Rise       ; clk             ;
-;  saida[2]       ; clk        ; 6.967 ; 6.967 ; Rise       ; clk             ;
-;  saida[3]       ; clk        ; 7.806 ; 7.806 ; Rise       ; clk             ;
-;  saida[4]       ; clk        ; 6.952 ; 6.952 ; Rise       ; clk             ;
-;  saida[5]       ; clk        ; 7.237 ; 7.237 ; Rise       ; clk             ;
-;  saida[6]       ; clk        ; 6.957 ; 6.957 ; Rise       ; clk             ;
-;  saida[7]       ; clk        ; 7.782 ; 7.782 ; Rise       ; clk             ;
-;  saida[8]       ; clk        ; 7.488 ; 7.488 ; Rise       ; clk             ;
-;  saida[9]       ; clk        ; 6.932 ; 6.932 ; Rise       ; clk             ;
-;  saida[10]      ; clk        ; 7.222 ; 7.222 ; Rise       ; clk             ;
-;  saida[11]      ; clk        ; 6.927 ; 6.927 ; Rise       ; clk             ;
-;  saida[12]      ; clk        ; 7.788 ; 7.788 ; Rise       ; clk             ;
-;  saida[13]      ; clk        ; 7.516 ; 7.516 ; Rise       ; clk             ;
-;  saida[14]      ; clk        ; 7.801 ; 7.801 ; Rise       ; clk             ;
-;  saida[15]      ; clk        ; 7.500 ; 7.500 ; Rise       ; clk             ;
-; saidaResto[*]   ; clk        ; 6.928 ; 6.928 ; Rise       ; clk             ;
-;  saidaResto[0]  ; clk        ; 7.211 ; 7.211 ; Rise       ; clk             ;
-;  saidaResto[1]  ; clk        ; 7.712 ; 7.712 ; Rise       ; clk             ;
-;  saidaResto[2]  ; clk        ; 7.217 ; 7.217 ; Rise       ; clk             ;
-;  saidaResto[3]  ; clk        ; 7.568 ; 7.568 ; Rise       ; clk             ;
-;  saidaResto[4]  ; clk        ; 7.515 ; 7.515 ; Rise       ; clk             ;
-;  saidaResto[5]  ; clk        ; 7.340 ; 7.340 ; Rise       ; clk             ;
-;  saidaResto[6]  ; clk        ; 6.980 ; 6.980 ; Rise       ; clk             ;
-;  saidaResto[7]  ; clk        ; 7.232 ; 7.232 ; Rise       ; clk             ;
-;  saidaResto[8]  ; clk        ; 6.939 ; 6.939 ; Rise       ; clk             ;
-;  saidaResto[9]  ; clk        ; 7.222 ; 7.222 ; Rise       ; clk             ;
-;  saidaResto[10] ; clk        ; 7.287 ; 7.287 ; Rise       ; clk             ;
-;  saidaResto[11] ; clk        ; 6.932 ; 6.932 ; Rise       ; clk             ;
-;  saidaResto[12] ; clk        ; 7.534 ; 7.534 ; Rise       ; clk             ;
-;  saidaResto[13] ; clk        ; 7.546 ; 7.546 ; Rise       ; clk             ;
-;  saidaResto[14] ; clk        ; 7.193 ; 7.193 ; Rise       ; clk             ;
-;  saidaResto[15] ; clk        ; 6.928 ; 6.928 ; Rise       ; clk             ;
+; saida[*]        ; clk        ; 6.859 ; 6.859 ; Rise       ; clk             ;
+;  saida[0]       ; clk        ; 7.221 ; 7.221 ; Rise       ; clk             ;
+;  saida[1]       ; clk        ; 6.980 ; 6.980 ; Rise       ; clk             ;
+;  saida[2]       ; clk        ; 7.251 ; 7.251 ; Rise       ; clk             ;
+;  saida[3]       ; clk        ; 6.944 ; 6.944 ; Rise       ; clk             ;
+;  saida[4]       ; clk        ; 7.208 ; 7.208 ; Rise       ; clk             ;
+;  saida[5]       ; clk        ; 7.211 ; 7.211 ; Rise       ; clk             ;
+;  saida[6]       ; clk        ; 6.951 ; 6.951 ; Rise       ; clk             ;
+;  saida[7]       ; clk        ; 7.436 ; 7.436 ; Rise       ; clk             ;
+;  saida[8]       ; clk        ; 6.861 ; 6.861 ; Rise       ; clk             ;
+;  saida[9]       ; clk        ; 6.859 ; 6.859 ; Rise       ; clk             ;
+;  saida[10]      ; clk        ; 7.157 ; 7.157 ; Rise       ; clk             ;
+;  saida[11]      ; clk        ; 6.871 ; 6.871 ; Rise       ; clk             ;
+;  saida[12]      ; clk        ; 7.124 ; 7.124 ; Rise       ; clk             ;
+;  saida[13]      ; clk        ; 7.145 ; 7.145 ; Rise       ; clk             ;
+;  saida[14]      ; clk        ; 6.900 ; 6.900 ; Rise       ; clk             ;
+;  saida[15]      ; clk        ; 7.136 ; 7.136 ; Rise       ; clk             ;
+; saidaResto[*]   ; clk        ; 6.895 ; 6.895 ; Rise       ; clk             ;
+;  saidaResto[0]  ; clk        ; 7.484 ; 7.484 ; Rise       ; clk             ;
+;  saidaResto[1]  ; clk        ; 6.976 ; 6.976 ; Rise       ; clk             ;
+;  saidaResto[2]  ; clk        ; 7.781 ; 7.781 ; Rise       ; clk             ;
+;  saidaResto[3]  ; clk        ; 6.917 ; 6.917 ; Rise       ; clk             ;
+;  saidaResto[4]  ; clk        ; 7.822 ; 7.822 ; Rise       ; clk             ;
+;  saidaResto[5]  ; clk        ; 6.895 ; 6.895 ; Rise       ; clk             ;
+;  saidaResto[6]  ; clk        ; 7.209 ; 7.209 ; Rise       ; clk             ;
+;  saidaResto[7]  ; clk        ; 7.484 ; 7.484 ; Rise       ; clk             ;
+;  saidaResto[8]  ; clk        ; 7.516 ; 7.516 ; Rise       ; clk             ;
+;  saidaResto[9]  ; clk        ; 7.519 ; 7.519 ; Rise       ; clk             ;
+;  saidaResto[10] ; clk        ; 7.490 ; 7.490 ; Rise       ; clk             ;
+;  saidaResto[11] ; clk        ; 7.227 ; 7.227 ; Rise       ; clk             ;
+;  saidaResto[12] ; clk        ; 7.473 ; 7.473 ; Rise       ; clk             ;
+;  saidaResto[13] ; clk        ; 7.274 ; 7.274 ; Rise       ; clk             ;
+;  saidaResto[14] ; clk        ; 7.511 ; 7.511 ; Rise       ; clk             ;
+;  saidaResto[15] ; clk        ; 6.962 ; 6.962 ; Rise       ; clk             ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -564,7 +589,7 @@ No paths to report.
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -3.255 ; -220.728      ;
+; clk   ; -3.400 ; -221.856      ;
 +-------+--------+---------------+
 
 
@@ -603,106 +628,106 @@ No paths to report.
 +--------+---------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                       ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
-; -3.255 ; regA:rega|saidaA[0]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.793      ;
-; -3.228 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.758      ;
-; -3.224 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.762      ;
-; -3.199 ; regA:regb|saidaA[2]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.736      ;
-; -3.193 ; Controle:controle|SELD          ; Controle:controle|contador[4] ; clk          ; clk         ; 1.000        ; -0.001     ; 4.224      ;
-; -3.185 ; regA:regb|saidaA[4]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.722      ;
-; -3.180 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.717      ;
-; -3.178 ; regA:rega|saidaA[2]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.715      ;
-; -3.177 ; regA:rega|saidaA[0]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.715      ;
-; -3.177 ; regA:rega|saidaA[0]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.715      ;
-; -3.177 ; regA:rega|saidaA[0]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.715      ;
-; -3.177 ; regA:rega|saidaA[0]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.715      ;
-; -3.177 ; regA:rega|saidaA[0]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.715      ;
-; -3.176 ; regA:regb|saidaA[6]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.706      ;
-; -3.169 ; regA:rega|saidaA[6]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.706      ;
-; -3.168 ; regA:regb|saidaA[3]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.705      ;
-; -3.155 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.692      ;
-; -3.152 ; regA:regb|saidaA[0]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.689      ;
-; -3.150 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.680      ;
-; -3.150 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.680      ;
-; -3.150 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.680      ;
-; -3.150 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.680      ;
-; -3.150 ; AntiLoopM:antiloopm|saidaALM[6] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.680      ;
-; -3.148 ; regA:regb|saidaA[1]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.685      ;
-; -3.146 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.684      ;
-; -3.146 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.684      ;
-; -3.146 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.684      ;
-; -3.146 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.684      ;
-; -3.146 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.006      ; 3.684      ;
-; -3.121 ; regA:regb|saidaA[2]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.658      ;
-; -3.121 ; regA:regb|saidaA[2]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.658      ;
-; -3.121 ; regA:regb|saidaA[2]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.658      ;
-; -3.121 ; regA:regb|saidaA[2]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.658      ;
-; -3.121 ; regA:regb|saidaA[2]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.658      ;
-; -3.118 ; AntiLoopM:antiloopm|saidaALM[5] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.655      ;
-; -3.118 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.655      ;
-; -3.115 ; Controle:controle|SELD          ; Controle:controle|contador[2] ; clk          ; clk         ; 1.000        ; -0.001     ; 4.146      ;
-; -3.115 ; Controle:controle|SELD          ; Controle:controle|contador[3] ; clk          ; clk         ; 1.000        ; -0.001     ; 4.146      ;
-; -3.115 ; Controle:controle|SELD          ; Controle:controle|contador[5] ; clk          ; clk         ; 1.000        ; -0.001     ; 4.146      ;
-; -3.115 ; Controle:controle|SELD          ; Controle:controle|contador[6] ; clk          ; clk         ; 1.000        ; -0.001     ; 4.146      ;
-; -3.115 ; Controle:controle|SELD          ; Controle:controle|contador[7] ; clk          ; clk         ; 1.000        ; -0.001     ; 4.146      ;
-; -3.114 ; regA:rega|saidaA[1]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.651      ;
-; -3.110 ; regA:rega|saidaA[5]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.647      ;
-; -3.107 ; regA:regb|saidaA[4]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.644      ;
-; -3.107 ; regA:regb|saidaA[4]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.644      ;
-; -3.107 ; regA:regb|saidaA[4]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.644      ;
-; -3.107 ; regA:regb|saidaA[4]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.644      ;
-; -3.107 ; regA:regb|saidaA[4]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.644      ;
-; -3.102 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.639      ;
-; -3.102 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.639      ;
-; -3.102 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.639      ;
-; -3.102 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.639      ;
-; -3.102 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.639      ;
-; -3.100 ; regA:rega|saidaA[2]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.637      ;
-; -3.100 ; regA:rega|saidaA[2]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.637      ;
-; -3.100 ; regA:rega|saidaA[2]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.637      ;
-; -3.100 ; regA:rega|saidaA[2]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.637      ;
-; -3.100 ; regA:rega|saidaA[2]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.637      ;
-; -3.098 ; regA:regb|saidaA[6]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.628      ;
-; -3.098 ; regA:regb|saidaA[6]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.628      ;
-; -3.098 ; regA:regb|saidaA[6]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.628      ;
-; -3.098 ; regA:regb|saidaA[6]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.628      ;
-; -3.098 ; regA:regb|saidaA[6]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; -0.002     ; 3.628      ;
-; -3.096 ; AntiLoopM:antiloopm|saidaALM[7] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.633      ;
-; -3.091 ; regA:rega|saidaA[6]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.628      ;
-; -3.091 ; regA:rega|saidaA[6]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.628      ;
-; -3.091 ; regA:rega|saidaA[6]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.628      ;
-; -3.091 ; regA:rega|saidaA[6]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.628      ;
-; -3.091 ; regA:rega|saidaA[6]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.628      ;
-; -3.090 ; regA:regb|saidaA[3]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.627      ;
-; -3.090 ; regA:regb|saidaA[3]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.627      ;
-; -3.090 ; regA:regb|saidaA[3]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.627      ;
-; -3.090 ; regA:regb|saidaA[3]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.627      ;
-; -3.090 ; regA:regb|saidaA[3]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.627      ;
-; -3.083 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.620      ;
-; -3.082 ; AntiLoopM:antiloopm|saidaALM[2] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.619      ;
-; -3.080 ; AntiLoopD:antiloopd|saidaALD[5] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.617      ;
-; -3.077 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.614      ;
-; -3.077 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.614      ;
-; -3.077 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.614      ;
-; -3.077 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.614      ;
-; -3.077 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.614      ;
-; -3.074 ; regA:regb|saidaA[0]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.611      ;
-; -3.074 ; regA:regb|saidaA[0]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.611      ;
-; -3.074 ; regA:regb|saidaA[0]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.611      ;
-; -3.074 ; regA:regb|saidaA[0]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.611      ;
-; -3.074 ; regA:regb|saidaA[0]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.611      ;
-; -3.071 ; regA:regb|saidaA[5]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.608      ;
-; -3.070 ; regA:regb|saidaA[1]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.607      ;
-; -3.070 ; regA:regb|saidaA[1]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.607      ;
-; -3.070 ; regA:regb|saidaA[1]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.607      ;
-; -3.070 ; regA:regb|saidaA[1]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.607      ;
-; -3.070 ; regA:regb|saidaA[1]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.607      ;
-; -3.068 ; Controle:controle|SELM          ; Controle:controle|contador[4] ; clk          ; clk         ; 1.000        ; -0.003     ; 4.097      ;
-; -3.066 ; regA:rega|saidaA[4]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.603      ;
-; -3.060 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.597      ;
-; -3.040 ; AntiLoopM:antiloopm|saidaALM[5] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.577      ;
-; -3.040 ; AntiLoopM:antiloopm|saidaALM[5] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.577      ;
-; -3.040 ; AntiLoopM:antiloopm|saidaALM[5] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.577      ;
-; -3.040 ; AntiLoopM:antiloopm|saidaALM[5] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.005      ; 3.577      ;
+; -3.400 ; regA:regb|saidaA[0]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.935      ;
+; -3.400 ; regA:regb|saidaA[0]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.935      ;
+; -3.400 ; regA:regb|saidaA[0]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.935      ;
+; -3.400 ; regA:regb|saidaA[0]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.935      ;
+; -3.400 ; regA:regb|saidaA[0]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.935      ;
+; -3.400 ; regA:regb|saidaA[0]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.935      ;
+; -3.367 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.902      ;
+; -3.367 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.902      ;
+; -3.367 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.902      ;
+; -3.367 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.902      ;
+; -3.367 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.902      ;
+; -3.367 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.902      ;
+; -3.262 ; regA:regb|saidaA[4]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.797      ;
+; -3.262 ; regA:regb|saidaA[4]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.797      ;
+; -3.262 ; regA:regb|saidaA[4]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.797      ;
+; -3.262 ; regA:regb|saidaA[4]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.797      ;
+; -3.262 ; regA:regb|saidaA[4]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.797      ;
+; -3.262 ; regA:regb|saidaA[4]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.797      ;
+; -3.257 ; regA:rega|saidaA[0]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.798      ;
+; -3.257 ; regA:rega|saidaA[0]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.798      ;
+; -3.257 ; regA:rega|saidaA[0]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.798      ;
+; -3.257 ; regA:rega|saidaA[0]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.798      ;
+; -3.257 ; regA:rega|saidaA[0]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.798      ;
+; -3.257 ; regA:rega|saidaA[0]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.798      ;
+; -3.243 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.783      ;
+; -3.243 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.783      ;
+; -3.243 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.783      ;
+; -3.243 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.783      ;
+; -3.243 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.783      ;
+; -3.243 ; AntiLoopM:antiloopm|saidaALM[3] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.783      ;
+; -3.236 ; regA:regb|saidaA[5]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.771      ;
+; -3.236 ; regA:regb|saidaA[5]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.771      ;
+; -3.236 ; regA:regb|saidaA[5]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.771      ;
+; -3.236 ; regA:regb|saidaA[5]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.771      ;
+; -3.236 ; regA:regb|saidaA[5]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.771      ;
+; -3.236 ; regA:regb|saidaA[5]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.771      ;
+; -3.226 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.767      ;
+; -3.226 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.767      ;
+; -3.226 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.767      ;
+; -3.226 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.767      ;
+; -3.226 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.767      ;
+; -3.226 ; AntiLoopM:antiloopm|saidaALM[1] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.767      ;
+; -3.224 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.759      ;
+; -3.224 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.759      ;
+; -3.224 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.759      ;
+; -3.224 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.759      ;
+; -3.224 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.759      ;
+; -3.224 ; AntiLoopM:antiloopm|saidaALM[4] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.759      ;
+; -3.218 ; regA:regb|saidaA[0]             ; Controle:controle|EnB         ; clk          ; clk         ; 0.500        ; 0.004      ; 3.754      ;
+; -3.213 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.748      ;
+; -3.213 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.748      ;
+; -3.213 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.748      ;
+; -3.213 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.748      ;
+; -3.213 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.748      ;
+; -3.213 ; AntiLoopD:antiloopd|saidaALD[1] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.748      ;
+; -3.211 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.751      ;
+; -3.211 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.751      ;
+; -3.211 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.751      ;
+; -3.211 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.751      ;
+; -3.211 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.751      ;
+; -3.211 ; AntiLoopD:antiloopd|saidaALD[0] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.751      ;
+; -3.190 ; regA:rega|saidaA[6]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.731      ;
+; -3.190 ; regA:rega|saidaA[6]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.731      ;
+; -3.190 ; regA:rega|saidaA[6]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.731      ;
+; -3.190 ; regA:rega|saidaA[6]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.731      ;
+; -3.190 ; regA:rega|saidaA[6]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.731      ;
+; -3.190 ; regA:rega|saidaA[6]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.009      ; 3.731      ;
+; -3.185 ; AntiLoopM:antiloopm|saidaALM[0] ; Controle:controle|EnB         ; clk          ; clk         ; 0.500        ; 0.004      ; 3.721      ;
+; -3.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.719      ;
+; -3.179 ; AntiLoopM:antiloopm|saidaALM[2] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.714      ;
+; -3.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.719      ;
+; -3.179 ; AntiLoopM:antiloopm|saidaALM[2] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.714      ;
+; -3.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.719      ;
+; -3.179 ; AntiLoopM:antiloopm|saidaALM[2] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.714      ;
+; -3.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.719      ;
+; -3.179 ; AntiLoopM:antiloopm|saidaALM[2] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.714      ;
+; -3.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.719      ;
+; -3.179 ; AntiLoopM:antiloopm|saidaALM[2] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.714      ;
+; -3.179 ; regA:rega|saidaA[4]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.719      ;
+; -3.179 ; AntiLoopM:antiloopm|saidaALM[2] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.003      ; 3.714      ;
+; -3.158 ; regA:regb|saidaA[0]             ; Controle:controle|EnResto     ; clk          ; clk         ; 0.500        ; 0.003      ; 3.693      ;
+; -3.158 ; regA:rega|saidaA[2]             ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.698      ;
+; -3.158 ; regA:rega|saidaA[2]             ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.698      ;
+; -3.158 ; regA:rega|saidaA[2]             ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.698      ;
+; -3.158 ; regA:rega|saidaA[2]             ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.698      ;
+; -3.158 ; regA:rega|saidaA[2]             ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.698      ;
+; -3.158 ; regA:rega|saidaA[2]             ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.698      ;
+; -3.157 ; regA:regb|saidaA[0]             ; Controle:controle|multp       ; clk          ; clk         ; 0.500        ; 0.003      ; 3.692      ;
+; -3.152 ; Controle:controle|SELM          ; Controle:controle|contador[2] ; clk          ; clk         ; 1.000        ; -0.002     ; 4.182      ;
+; -3.152 ; Controle:controle|SELM          ; Controle:controle|contador[3] ; clk          ; clk         ; 1.000        ; -0.002     ; 4.182      ;
+; -3.152 ; Controle:controle|SELM          ; Controle:controle|contador[4] ; clk          ; clk         ; 1.000        ; -0.002     ; 4.182      ;
+; -3.152 ; Controle:controle|SELM          ; Controle:controle|contador[5] ; clk          ; clk         ; 1.000        ; -0.002     ; 4.182      ;
+; -3.152 ; Controle:controle|SELM          ; Controle:controle|contador[6] ; clk          ; clk         ; 1.000        ; -0.002     ; 4.182      ;
+; -3.152 ; Controle:controle|SELM          ; Controle:controle|contador[7] ; clk          ; clk         ; 1.000        ; -0.002     ; 4.182      ;
+; -3.127 ; AntiLoopD:antiloopd|saidaALD[4] ; Controle:controle|contador[2] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.667      ;
+; -3.127 ; AntiLoopD:antiloopd|saidaALD[4] ; Controle:controle|contador[3] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.667      ;
+; -3.127 ; AntiLoopD:antiloopd|saidaALD[4] ; Controle:controle|contador[4] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.667      ;
+; -3.127 ; AntiLoopD:antiloopd|saidaALD[4] ; Controle:controle|contador[5] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.667      ;
+; -3.127 ; AntiLoopD:antiloopd|saidaALD[4] ; Controle:controle|contador[6] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.667      ;
+; -3.127 ; AntiLoopD:antiloopd|saidaALD[4] ; Controle:controle|contador[7] ; clk          ; clk         ; 0.500        ; 0.008      ; 3.667      ;
 +--------+---------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -711,106 +736,106 @@ No paths to report.
 +-------+----------------------------------+----------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                        ; To Node                                                                                      ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------------------------+----------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.215 ; RegResto:regResto|FimResto       ; RegResto:regResto|FimResto                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.215 ; Controle:controle|resetResto     ; Controle:controle|resetResto                                                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; Controle:controle|Endereco[1]    ; Controle:controle|Endereco[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; Controle:controle|EnB            ; Controle:controle|EnB                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
 ; 0.215 ; Controle:controle|EnA            ; Controle:controle|EnA                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
-; 0.243 ; AntiLoopM:antiloopm|saidaALM[13] ; regC:regc|saidaC[13]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.395      ;
-; 0.245 ; Controle:controle|state.s1       ; Controle:controle|Endereco[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.397      ;
-; 0.320 ; Controle:controle|state.s3       ; Controle:controle|state.s4                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.472      ;
-; 0.320 ; Controle:controle|state.s3       ; Controle:controle|SELM                                                                       ; clk          ; clk         ; 0.000        ; -0.001     ; 0.471      ;
-; 0.321 ; Controle:controle|state.s4       ; Controle:controle|DIV                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.473      ;
-; 0.324 ; AntiLoopM:antiloopm|saidaALM[15] ; regC:regc|saidaC[15]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.476      ;
-; 0.336 ; AntiLoopM:antiloopm|saidaALM[11] ; regC:regc|saidaC[11]                                                                         ; clk          ; clk         ; 0.000        ; 0.001      ; 0.489      ;
-; 0.363 ; AntiLoopM:antiloopm|saidaALM[14] ; regC:regc|saidaC[14]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
-; 0.363 ; Controle:controle|state.s2       ; Controle:controle|state.s3                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
-; 0.363 ; Controle:controle|state.s2       ; Controle:controle|Endereco[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.515      ;
-; 0.365 ; Controle:controle|state.s1       ; Controle:controle|state.s2                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.517      ;
-; 0.370 ; Controle:controle|state.s4       ; Controle:controle|state.s1                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.522      ;
-; 0.393 ; Controle:controle|multp          ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.545      ;
-; 0.395 ; Controle:controle|multp          ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.547      ;
-; 0.403 ; Controle:controle|multp          ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.555      ;
-; 0.404 ; Controle:controle|multp          ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.556      ;
-; 0.404 ; Controle:controle|multp          ; Controle:controle|contador[7]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.556      ;
-; 0.448 ; Controle:controle|multp          ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.600      ;
-; 0.454 ; AntiLoopM:antiloopm|saidaALM[12] ; regC:regc|saidaC[12]                                                                         ; clk          ; clk         ; 0.000        ; 0.001      ; 0.607      ;
-; 0.454 ; Controle:controle|EnC            ; Controle:controle|EnC                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.606      ;
-; 0.458 ; AntiLoopM:antiloopm|saidaALM[10] ; regC:regc|saidaC[10]                                                                         ; clk          ; clk         ; 0.000        ; 0.001      ; 0.611      ;
-; 0.478 ; Controle:controle|state.s3       ; Controle:controle|Endereco[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.630      ;
-; 0.499 ; regA:rega|saidaA[5]              ; RegResto:regResto|saidaResto[5]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 0.655      ;
-; 0.508 ; Controle:controle|multp          ; Controle:controle|SELD                                                                       ; clk          ; clk         ; 0.000        ; 0.001      ; 0.661      ;
-; 0.541 ; Controle:controle|contador[1]    ; Controle:controle|contador[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.693      ;
-; 0.544 ; AntiLoopM:antiloopm|saidaALM[9]  ; regC:regc|saidaC[9]                                                                          ; clk          ; clk         ; 0.000        ; 0.001      ; 0.697      ;
-; 0.550 ; Controle:controle|state.s1       ; Controle:controle|Endereco[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.702      ;
-; 0.567 ; AntiLoopM:antiloopm|saidaALM[8]  ; regC:regc|saidaC[8]                                                                          ; clk          ; clk         ; 0.000        ; 0.001      ; 0.720      ;
-; 0.568 ; Controle:controle|multp          ; Controle:controle|EnResto                                                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.720      ;
-; 0.569 ; Controle:controle|multp          ; Controle:controle|multp                                                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.721      ;
-; 0.585 ; regA:rega|saidaA[7]              ; RegResto:regResto|saidaResto[7]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 0.741      ;
-; 0.590 ; Controle:controle|DIV            ; Controle:controle|EnB                                                                        ; clk          ; clk         ; 0.000        ; -0.010     ; 0.732      ;
-; 0.623 ; Controle:controle|state.s3       ; Controle:controle|Op                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.775      ;
-; 0.627 ; Controle:controle|SELD           ; Controle:controle|SELD                                                                       ; clk          ; clk         ; 0.000        ; 0.000      ; 0.779      ;
-; 0.652 ; Controle:controle|EnResto        ; Controle:controle|EnResto                                                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.804      ;
-; 0.654 ; Controle:controle|menor          ; Controle:controle|menor                                                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.806      ;
-; 0.667 ; regA:rega|saidaA[2]              ; RegResto:regResto|saidaResto[2]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 0.823      ;
-; 0.673 ; regA:rega|saidaA[6]              ; RegResto:regResto|saidaResto[6]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 0.829      ;
-; 0.676 ; AntiLoopM:antiloopm|saidaALM[4]  ; regC:regc|saidaC[4]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 0.832      ;
-; 0.676 ; regA:rega|saidaA[1]              ; RegResto:regResto|saidaResto[1]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 0.832      ;
-; 0.677 ; AntiLoopM:antiloopm|saidaALM[1]  ; regC:regc|saidaC[1]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 0.833      ;
-; 0.680 ; AntiLoopM:antiloopm|saidaALM[2]  ; regC:regc|saidaC[2]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 0.836      ;
-; 0.694 ; AntiLoopD:antiloopd|saidaALD[14] ; AntiLoopD:antiloopd|saidaALD[14]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.846      ;
-; 0.695 ; Controle:controle|state.s1       ; Controle:controle|Op                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.847      ;
-; 0.702 ; AntiLoopM:antiloopm|saidaALM[0]  ; regC:regc|saidaC[0]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 0.858      ;
-; 0.710 ; Controle:controle|contador[4]    ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.862      ;
-; 0.712 ; AntiLoopM:antiloopm|saidaALM[5]  ; regC:regc|saidaC[5]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 0.868      ;
-; 0.721 ; AntiLoopM:antiloopm|saidaALM[11] ; AntiLoopD:antiloopd|saidaALD[11]                                                             ; clk          ; clk         ; 0.000        ; -0.003     ; 0.870      ;
-; 0.734 ; Controle:controle|DIV            ; Controle:controle|menor                                                                      ; clk          ; clk         ; 0.000        ; -0.003     ; 0.883      ;
-; 0.739 ; Controle:controle|EnA            ; regA:rega|FimA                                                                               ; clk          ; clk         ; -0.500       ; 0.000      ; 0.391      ;
-; 0.744 ; AntiLoopM:antiloopm|saidaALM[8]  ; AntiLoopD:antiloopd|saidaALD[8]                                                              ; clk          ; clk         ; 0.000        ; -0.003     ; 0.893      ;
-; 0.750 ; regA:rega|saidaA[4]              ; RegResto:regResto|saidaResto[4]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 0.906      ;
-; 0.760 ; AntiLoopM:antiloopm|saidaALM[7]  ; regC:regc|saidaC[7]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 0.916      ;
-; 0.769 ; Controle:controle|multp          ; Controle:controle|resetResto                                                                 ; clk          ; clk         ; 0.000        ; 0.001      ; 0.922      ;
-; 0.781 ; AntiLoopD:antiloopd|saidaALD[9]  ; AntiLoopD:antiloopd|saidaALD[9]                                                              ; clk          ; clk         ; 0.000        ; 0.000      ; 0.933      ;
-; 0.796 ; Controle:controle|contador[3]    ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.948      ;
-; 0.803 ; Controle:controle|contador[2]    ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.955      ;
-; 0.817 ; AntiLoopM:antiloopm|saidaALM[15] ; AntiLoopD:antiloopd|saidaALD[15]                                                             ; clk          ; clk         ; 0.000        ; -0.004     ; 0.965      ;
-; 0.829 ; Controle:controle|multp          ; Controle:controle|contador[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.981      ;
-; 0.830 ; Controle:controle|SELM           ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; -0.003     ; 0.979      ;
-; 0.830 ; Controle:controle|SELM           ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; -0.003     ; 0.979      ;
-; 0.830 ; Controle:controle|SELM           ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; -0.003     ; 0.979      ;
-; 0.830 ; Controle:controle|SELM           ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; -0.003     ; 0.979      ;
-; 0.830 ; Controle:controle|SELM           ; Controle:controle|contador[7]                                                                ; clk          ; clk         ; 0.000        ; -0.003     ; 0.979      ;
-; 0.834 ; AntiLoopD:antiloopd|saidaALD[14] ; AntiLoopD:antiloopd|saidaALD[15]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.986      ;
-; 0.842 ; Controle:controle|SELM           ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; -0.003     ; 0.991      ;
-; 0.842 ; Controle:controle|contador[1]    ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.994      ;
-; 0.843 ; AntiLoopM:antiloopm|saidaALM[12] ; AntiLoopD:antiloopd|saidaALD[12]                                                             ; clk          ; clk         ; 0.000        ; -0.003     ; 0.992      ;
-; 0.845 ; AntiLoopM:antiloopm|saidaALM[6]  ; regC:regc|saidaC[6]                                                                          ; clk          ; clk         ; 0.000        ; -0.003     ; 0.994      ;
-; 0.858 ; regA:rega|saidaA[3]              ; RegResto:regResto|saidaResto[3]                                                              ; clk          ; clk         ; 0.000        ; 0.004      ; 1.014      ;
-; 0.861 ; AntiLoopM:antiloopm|saidaALM[11] ; AntiLoopD:antiloopd|saidaALD[12]                                                             ; clk          ; clk         ; 0.000        ; -0.003     ; 1.010      ;
-; 0.861 ; regA:rega|FimA                   ; Controle:controle|EnA                                                                        ; clk          ; clk         ; -0.500       ; 0.000      ; 0.513      ;
-; 0.864 ; AntiLoopM:antiloopm|saidaALM[10] ; AntiLoopD:antiloopd|saidaALD[10]                                                             ; clk          ; clk         ; 0.000        ; -0.003     ; 1.013      ;
-; 0.866 ; AntiLoopD:antiloopd|saidaALD[14] ; AntiLoopM:antiloopm|saidaALM[14]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.018      ;
-; 0.869 ; AntiLoopD:antiloopd|saidaALD[14] ; regC:regc|saidaC[14]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 1.021      ;
-; 0.875 ; Controle:controle|contador[1]    ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.027      ;
-; 0.876 ; Controle:controle|multp          ; Controle:controle|menor                                                                      ; clk          ; clk         ; 0.000        ; 0.001      ; 1.029      ;
-; 0.877 ; Controle:controle|DIV            ; Controle:controle|EnC                                                                        ; clk          ; clk         ; 0.000        ; -0.003     ; 1.026      ;
-; 0.880 ; regA:rega|saidaA[0]              ; RegResto:regResto|saidaResto[0]                                                              ; clk          ; clk         ; 0.000        ; 0.005      ; 1.037      ;
-; 0.884 ; AntiLoopM:antiloopm|saidaALM[8]  ; AntiLoopD:antiloopd|saidaALD[9]                                                              ; clk          ; clk         ; 0.000        ; -0.003     ; 1.033      ;
-; 0.884 ; Controle:controle|contador[0]    ; Controle:controle|contador[0]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.036      ;
-; 0.893 ; AntiLoopM:antiloopm|saidaALM[9]  ; AntiLoopD:antiloopd|saidaALD[9]                                                              ; clk          ; clk         ; 0.000        ; -0.003     ; 1.042      ;
-; 0.901 ; Controle:controle|contador[6]    ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.053      ;
-; 0.907 ; Controle:controle|contador[1]    ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.059      ;
-; 0.908 ; AntiLoopM:antiloopm|saidaALM[3]  ; regC:regc|saidaC[3]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 1.064      ;
-; 0.914 ; Controle:controle|EnA            ; ROM:rom|altsyncram:temp_rtl_0|altsyncram_2q61:auto_generated|ram_block1a0~porta_address_reg0 ; clk          ; clk         ; -0.500       ; 0.066      ; 0.618      ;
-; 0.919 ; AntiLoopD:antiloopd|saidaALD[9]  ; AntiLoopD:antiloopd|saidaALD[10]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.071      ;
-; 0.919 ; AntiLoopM:antiloopm|saidaALM[8]  ; AntiLoopD:antiloopd|saidaALD[10]                                                             ; clk          ; clk         ; 0.000        ; -0.003     ; 1.068      ;
-; 0.924 ; AntiLoopD:antiloopd|saidaALD[15] ; AntiLoopD:antiloopd|saidaALD[15]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.076      ;
+; 0.215 ; Controle:controle|menor          ; Controle:controle|menor                                                                      ; clk          ; clk         ; 0.000        ; 0.000      ; 0.367      ;
+; 0.239 ; Controle:controle|state.s4       ; Controle:controle|state.s1                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.391      ;
+; 0.289 ; AntiLoopM:antiloopm|saidaALM[13] ; regC:regc|saidaC[13]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.441      ;
+; 0.313 ; Controle:controle|state.s1       ; Controle:controle|Endereco[2]                                                                ; clk          ; clk         ; 0.000        ; 0.001      ; 0.466      ;
+; 0.320 ; AntiLoopM:antiloopm|saidaALM[8]  ; regC:regc|saidaC[8]                                                                          ; clk          ; clk         ; 0.000        ; -0.001     ; 0.471      ;
+; 0.361 ; AntiLoopM:antiloopm|saidaALM[14] ; regC:regc|saidaC[14]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.513      ;
+; 0.368 ; Controle:controle|state.s1       ; Controle:controle|state.s2                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.520      ;
+; 0.370 ; Controle:controle|state.s3       ; Controle:controle|state.s4                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.522      ;
+; 0.377 ; Controle:controle|state.s2       ; Controle:controle|state.s3                                                                   ; clk          ; clk         ; 0.000        ; 0.000      ; 0.529      ;
+; 0.385 ; AntiLoopM:antiloopm|saidaALM[10] ; regC:regc|saidaC[10]                                                                         ; clk          ; clk         ; 0.000        ; 0.000      ; 0.537      ;
+; 0.422 ; Controle:controle|state.s3       ; Controle:controle|SELM                                                                       ; clk          ; clk         ; 0.000        ; 0.006      ; 0.580      ;
+; 0.423 ; AntiLoopM:antiloopm|saidaALM[1]  ; regC:regc|saidaC[1]                                                                          ; clk          ; clk         ; 0.000        ; 0.005      ; 0.580      ;
+; 0.436 ; AntiLoopM:antiloopm|saidaALM[9]  ; regC:regc|saidaC[9]                                                                          ; clk          ; clk         ; 0.000        ; -0.001     ; 0.587      ;
+; 0.447 ; Controle:controle|state.s2       ; Controle:controle|Endereco[2]                                                                ; clk          ; clk         ; 0.000        ; 0.001      ; 0.600      ;
+; 0.448 ; AntiLoopM:antiloopm|saidaALM[11] ; regC:regc|saidaC[11]                                                                         ; clk          ; clk         ; 0.000        ; -0.001     ; 0.599      ;
+; 0.449 ; AntiLoopM:antiloopm|saidaALM[0]  ; regC:regc|saidaC[0]                                                                          ; clk          ; clk         ; 0.000        ; -0.001     ; 0.600      ;
+; 0.477 ; Controle:controle|multp          ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.629      ;
+; 0.479 ; Controle:controle|multp          ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.631      ;
+; 0.479 ; Controle:controle|multp          ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.631      ;
+; 0.480 ; Controle:controle|multp          ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.632      ;
+; 0.481 ; Controle:controle|multp          ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.633      ;
+; 0.485 ; Controle:controle|multp          ; Controle:controle|contador[7]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.637      ;
+; 0.488 ; regA:rega|saidaA[0]              ; RegResto:regResto|saidaResto[0]                                                              ; clk          ; clk         ; 0.000        ; 0.012      ; 0.652      ;
+; 0.500 ; Controle:controle|state.s4       ; Controle:controle|DIV                                                                        ; clk          ; clk         ; 0.000        ; 0.006      ; 0.658      ;
+; 0.508 ; AntiLoopM:antiloopm|saidaALM[15] ; regC:regc|saidaC[15]                                                                         ; clk          ; clk         ; 0.000        ; 0.006      ; 0.666      ;
+; 0.509 ; AntiLoopM:antiloopm|saidaALM[12] ; regC:regc|saidaC[12]                                                                         ; clk          ; clk         ; 0.000        ; 0.006      ; 0.667      ;
+; 0.548 ; Controle:controle|state.s3       ; Controle:controle|Endereco[1]                                                                ; clk          ; clk         ; 0.000        ; 0.001      ; 0.701      ;
+; 0.550 ; AntiLoopM:antiloopm|saidaALM[4]  ; regC:regc|saidaC[4]                                                                          ; clk          ; clk         ; 0.000        ; -0.001     ; 0.701      ;
+; 0.554 ; regA:rega|saidaA[5]              ; RegResto:regResto|saidaResto[5]                                                              ; clk          ; clk         ; 0.000        ; 0.011      ; 0.717      ;
+; 0.555 ; AntiLoopM:antiloopm|saidaALM[2]  ; regC:regc|saidaC[2]                                                                          ; clk          ; clk         ; 0.000        ; -0.001     ; 0.706      ;
+; 0.557 ; Controle:controle|multp          ; Controle:controle|contador[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.709      ;
+; 0.570 ; AntiLoopM:antiloopm|saidaALM[6]  ; regC:regc|saidaC[6]                                                                          ; clk          ; clk         ; 0.000        ; 0.005      ; 0.727      ;
+; 0.576 ; Controle:controle|contador[7]    ; Controle:controle|contador[7]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.728      ;
+; 0.577 ; Controle:controle|EnC            ; Controle:controle|EnC                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.729      ;
+; 0.586 ; Controle:controle|EnResto        ; Controle:controle|EnResto                                                                    ; clk          ; clk         ; 0.000        ; 0.000      ; 0.738      ;
+; 0.610 ; Controle:controle|contador[5]    ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.762      ;
+; 0.615 ; Controle:controle|state.s1       ; Controle:controle|Endereco[1]                                                                ; clk          ; clk         ; 0.000        ; 0.001      ; 0.768      ;
+; 0.626 ; regA:rega|saidaA[7]              ; RegResto:regResto|saidaResto[7]                                                              ; clk          ; clk         ; 0.000        ; 0.012      ; 0.790      ;
+; 0.630 ; Controle:controle|contador[6]    ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.782      ;
+; 0.631 ; Controle:controle|contador[2]    ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.783      ;
+; 0.651 ; AntiLoopM:antiloopm|saidaALM[3]  ; regC:regc|saidaC[3]                                                                          ; clk          ; clk         ; 0.000        ; 0.004      ; 0.807      ;
+; 0.684 ; regA:rega|saidaA[3]              ; RegResto:regResto|saidaResto[3]                                                              ; clk          ; clk         ; 0.000        ; 0.012      ; 0.848      ;
+; 0.697 ; AntiLoopD:antiloopd|saidaALD[10] ; AntiLoopD:antiloopd|saidaALD[10]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.849      ;
+; 0.702 ; Controle:controle|contador[3]    ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.854      ;
+; 0.715 ; regA:rega|saidaA[6]              ; RegResto:regResto|saidaResto[6]                                                              ; clk          ; clk         ; 0.000        ; 0.012      ; 0.879      ;
+; 0.718 ; regA:rega|saidaA[4]              ; RegResto:regResto|saidaResto[4]                                                              ; clk          ; clk         ; 0.000        ; 0.011      ; 0.881      ;
+; 0.735 ; Controle:controle|state.s3       ; Controle:controle|Op                                                                         ; clk          ; clk         ; 0.000        ; 0.006      ; 0.893      ;
+; 0.741 ; AntiLoopD:antiloopd|saidaALD[15] ; AntiLoopD:antiloopd|saidaALD[15]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.893      ;
+; 0.741 ; AntiLoopD:antiloopd|saidaALD[15] ; AntiLoopM:antiloopm|saidaALM[15]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 0.893      ;
+; 0.751 ; regC:regc|FimC                   ; Controle:controle|EnC                                                                        ; clk          ; clk         ; -0.500       ; 0.000      ; 0.403      ;
+; 0.757 ; Controle:controle|contador[4]    ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.909      ;
+; 0.759 ; Controle:controle|DIV            ; Controle:controle|EnC                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.911      ;
+; 0.766 ; regA:regb|saidaA[7]              ; AntiLoopM:antiloopm|saidaALM[7]                                                              ; clk          ; clk         ; 0.000        ; -0.007     ; 0.911      ;
+; 0.767 ; regA:rega|saidaA[1]              ; AntiLoopM:antiloopm|saidaALM[1]                                                              ; clk          ; clk         ; 0.000        ; -0.007     ; 0.912      ;
+; 0.778 ; regA:regb|saidaA[1]              ; AntiLoopM:antiloopm|saidaALM[1]                                                              ; clk          ; clk         ; 0.000        ; -0.007     ; 0.923      ;
+; 0.779 ; Controle:controle|DIV            ; Controle:controle|EnB                                                                        ; clk          ; clk         ; 0.000        ; -0.001     ; 0.930      ;
+; 0.785 ; Controle:controle|resetResto     ; Controle:controle|resetResto                                                                 ; clk          ; clk         ; 0.000        ; 0.000      ; 0.937      ;
+; 0.785 ; Controle:controle|SELM           ; Controle:controle|EnC                                                                        ; clk          ; clk         ; 0.000        ; 0.000      ; 0.937      ;
+; 0.791 ; Controle:controle|contador[3]    ; Controle:controle|EnB                                                                        ; clk          ; clk         ; 0.000        ; 0.001      ; 0.944      ;
+; 0.792 ; Controle:controle|contador[3]    ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.944      ;
+; 0.795 ; Controle:controle|contador[4]    ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.947      ;
+; 0.802 ; Controle:controle|state.s1       ; Controle:controle|Op                                                                         ; clk          ; clk         ; 0.000        ; 0.006      ; 0.960      ;
+; 0.806 ; Controle:controle|contador[5]    ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.958      ;
+; 0.806 ; Controle:controle|SELM           ; Controle:controle|EnB                                                                        ; clk          ; clk         ; 0.000        ; -0.001     ; 0.957      ;
+; 0.812 ; regA:rega|saidaA[2]              ; RegResto:regResto|saidaResto[2]                                                              ; clk          ; clk         ; 0.000        ; 0.011      ; 0.975      ;
+; 0.832 ; AntiLoopM:antiloopm|saidaALM[7]  ; regC:regc|saidaC[7]                                                                          ; clk          ; clk         ; 0.000        ; 0.010      ; 0.994      ;
+; 0.840 ; Controle:controle|contador[2]    ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 0.992      ;
+; 0.844 ; Controle:controle|contador[2]    ; Controle:controle|EnB                                                                        ; clk          ; clk         ; 0.000        ; 0.001      ; 0.997      ;
+; 0.845 ; AntiLoopM:antiloopm|saidaALM[5]  ; regC:regc|saidaC[5]                                                                          ; clk          ; clk         ; 0.000        ; -0.001     ; 0.996      ;
+; 0.851 ; Controle:controle|contador[6]    ; Controle:controle|contador[7]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.003      ;
+; 0.852 ; Controle:controle|contador[1]    ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.004      ;
+; 0.853 ; Controle:controle|SELM           ; Controle:controle|contador[1]                                                                ; clk          ; clk         ; 0.000        ; -0.002     ; 1.003      ;
+; 0.853 ; Controle:controle|contador[2]    ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.005      ;
+; 0.854 ; Controle:controle|contador[4]    ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.006      ;
+; 0.855 ; regA:rega|FimA                   ; Controle:controle|EnA                                                                        ; clk          ; clk         ; -0.500       ; 0.000      ; 0.507      ;
+; 0.870 ; AntiLoopM:antiloopm|saidaALM[7]  ; AntiLoopM:antiloopm|saidaALM[7]                                                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.022      ;
+; 0.870 ; Controle:controle|EnB            ; regA:regb|FimA                                                                               ; clk          ; clk         ; -0.500       ; 0.000      ; 0.522      ;
+; 0.875 ; AntiLoopD:antiloopd|saidaALD[1]  ; AntiLoopM:antiloopm|saidaALM[1]                                                              ; clk          ; clk         ; 0.000        ; -0.006     ; 1.021      ;
+; 0.877 ; AntiLoopM:antiloopm|saidaALM[12] ; AntiLoopM:antiloopm|saidaALM[12]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.029      ;
+; 0.877 ; Controle:controle|DIV            ; Controle:controle|resetResto                                                                 ; clk          ; clk         ; 0.000        ; -0.006     ; 1.023      ;
+; 0.881 ; regA:rega|saidaA[7]              ; AntiLoopM:antiloopm|saidaALM[7]                                                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.033      ;
+; 0.882 ; Controle:controle|EnC            ; regC:regc|FimC                                                                               ; clk          ; clk         ; -0.500       ; 0.000      ; 0.534      ;
+; 0.885 ; Controle:controle|contador[0]    ; Controle:controle|contador[2]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.037      ;
+; 0.886 ; AntiLoopM:antiloopm|saidaALM[1]  ; AntiLoopM:antiloopm|saidaALM[1]                                                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.038      ;
+; 0.887 ; Controle:controle|Endereco[2]    ; ROM:rom|altsyncram:temp_rtl_0|altsyncram_2q61:auto_generated|ram_block1a0~porta_address_reg2 ; clk          ; clk         ; -0.500       ; 0.071      ; 0.596      ;
+; 0.887 ; Controle:controle|Endereco[1]    ; ROM:rom|altsyncram:temp_rtl_0|altsyncram_2q61:auto_generated|ram_block1a0~porta_address_reg1 ; clk          ; clk         ; -0.500       ; 0.071      ; 0.596      ;
+; 0.887 ; RegResto:regResto|FimResto       ; Controle:controle|EnC                                                                        ; clk          ; clk         ; -0.500       ; 0.000      ; 0.539      ;
+; 0.889 ; Controle:controle|contador[3]    ; Controle:controle|contador[6]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.041      ;
+; 0.894 ; Controle:controle|multp          ; Controle:controle|contador[0]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.046      ;
+; 0.897 ; Controle:controle|contador[1]    ; Controle:controle|contador[1]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.049      ;
+; 0.908 ; AntiLoopD:antiloopd|saidaALD[7]  ; AntiLoopM:antiloopm|saidaALM[7]                                                              ; clk          ; clk         ; 0.000        ; 0.000      ; 1.060      ;
+; 0.913 ; Controle:controle|multp          ; Controle:controle|EnC                                                                        ; clk          ; clk         ; 0.000        ; 0.002      ; 1.067      ;
+; 0.915 ; AntiLoopD:antiloopd|saidaALD[0]  ; AntiLoopM:antiloopm|saidaALM[1]                                                              ; clk          ; clk         ; 0.000        ; -0.001     ; 1.066      ;
+; 0.915 ; Controle:controle|contador[4]    ; Controle:controle|EnB                                                                        ; clk          ; clk         ; 0.000        ; 0.001      ; 1.068      ;
+; 0.922 ; Controle:controle|contador[5]    ; Controle:controle|contador[7]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.074      ;
+; 0.929 ; Controle:controle|resetResto     ; RegResto:regResto|FimResto                                                                   ; clk          ; clk         ; -0.500       ; 0.006      ; 0.587      ;
 ; 0.933 ; Controle:controle|contador[3]    ; Controle:controle|contador[4]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.085      ;
-; 0.941 ; Controle:controle|contador[2]    ; Controle:controle|contador[3]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.093      ;
-; 0.942 ; Controle:controle|DIV            ; Controle:controle|SELD                                                                       ; clk          ; clk         ; 0.000        ; -0.003     ; 1.091      ;
-; 0.948 ; Controle:controle|contador[5]    ; Controle:controle|contador[5]                                                                ; clk          ; clk         ; 0.000        ; 0.000      ; 1.100      ;
-; 0.952 ; Controle:controle|SELM           ; Controle:controle|menor                                                                      ; clk          ; clk         ; 0.000        ; -0.002     ; 1.102      ;
-; 0.954 ; AntiLoopD:antiloopd|saidaALD[9]  ; AntiLoopD:antiloopd|saidaALD[11]                                                             ; clk          ; clk         ; 0.000        ; 0.000      ; 1.106      ;
-; 0.954 ; AntiLoopM:antiloopm|saidaALM[8]  ; AntiLoopD:antiloopd|saidaALD[11]                                                             ; clk          ; clk         ; 0.000        ; -0.003     ; 1.103      ;
 +-------+----------------------------------+----------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -922,45 +947,65 @@ No paths to report.
 +--------+--------------+----------------+------------------+-------+------------+----------------------------------------------------------------------------------------------+
 
 
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; reset     ; clk        ; 3.004 ; 3.004 ; Rise       ; clk             ;
+; reset     ; clk        ; 2.689 ; 2.689 ; Fall       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; reset     ; clk        ; -1.520 ; -1.520 ; Rise       ; clk             ;
+; reset     ; clk        ; -1.664 ; -1.664 ; Fall       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
+
+
 +-----------------------------------------------------------------------------+
 ; Clock to Output Times                                                       ;
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; saida[*]        ; clk        ; 4.145 ; 4.145 ; Rise       ; clk             ;
-;  saida[0]       ; clk        ; 3.800 ; 3.800 ; Rise       ; clk             ;
-;  saida[1]       ; clk        ; 4.145 ; 4.145 ; Rise       ; clk             ;
-;  saida[2]       ; clk        ; 3.825 ; 3.825 ; Rise       ; clk             ;
-;  saida[3]       ; clk        ; 4.129 ; 4.129 ; Rise       ; clk             ;
-;  saida[4]       ; clk        ; 3.807 ; 3.807 ; Rise       ; clk             ;
-;  saida[5]       ; clk        ; 3.921 ; 3.921 ; Rise       ; clk             ;
-;  saida[6]       ; clk        ; 3.814 ; 3.814 ; Rise       ; clk             ;
-;  saida[7]       ; clk        ; 4.110 ; 4.110 ; Rise       ; clk             ;
-;  saida[8]       ; clk        ; 3.999 ; 3.999 ; Rise       ; clk             ;
-;  saida[9]       ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saida[10]      ; clk        ; 3.904 ; 3.904 ; Rise       ; clk             ;
-;  saida[11]      ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saida[12]      ; clk        ; 4.123 ; 4.123 ; Rise       ; clk             ;
-;  saida[13]      ; clk        ; 4.013 ; 4.013 ; Rise       ; clk             ;
-;  saida[14]      ; clk        ; 4.126 ; 4.126 ; Rise       ; clk             ;
-;  saida[15]      ; clk        ; 4.009 ; 4.009 ; Rise       ; clk             ;
-; saidaResto[*]   ; clk        ; 4.127 ; 4.127 ; Rise       ; clk             ;
-;  saidaResto[0]  ; clk        ; 3.894 ; 3.894 ; Rise       ; clk             ;
-;  saidaResto[1]  ; clk        ; 4.127 ; 4.127 ; Rise       ; clk             ;
-;  saidaResto[2]  ; clk        ; 3.902 ; 3.902 ; Rise       ; clk             ;
-;  saidaResto[3]  ; clk        ; 4.058 ; 4.058 ; Rise       ; clk             ;
-;  saidaResto[4]  ; clk        ; 4.026 ; 4.026 ; Rise       ; clk             ;
-;  saidaResto[5]  ; clk        ; 3.989 ; 3.989 ; Rise       ; clk             ;
-;  saidaResto[6]  ; clk        ; 3.836 ; 3.836 ; Rise       ; clk             ;
-;  saidaResto[7]  ; clk        ; 3.915 ; 3.915 ; Rise       ; clk             ;
-;  saidaResto[8]  ; clk        ; 3.796 ; 3.796 ; Rise       ; clk             ;
-;  saidaResto[9]  ; clk        ; 3.902 ; 3.902 ; Rise       ; clk             ;
-;  saidaResto[10] ; clk        ; 3.950 ; 3.950 ; Rise       ; clk             ;
-;  saidaResto[11] ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saidaResto[12] ; clk        ; 4.035 ; 4.035 ; Rise       ; clk             ;
-;  saidaResto[13] ; clk        ; 4.042 ; 4.042 ; Rise       ; clk             ;
-;  saidaResto[14] ; clk        ; 3.882 ; 3.882 ; Rise       ; clk             ;
-;  saidaResto[15] ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
+; saida[*]        ; clk        ; 3.952 ; 3.952 ; Rise       ; clk             ;
+;  saida[0]       ; clk        ; 3.905 ; 3.905 ; Rise       ; clk             ;
+;  saida[1]       ; clk        ; 3.835 ; 3.835 ; Rise       ; clk             ;
+;  saida[2]       ; clk        ; 3.931 ; 3.931 ; Rise       ; clk             ;
+;  saida[3]       ; clk        ; 3.797 ; 3.797 ; Rise       ; clk             ;
+;  saida[4]       ; clk        ; 3.892 ; 3.892 ; Rise       ; clk             ;
+;  saida[5]       ; clk        ; 3.893 ; 3.893 ; Rise       ; clk             ;
+;  saida[6]       ; clk        ; 3.806 ; 3.806 ; Rise       ; clk             ;
+;  saida[7]       ; clk        ; 3.952 ; 3.952 ; Rise       ; clk             ;
+;  saida[8]       ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+;  saida[9]       ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+;  saida[10]      ; clk        ; 3.875 ; 3.875 ; Rise       ; clk             ;
+;  saida[11]      ; clk        ; 3.758 ; 3.758 ; Rise       ; clk             ;
+;  saida[12]      ; clk        ; 3.842 ; 3.842 ; Rise       ; clk             ;
+;  saida[13]      ; clk        ; 3.864 ; 3.864 ; Rise       ; clk             ;
+;  saida[14]      ; clk        ; 3.787 ; 3.787 ; Rise       ; clk             ;
+;  saida[15]      ; clk        ; 3.855 ; 3.855 ; Rise       ; clk             ;
+; saidaResto[*]   ; clk        ; 4.152 ; 4.152 ; Rise       ; clk             ;
+;  saidaResto[0]  ; clk        ; 4.000 ; 4.000 ; Rise       ; clk             ;
+;  saidaResto[1]  ; clk        ; 3.822 ; 3.822 ; Rise       ; clk             ;
+;  saidaResto[2]  ; clk        ; 4.128 ; 4.128 ; Rise       ; clk             ;
+;  saidaResto[3]  ; clk        ; 3.789 ; 3.789 ; Rise       ; clk             ;
+;  saidaResto[4]  ; clk        ; 4.152 ; 4.152 ; Rise       ; clk             ;
+;  saidaResto[5]  ; clk        ; 3.767 ; 3.767 ; Rise       ; clk             ;
+;  saidaResto[6]  ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
+;  saidaResto[7]  ; clk        ; 4.000 ; 4.000 ; Rise       ; clk             ;
+;  saidaResto[8]  ; clk        ; 4.032 ; 4.032 ; Rise       ; clk             ;
+;  saidaResto[9]  ; clk        ; 4.029 ; 4.029 ; Rise       ; clk             ;
+;  saidaResto[10] ; clk        ; 4.008 ; 4.008 ; Rise       ; clk             ;
+;  saidaResto[11] ; clk        ; 3.913 ; 3.913 ; Rise       ; clk             ;
+;  saidaResto[12] ; clk        ; 4.003 ; 4.003 ; Rise       ; clk             ;
+;  saidaResto[13] ; clk        ; 3.943 ; 3.943 ; Rise       ; clk             ;
+;  saidaResto[14] ; clk        ; 4.031 ; 4.031 ; Rise       ; clk             ;
+;  saidaResto[15] ; clk        ; 3.811 ; 3.811 ; Rise       ; clk             ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -969,40 +1014,40 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; saida[*]        ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saida[0]       ; clk        ; 3.800 ; 3.800 ; Rise       ; clk             ;
-;  saida[1]       ; clk        ; 4.145 ; 4.145 ; Rise       ; clk             ;
-;  saida[2]       ; clk        ; 3.825 ; 3.825 ; Rise       ; clk             ;
-;  saida[3]       ; clk        ; 4.129 ; 4.129 ; Rise       ; clk             ;
-;  saida[4]       ; clk        ; 3.807 ; 3.807 ; Rise       ; clk             ;
-;  saida[5]       ; clk        ; 3.921 ; 3.921 ; Rise       ; clk             ;
-;  saida[6]       ; clk        ; 3.814 ; 3.814 ; Rise       ; clk             ;
-;  saida[7]       ; clk        ; 4.110 ; 4.110 ; Rise       ; clk             ;
-;  saida[8]       ; clk        ; 3.999 ; 3.999 ; Rise       ; clk             ;
-;  saida[9]       ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saida[10]      ; clk        ; 3.904 ; 3.904 ; Rise       ; clk             ;
-;  saida[11]      ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saida[12]      ; clk        ; 4.123 ; 4.123 ; Rise       ; clk             ;
-;  saida[13]      ; clk        ; 4.013 ; 4.013 ; Rise       ; clk             ;
-;  saida[14]      ; clk        ; 4.126 ; 4.126 ; Rise       ; clk             ;
-;  saida[15]      ; clk        ; 4.009 ; 4.009 ; Rise       ; clk             ;
-; saidaResto[*]   ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saidaResto[0]  ; clk        ; 3.894 ; 3.894 ; Rise       ; clk             ;
-;  saidaResto[1]  ; clk        ; 4.127 ; 4.127 ; Rise       ; clk             ;
-;  saidaResto[2]  ; clk        ; 3.902 ; 3.902 ; Rise       ; clk             ;
-;  saidaResto[3]  ; clk        ; 4.058 ; 4.058 ; Rise       ; clk             ;
-;  saidaResto[4]  ; clk        ; 4.026 ; 4.026 ; Rise       ; clk             ;
-;  saidaResto[5]  ; clk        ; 3.989 ; 3.989 ; Rise       ; clk             ;
-;  saidaResto[6]  ; clk        ; 3.836 ; 3.836 ; Rise       ; clk             ;
-;  saidaResto[7]  ; clk        ; 3.915 ; 3.915 ; Rise       ; clk             ;
-;  saidaResto[8]  ; clk        ; 3.796 ; 3.796 ; Rise       ; clk             ;
-;  saidaResto[9]  ; clk        ; 3.902 ; 3.902 ; Rise       ; clk             ;
-;  saidaResto[10] ; clk        ; 3.950 ; 3.950 ; Rise       ; clk             ;
-;  saidaResto[11] ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saidaResto[12] ; clk        ; 4.035 ; 4.035 ; Rise       ; clk             ;
-;  saidaResto[13] ; clk        ; 4.042 ; 4.042 ; Rise       ; clk             ;
-;  saidaResto[14] ; clk        ; 3.882 ; 3.882 ; Rise       ; clk             ;
-;  saidaResto[15] ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
+; saida[*]        ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+;  saida[0]       ; clk        ; 3.905 ; 3.905 ; Rise       ; clk             ;
+;  saida[1]       ; clk        ; 3.835 ; 3.835 ; Rise       ; clk             ;
+;  saida[2]       ; clk        ; 3.931 ; 3.931 ; Rise       ; clk             ;
+;  saida[3]       ; clk        ; 3.797 ; 3.797 ; Rise       ; clk             ;
+;  saida[4]       ; clk        ; 3.892 ; 3.892 ; Rise       ; clk             ;
+;  saida[5]       ; clk        ; 3.893 ; 3.893 ; Rise       ; clk             ;
+;  saida[6]       ; clk        ; 3.806 ; 3.806 ; Rise       ; clk             ;
+;  saida[7]       ; clk        ; 3.952 ; 3.952 ; Rise       ; clk             ;
+;  saida[8]       ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+;  saida[9]       ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+;  saida[10]      ; clk        ; 3.875 ; 3.875 ; Rise       ; clk             ;
+;  saida[11]      ; clk        ; 3.758 ; 3.758 ; Rise       ; clk             ;
+;  saida[12]      ; clk        ; 3.842 ; 3.842 ; Rise       ; clk             ;
+;  saida[13]      ; clk        ; 3.864 ; 3.864 ; Rise       ; clk             ;
+;  saida[14]      ; clk        ; 3.787 ; 3.787 ; Rise       ; clk             ;
+;  saida[15]      ; clk        ; 3.855 ; 3.855 ; Rise       ; clk             ;
+; saidaResto[*]   ; clk        ; 3.767 ; 3.767 ; Rise       ; clk             ;
+;  saidaResto[0]  ; clk        ; 4.000 ; 4.000 ; Rise       ; clk             ;
+;  saidaResto[1]  ; clk        ; 3.822 ; 3.822 ; Rise       ; clk             ;
+;  saidaResto[2]  ; clk        ; 4.128 ; 4.128 ; Rise       ; clk             ;
+;  saidaResto[3]  ; clk        ; 3.789 ; 3.789 ; Rise       ; clk             ;
+;  saidaResto[4]  ; clk        ; 4.152 ; 4.152 ; Rise       ; clk             ;
+;  saidaResto[5]  ; clk        ; 3.767 ; 3.767 ; Rise       ; clk             ;
+;  saidaResto[6]  ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
+;  saidaResto[7]  ; clk        ; 4.000 ; 4.000 ; Rise       ; clk             ;
+;  saidaResto[8]  ; clk        ; 4.032 ; 4.032 ; Rise       ; clk             ;
+;  saidaResto[9]  ; clk        ; 4.029 ; 4.029 ; Rise       ; clk             ;
+;  saidaResto[10] ; clk        ; 4.008 ; 4.008 ; Rise       ; clk             ;
+;  saidaResto[11] ; clk        ; 3.913 ; 3.913 ; Rise       ; clk             ;
+;  saidaResto[12] ; clk        ; 4.003 ; 4.003 ; Rise       ; clk             ;
+;  saidaResto[13] ; clk        ; 3.943 ; 3.943 ; Rise       ; clk             ;
+;  saidaResto[14] ; clk        ; 4.031 ; 4.031 ; Rise       ; clk             ;
+;  saidaResto[15] ; clk        ; 3.811 ; 3.811 ; Rise       ; clk             ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1011,11 +1056,31 @@ No paths to report.
 +------------------+----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -9.983   ; 0.215 ; N/A      ; N/A     ; -1.814              ;
-;  clk             ; -9.983   ; 0.215 ; N/A      ; N/A     ; -1.814              ;
-; Design-wide TNS  ; -669.882 ; 0.0   ; 0.0      ; 0.0     ; -145.713            ;
-;  clk             ; -669.882 ; 0.000 ; N/A      ; N/A     ; -145.713            ;
+; Worst-case Slack ; -9.839   ; 0.215 ; N/A      ; N/A     ; -1.814              ;
+;  clk             ; -9.839   ; 0.215 ; N/A      ; N/A     ; -1.814              ;
+; Design-wide TNS  ; -661.593 ; 0.0   ; 0.0      ; 0.0     ; -145.713            ;
+;  clk             ; -661.593 ; 0.000 ; N/A      ; N/A     ; -145.713            ;
 +------------------+----------+-------+----------+---------+---------------------+
+
+
++-----------------------------------------------------------------------+
+; Setup Times                                                           ;
++-----------+------------+-------+-------+------------+-----------------+
+; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-----------+------------+-------+-------+------------+-----------------+
+; reset     ; clk        ; 7.057 ; 7.057 ; Rise       ; clk             ;
+; reset     ; clk        ; 6.311 ; 6.311 ; Fall       ; clk             ;
++-----------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Hold Times                                                              ;
++-----------+------------+--------+--------+------------+-----------------+
+; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++-----------+------------+--------+--------+------------+-----------------+
+; reset     ; clk        ; -1.520 ; -1.520 ; Rise       ; clk             ;
+; reset     ; clk        ; -1.664 ; -1.664 ; Fall       ; clk             ;
++-----------+------------+--------+--------+------------+-----------------+
 
 
 +-----------------------------------------------------------------------------+
@@ -1023,40 +1088,40 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; saida[*]        ; clk        ; 7.821 ; 7.821 ; Rise       ; clk             ;
-;  saida[0]       ; clk        ; 6.945 ; 6.945 ; Rise       ; clk             ;
-;  saida[1]       ; clk        ; 7.821 ; 7.821 ; Rise       ; clk             ;
-;  saida[2]       ; clk        ; 6.967 ; 6.967 ; Rise       ; clk             ;
-;  saida[3]       ; clk        ; 7.806 ; 7.806 ; Rise       ; clk             ;
-;  saida[4]       ; clk        ; 6.952 ; 6.952 ; Rise       ; clk             ;
-;  saida[5]       ; clk        ; 7.237 ; 7.237 ; Rise       ; clk             ;
-;  saida[6]       ; clk        ; 6.957 ; 6.957 ; Rise       ; clk             ;
-;  saida[7]       ; clk        ; 7.782 ; 7.782 ; Rise       ; clk             ;
-;  saida[8]       ; clk        ; 7.488 ; 7.488 ; Rise       ; clk             ;
-;  saida[9]       ; clk        ; 6.932 ; 6.932 ; Rise       ; clk             ;
-;  saida[10]      ; clk        ; 7.222 ; 7.222 ; Rise       ; clk             ;
-;  saida[11]      ; clk        ; 6.927 ; 6.927 ; Rise       ; clk             ;
-;  saida[12]      ; clk        ; 7.788 ; 7.788 ; Rise       ; clk             ;
-;  saida[13]      ; clk        ; 7.516 ; 7.516 ; Rise       ; clk             ;
-;  saida[14]      ; clk        ; 7.801 ; 7.801 ; Rise       ; clk             ;
-;  saida[15]      ; clk        ; 7.500 ; 7.500 ; Rise       ; clk             ;
-; saidaResto[*]   ; clk        ; 7.712 ; 7.712 ; Rise       ; clk             ;
-;  saidaResto[0]  ; clk        ; 7.211 ; 7.211 ; Rise       ; clk             ;
-;  saidaResto[1]  ; clk        ; 7.712 ; 7.712 ; Rise       ; clk             ;
-;  saidaResto[2]  ; clk        ; 7.217 ; 7.217 ; Rise       ; clk             ;
-;  saidaResto[3]  ; clk        ; 7.568 ; 7.568 ; Rise       ; clk             ;
-;  saidaResto[4]  ; clk        ; 7.515 ; 7.515 ; Rise       ; clk             ;
-;  saidaResto[5]  ; clk        ; 7.340 ; 7.340 ; Rise       ; clk             ;
-;  saidaResto[6]  ; clk        ; 6.980 ; 6.980 ; Rise       ; clk             ;
-;  saidaResto[7]  ; clk        ; 7.232 ; 7.232 ; Rise       ; clk             ;
-;  saidaResto[8]  ; clk        ; 6.939 ; 6.939 ; Rise       ; clk             ;
-;  saidaResto[9]  ; clk        ; 7.222 ; 7.222 ; Rise       ; clk             ;
-;  saidaResto[10] ; clk        ; 7.287 ; 7.287 ; Rise       ; clk             ;
-;  saidaResto[11] ; clk        ; 6.932 ; 6.932 ; Rise       ; clk             ;
-;  saidaResto[12] ; clk        ; 7.534 ; 7.534 ; Rise       ; clk             ;
-;  saidaResto[13] ; clk        ; 7.546 ; 7.546 ; Rise       ; clk             ;
-;  saidaResto[14] ; clk        ; 7.193 ; 7.193 ; Rise       ; clk             ;
-;  saidaResto[15] ; clk        ; 6.928 ; 6.928 ; Rise       ; clk             ;
+; saida[*]        ; clk        ; 7.436 ; 7.436 ; Rise       ; clk             ;
+;  saida[0]       ; clk        ; 7.221 ; 7.221 ; Rise       ; clk             ;
+;  saida[1]       ; clk        ; 6.980 ; 6.980 ; Rise       ; clk             ;
+;  saida[2]       ; clk        ; 7.251 ; 7.251 ; Rise       ; clk             ;
+;  saida[3]       ; clk        ; 6.944 ; 6.944 ; Rise       ; clk             ;
+;  saida[4]       ; clk        ; 7.208 ; 7.208 ; Rise       ; clk             ;
+;  saida[5]       ; clk        ; 7.211 ; 7.211 ; Rise       ; clk             ;
+;  saida[6]       ; clk        ; 6.951 ; 6.951 ; Rise       ; clk             ;
+;  saida[7]       ; clk        ; 7.436 ; 7.436 ; Rise       ; clk             ;
+;  saida[8]       ; clk        ; 6.861 ; 6.861 ; Rise       ; clk             ;
+;  saida[9]       ; clk        ; 6.859 ; 6.859 ; Rise       ; clk             ;
+;  saida[10]      ; clk        ; 7.157 ; 7.157 ; Rise       ; clk             ;
+;  saida[11]      ; clk        ; 6.871 ; 6.871 ; Rise       ; clk             ;
+;  saida[12]      ; clk        ; 7.124 ; 7.124 ; Rise       ; clk             ;
+;  saida[13]      ; clk        ; 7.145 ; 7.145 ; Rise       ; clk             ;
+;  saida[14]      ; clk        ; 6.900 ; 6.900 ; Rise       ; clk             ;
+;  saida[15]      ; clk        ; 7.136 ; 7.136 ; Rise       ; clk             ;
+; saidaResto[*]   ; clk        ; 7.822 ; 7.822 ; Rise       ; clk             ;
+;  saidaResto[0]  ; clk        ; 7.484 ; 7.484 ; Rise       ; clk             ;
+;  saidaResto[1]  ; clk        ; 6.976 ; 6.976 ; Rise       ; clk             ;
+;  saidaResto[2]  ; clk        ; 7.781 ; 7.781 ; Rise       ; clk             ;
+;  saidaResto[3]  ; clk        ; 6.917 ; 6.917 ; Rise       ; clk             ;
+;  saidaResto[4]  ; clk        ; 7.822 ; 7.822 ; Rise       ; clk             ;
+;  saidaResto[5]  ; clk        ; 6.895 ; 6.895 ; Rise       ; clk             ;
+;  saidaResto[6]  ; clk        ; 7.209 ; 7.209 ; Rise       ; clk             ;
+;  saidaResto[7]  ; clk        ; 7.484 ; 7.484 ; Rise       ; clk             ;
+;  saidaResto[8]  ; clk        ; 7.516 ; 7.516 ; Rise       ; clk             ;
+;  saidaResto[9]  ; clk        ; 7.519 ; 7.519 ; Rise       ; clk             ;
+;  saidaResto[10] ; clk        ; 7.490 ; 7.490 ; Rise       ; clk             ;
+;  saidaResto[11] ; clk        ; 7.227 ; 7.227 ; Rise       ; clk             ;
+;  saidaResto[12] ; clk        ; 7.473 ; 7.473 ; Rise       ; clk             ;
+;  saidaResto[13] ; clk        ; 7.274 ; 7.274 ; Rise       ; clk             ;
+;  saidaResto[14] ; clk        ; 7.511 ; 7.511 ; Rise       ; clk             ;
+;  saidaResto[15] ; clk        ; 6.962 ; 6.962 ; Rise       ; clk             ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1065,40 +1130,40 @@ No paths to report.
 +-----------------+------------+-------+-------+------------+-----------------+
 ; Data Port       ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------------+------------+-------+-------+------------+-----------------+
-; saida[*]        ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saida[0]       ; clk        ; 3.800 ; 3.800 ; Rise       ; clk             ;
-;  saida[1]       ; clk        ; 4.145 ; 4.145 ; Rise       ; clk             ;
-;  saida[2]       ; clk        ; 3.825 ; 3.825 ; Rise       ; clk             ;
-;  saida[3]       ; clk        ; 4.129 ; 4.129 ; Rise       ; clk             ;
-;  saida[4]       ; clk        ; 3.807 ; 3.807 ; Rise       ; clk             ;
-;  saida[5]       ; clk        ; 3.921 ; 3.921 ; Rise       ; clk             ;
-;  saida[6]       ; clk        ; 3.814 ; 3.814 ; Rise       ; clk             ;
-;  saida[7]       ; clk        ; 4.110 ; 4.110 ; Rise       ; clk             ;
-;  saida[8]       ; clk        ; 3.999 ; 3.999 ; Rise       ; clk             ;
-;  saida[9]       ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saida[10]      ; clk        ; 3.904 ; 3.904 ; Rise       ; clk             ;
-;  saida[11]      ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saida[12]      ; clk        ; 4.123 ; 4.123 ; Rise       ; clk             ;
-;  saida[13]      ; clk        ; 4.013 ; 4.013 ; Rise       ; clk             ;
-;  saida[14]      ; clk        ; 4.126 ; 4.126 ; Rise       ; clk             ;
-;  saida[15]      ; clk        ; 4.009 ; 4.009 ; Rise       ; clk             ;
-; saidaResto[*]   ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saidaResto[0]  ; clk        ; 3.894 ; 3.894 ; Rise       ; clk             ;
-;  saidaResto[1]  ; clk        ; 4.127 ; 4.127 ; Rise       ; clk             ;
-;  saidaResto[2]  ; clk        ; 3.902 ; 3.902 ; Rise       ; clk             ;
-;  saidaResto[3]  ; clk        ; 4.058 ; 4.058 ; Rise       ; clk             ;
-;  saidaResto[4]  ; clk        ; 4.026 ; 4.026 ; Rise       ; clk             ;
-;  saidaResto[5]  ; clk        ; 3.989 ; 3.989 ; Rise       ; clk             ;
-;  saidaResto[6]  ; clk        ; 3.836 ; 3.836 ; Rise       ; clk             ;
-;  saidaResto[7]  ; clk        ; 3.915 ; 3.915 ; Rise       ; clk             ;
-;  saidaResto[8]  ; clk        ; 3.796 ; 3.796 ; Rise       ; clk             ;
-;  saidaResto[9]  ; clk        ; 3.902 ; 3.902 ; Rise       ; clk             ;
-;  saidaResto[10] ; clk        ; 3.950 ; 3.950 ; Rise       ; clk             ;
-;  saidaResto[11] ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
-;  saidaResto[12] ; clk        ; 4.035 ; 4.035 ; Rise       ; clk             ;
-;  saidaResto[13] ; clk        ; 4.042 ; 4.042 ; Rise       ; clk             ;
-;  saidaResto[14] ; clk        ; 3.882 ; 3.882 ; Rise       ; clk             ;
-;  saidaResto[15] ; clk        ; 3.791 ; 3.791 ; Rise       ; clk             ;
+; saida[*]        ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+;  saida[0]       ; clk        ; 3.905 ; 3.905 ; Rise       ; clk             ;
+;  saida[1]       ; clk        ; 3.835 ; 3.835 ; Rise       ; clk             ;
+;  saida[2]       ; clk        ; 3.931 ; 3.931 ; Rise       ; clk             ;
+;  saida[3]       ; clk        ; 3.797 ; 3.797 ; Rise       ; clk             ;
+;  saida[4]       ; clk        ; 3.892 ; 3.892 ; Rise       ; clk             ;
+;  saida[5]       ; clk        ; 3.893 ; 3.893 ; Rise       ; clk             ;
+;  saida[6]       ; clk        ; 3.806 ; 3.806 ; Rise       ; clk             ;
+;  saida[7]       ; clk        ; 3.952 ; 3.952 ; Rise       ; clk             ;
+;  saida[8]       ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+;  saida[9]       ; clk        ; 3.748 ; 3.748 ; Rise       ; clk             ;
+;  saida[10]      ; clk        ; 3.875 ; 3.875 ; Rise       ; clk             ;
+;  saida[11]      ; clk        ; 3.758 ; 3.758 ; Rise       ; clk             ;
+;  saida[12]      ; clk        ; 3.842 ; 3.842 ; Rise       ; clk             ;
+;  saida[13]      ; clk        ; 3.864 ; 3.864 ; Rise       ; clk             ;
+;  saida[14]      ; clk        ; 3.787 ; 3.787 ; Rise       ; clk             ;
+;  saida[15]      ; clk        ; 3.855 ; 3.855 ; Rise       ; clk             ;
+; saidaResto[*]   ; clk        ; 3.767 ; 3.767 ; Rise       ; clk             ;
+;  saidaResto[0]  ; clk        ; 4.000 ; 4.000 ; Rise       ; clk             ;
+;  saidaResto[1]  ; clk        ; 3.822 ; 3.822 ; Rise       ; clk             ;
+;  saidaResto[2]  ; clk        ; 4.128 ; 4.128 ; Rise       ; clk             ;
+;  saidaResto[3]  ; clk        ; 3.789 ; 3.789 ; Rise       ; clk             ;
+;  saidaResto[4]  ; clk        ; 4.152 ; 4.152 ; Rise       ; clk             ;
+;  saidaResto[5]  ; clk        ; 3.767 ; 3.767 ; Rise       ; clk             ;
+;  saidaResto[6]  ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
+;  saidaResto[7]  ; clk        ; 4.000 ; 4.000 ; Rise       ; clk             ;
+;  saidaResto[8]  ; clk        ; 4.032 ; 4.032 ; Rise       ; clk             ;
+;  saidaResto[9]  ; clk        ; 4.029 ; 4.029 ; Rise       ; clk             ;
+;  saidaResto[10] ; clk        ; 4.008 ; 4.008 ; Rise       ; clk             ;
+;  saidaResto[11] ; clk        ; 3.913 ; 3.913 ; Rise       ; clk             ;
+;  saidaResto[12] ; clk        ; 4.003 ; 4.003 ; Rise       ; clk             ;
+;  saidaResto[13] ; clk        ; 3.943 ; 3.943 ; Rise       ; clk             ;
+;  saidaResto[14] ; clk        ; 4.031 ; 4.031 ; Rise       ; clk             ;
+;  saidaResto[15] ; clk        ; 3.811 ; 3.811 ; Rise       ; clk             ;
 +-----------------+------------+-------+-------+------------+-----------------+
 
 
@@ -1107,7 +1172,7 @@ No paths to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 3561     ; 2368     ; 14272    ; 8308     ;
+; clk        ; clk      ; 3560     ; 2368     ; 14261    ; 8279     ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1117,7 +1182,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clk        ; clk      ; 3561     ; 2368     ; 14272    ; 8308     ;
+; clk        ; clk      ; 3560     ; 2368     ; 14261    ; 8279     ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1141,8 +1206,8 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 0     ; 0    ;
-; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 1     ; 1    ;
+; Unconstrained Input Port Paths  ; 92    ; 92   ;
 ; Unconstrained Output Ports      ; 32    ; 32   ;
 ; Unconstrained Output Port Paths ; 32    ; 32   ;
 +---------------------------------+-------+------+
@@ -1154,7 +1219,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Jul 02 15:53:44 2018
+    Info: Processing started: Tue Jul 03 21:22:18 2018
 Info: Command: quartus_sta SISTEMA_FINAL -c SISTEMA_FINAL
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
@@ -1167,10 +1232,10 @@ Info (332105): Deriving Clocks
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -9.983
+Info (332146): Worst-case setup slack is -9.839
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -9.983      -669.882 clk 
+    Info (332119):    -9.839      -661.593 clk 
 Info (332146): Worst-case hold slack is 0.445
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -1184,10 +1249,10 @@ Info (332146): Worst-case minimum pulse width slack is -1.814
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -3.255
+Info (332146): Worst-case setup slack is -3.400
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    -3.255      -220.728 clk 
+    Info (332119):    -3.400      -221.856 clk 
 Info (332146): Worst-case hold slack is 0.215
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -1203,8 +1268,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4578 megabytes
-    Info: Processing ended: Mon Jul 02 15:53:46 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Tue Jul 03 21:22:19 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

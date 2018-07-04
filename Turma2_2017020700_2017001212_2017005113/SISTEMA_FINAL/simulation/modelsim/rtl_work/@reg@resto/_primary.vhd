@@ -5,6 +5,7 @@ entity RegResto is
         entrada         : in     vl_logic_vector(15 downto 0);
         EnResto         : in     vl_logic;
         clk             : in     vl_logic;
+        resetResto      : in     vl_logic;
         FimResto        : out    vl_logic;
         saidaResto      : out    vl_logic_vector(15 downto 0)
     );
