@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
 
-// DATE "07/01/2018 22:19:36"
+// DATE "07/04/2018 01:05:44"
 
 // 
 // Device: Altera EP2C20F484C7 Package FBGA484
@@ -32,50 +32,53 @@ module RegResto (
 	entrada,
 	EnResto,
 	clk,
+	resetResto,
 	FimResto,
 	saidaResto);
 input 	[15:0] entrada;
 input 	EnResto;
 input 	clk;
+input 	resetResto;
 output 	FimResto;
 output 	[15:0] saidaResto;
 
 // Design Ports Information
-// FimResto	=>  Location: PIN_Y3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[0]	=>  Location: PIN_R5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[1]	=>  Location: PIN_R2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[2]	=>  Location: PIN_T1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[3]	=>  Location: PIN_P5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[4]	=>  Location: PIN_H5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[5]	=>  Location: PIN_R19,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[6]	=>  Location: PIN_U2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[7]	=>  Location: PIN_J4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[8]	=>  Location: PIN_T6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[9]	=>  Location: PIN_T2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[10]	=>  Location: PIN_T5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[11]	=>  Location: PIN_H4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[12]	=>  Location: PIN_V2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[13]	=>  Location: PIN_T3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[14]	=>  Location: PIN_Y2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// saidaResto[15]	=>  Location: PIN_AA3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
-// EnResto	=>  Location: PIN_E1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// FimResto	=>  Location: PIN_E9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[0]	=>  Location: PIN_D8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[1]	=>  Location: PIN_T11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[2]	=>  Location: PIN_F11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[3]	=>  Location: PIN_C10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[4]	=>  Location: PIN_A7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[5]	=>  Location: PIN_AA9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[6]	=>  Location: PIN_A9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[7]	=>  Location: PIN_D9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[8]	=>  Location: PIN_F9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[9]	=>  Location: PIN_B10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[10]	=>  Location: PIN_B7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[11]	=>  Location: PIN_A8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[12]	=>  Location: PIN_F10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[13]	=>  Location: PIN_E8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[14]	=>  Location: PIN_H10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// saidaResto[15]	=>  Location: PIN_C9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// EnResto	=>  Location: PIN_C7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 // clk	=>  Location: PIN_M1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[0]	=>  Location: PIN_W2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[1]	=>  Location: PIN_V1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[2]	=>  Location: PIN_U1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[3]	=>  Location: PIN_W5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[4]	=>  Location: PIN_D4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[5]	=>  Location: PIN_W3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[6]	=>  Location: PIN_P6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[7]	=>  Location: PIN_J2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[8]	=>  Location: PIN_R6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[9]	=>  Location: PIN_AB4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[10]	=>  Location: PIN_W4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[11]	=>  Location: PIN_F8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[12]	=>  Location: PIN_B4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[13]	=>  Location: PIN_Y1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[14]	=>  Location: PIN_U3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-// entrada[15]	=>  Location: PIN_R7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// resetResto	=>  Location: PIN_H9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[0]	=>  Location: PIN_H11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[1]	=>  Location: PIN_B8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[2]	=>  Location: PIN_D11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[3]	=>  Location: PIN_D7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[4]	=>  Location: PIN_A13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[5]	=>  Location: PIN_A10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[6]	=>  Location: PIN_F8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[7]	=>  Location: PIN_G12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[8]	=>  Location: PIN_G11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[9]	=>  Location: PIN_E11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[10]	=>  Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[11]	=>  Location: PIN_A14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[12]	=>  Location: PIN_A11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[13]	=>  Location: PIN_B13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[14]	=>  Location: PIN_B14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// entrada[15]	=>  Location: PIN_B9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 
 
 wire gnd;
@@ -96,34 +99,116 @@ initial $sdf_annotate("RegResto_v_fast.sdo");
 wire \clk~combout ;
 wire \clk~clkctrl_outclk ;
 wire \EnResto~combout ;
+wire \FimResto~reg0feeder_combout ;
+wire \resetResto~combout ;
 wire \FimResto~reg0_regout ;
-wire \saidaResto[0]~reg0feeder_combout ;
+wire \saidaResto~0_combout ;
+wire \saidaResto[0]~1_combout ;
 wire \saidaResto[0]~reg0_regout ;
-wire \saidaResto[1]~reg0feeder_combout ;
+wire \saidaResto~2_combout ;
 wire \saidaResto[1]~reg0_regout ;
-wire \saidaResto[2]~reg0feeder_combout ;
+wire \saidaResto~3_combout ;
 wire \saidaResto[2]~reg0_regout ;
+wire \saidaResto~4_combout ;
 wire \saidaResto[3]~reg0_regout ;
+wire \saidaResto~5_combout ;
 wire \saidaResto[4]~reg0_regout ;
-wire \saidaResto[5]~reg0feeder_combout ;
+wire \saidaResto~6_combout ;
 wire \saidaResto[5]~reg0_regout ;
+wire \saidaResto~7_combout ;
 wire \saidaResto[6]~reg0_regout ;
-wire \saidaResto[7]~reg0feeder_combout ;
+wire \saidaResto~8_combout ;
 wire \saidaResto[7]~reg0_regout ;
-wire \saidaResto[8]~reg0feeder_combout ;
+wire \saidaResto~9_combout ;
 wire \saidaResto[8]~reg0_regout ;
+wire \saidaResto~10_combout ;
 wire \saidaResto[9]~reg0_regout ;
-wire \saidaResto[10]~reg0feeder_combout ;
+wire \saidaResto~11_combout ;
 wire \saidaResto[10]~reg0_regout ;
-wire \saidaResto[11]~reg0feeder_combout ;
+wire \saidaResto~12_combout ;
 wire \saidaResto[11]~reg0_regout ;
-wire \saidaResto[12]~reg0feeder_combout ;
+wire \saidaResto~13_combout ;
 wire \saidaResto[12]~reg0_regout ;
+wire \saidaResto~14_combout ;
 wire \saidaResto[13]~reg0_regout ;
+wire \saidaResto~15_combout ;
 wire \saidaResto[14]~reg0_regout ;
+wire \saidaResto~16_combout ;
 wire \saidaResto[15]~reg0_regout ;
 wire [15:0] \entrada~combout ;
 
+
+// Location: PIN_H11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \entrada[0]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\entrada~combout [0]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(entrada[0]));
+// synopsys translate_off
+defparam \entrada[0]~I .input_async_reset = "none";
+defparam \entrada[0]~I .input_power_up = "low";
+defparam \entrada[0]~I .input_register_mode = "none";
+defparam \entrada[0]~I .input_sync_reset = "none";
+defparam \entrada[0]~I .oe_async_reset = "none";
+defparam \entrada[0]~I .oe_power_up = "low";
+defparam \entrada[0]~I .oe_register_mode = "none";
+defparam \entrada[0]~I .oe_sync_reset = "none";
+defparam \entrada[0]~I .operation_mode = "input";
+defparam \entrada[0]~I .output_async_reset = "none";
+defparam \entrada[0]~I .output_power_up = "low";
+defparam \entrada[0]~I .output_register_mode = "none";
+defparam \entrada[0]~I .output_sync_reset = "none";
+// synopsys translate_on
+
+// Location: PIN_A11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \entrada[12]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.outclk(gnd),
+	.outclkena(vcc),
+	.inclk(gnd),
+	.inclkena(vcc),
+	.areset(gnd),
+	.sreset(gnd),
+	.differentialin(gnd),
+	.linkin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.devoe(devoe),
+	.combout(\entrada~combout [12]),
+	.regout(),
+	.differentialout(),
+	.linkout(),
+	.padio(entrada[12]));
+// synopsys translate_off
+defparam \entrada[12]~I .input_async_reset = "none";
+defparam \entrada[12]~I .input_power_up = "low";
+defparam \entrada[12]~I .input_register_mode = "none";
+defparam \entrada[12]~I .input_sync_reset = "none";
+defparam \entrada[12]~I .oe_async_reset = "none";
+defparam \entrada[12]~I .oe_power_up = "low";
+defparam \entrada[12]~I .oe_register_mode = "none";
+defparam \entrada[12]~I .oe_sync_reset = "none";
+defparam \entrada[12]~I .operation_mode = "input";
+defparam \entrada[12]~I .output_async_reset = "none";
+defparam \entrada[12]~I .output_power_up = "low";
+defparam \entrada[12]~I .output_register_mode = "none";
+defparam \entrada[12]~I .output_sync_reset = "none";
+// synopsys translate_on
 
 // Location: PIN_M1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \clk~I (
@@ -174,7 +259,7 @@ defparam \clk~clkctrl .clock_type = "global clock";
 defparam \clk~clkctrl .ena_register_mode = "none";
 // synopsys translate_on
 
-// Location: PIN_E1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_C7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \EnResto~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -210,21 +295,25 @@ defparam \EnResto~I .output_register_mode = "none";
 defparam \EnResto~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N17
-cycloneii_lcell_ff \FimResto~reg0 (
-	.clk(\clk~clkctrl_outclk ),
-	.datain(gnd),
-	.sdata(\EnResto~combout ),
-	.aclr(gnd),
-	.sclr(gnd),
-	.sload(vcc),
-	.ena(vcc),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.regout(\FimResto~reg0_regout ));
+// Location: LCCOMB_X15_Y26_N0
+cycloneii_lcell_comb \FimResto~reg0feeder (
+// Equation(s):
+// \FimResto~reg0feeder_combout  = \EnResto~combout 
 
-// Location: PIN_W2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \entrada[0]~I (
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\EnResto~combout ),
+	.cin(gnd),
+	.combout(\FimResto~reg0feeder_combout ),
+	.cout());
+// synopsys translate_off
+defparam \FimResto~reg0feeder .lut_mask = 16'hFF00;
+defparam \FimResto~reg0feeder .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: PIN_H9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+cycloneii_io \resetResto~I (
 	.datain(gnd),
 	.oe(gnd),
 	.outclk(gnd),
@@ -238,58 +327,88 @@ cycloneii_io \entrada[0]~I (
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.devoe(devoe),
-	.combout(\entrada~combout [0]),
+	.combout(\resetResto~combout ),
 	.regout(),
 	.differentialout(),
 	.linkout(),
-	.padio(entrada[0]));
+	.padio(resetResto));
 // synopsys translate_off
-defparam \entrada[0]~I .input_async_reset = "none";
-defparam \entrada[0]~I .input_power_up = "low";
-defparam \entrada[0]~I .input_register_mode = "none";
-defparam \entrada[0]~I .input_sync_reset = "none";
-defparam \entrada[0]~I .oe_async_reset = "none";
-defparam \entrada[0]~I .oe_power_up = "low";
-defparam \entrada[0]~I .oe_register_mode = "none";
-defparam \entrada[0]~I .oe_sync_reset = "none";
-defparam \entrada[0]~I .operation_mode = "input";
-defparam \entrada[0]~I .output_async_reset = "none";
-defparam \entrada[0]~I .output_power_up = "low";
-defparam \entrada[0]~I .output_register_mode = "none";
-defparam \entrada[0]~I .output_sync_reset = "none";
+defparam \resetResto~I .input_async_reset = "none";
+defparam \resetResto~I .input_power_up = "low";
+defparam \resetResto~I .input_register_mode = "none";
+defparam \resetResto~I .input_sync_reset = "none";
+defparam \resetResto~I .oe_async_reset = "none";
+defparam \resetResto~I .oe_power_up = "low";
+defparam \resetResto~I .oe_register_mode = "none";
+defparam \resetResto~I .oe_sync_reset = "none";
+defparam \resetResto~I .operation_mode = "input";
+defparam \resetResto~I .output_async_reset = "none";
+defparam \resetResto~I .output_power_up = "low";
+defparam \resetResto~I .output_register_mode = "none";
+defparam \resetResto~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y7_N26
-cycloneii_lcell_comb \saidaResto[0]~reg0feeder (
-// Equation(s):
-// \saidaResto[0]~reg0feeder_combout  = \entrada~combout [0]
-
-	.dataa(vcc),
-	.datab(vcc),
-	.datac(vcc),
-	.datad(\entrada~combout [0]),
-	.cin(gnd),
-	.combout(\saidaResto[0]~reg0feeder_combout ),
-	.cout());
-// synopsys translate_off
-defparam \saidaResto[0]~reg0feeder .lut_mask = 16'hFF00;
-defparam \saidaResto[0]~reg0feeder .sum_lutc_input = "datac";
-// synopsys translate_on
-
-// Location: LCFF_X1_Y7_N27
-cycloneii_lcell_ff \saidaResto[0]~reg0 (
+// Location: LCFF_X15_Y26_N1
+cycloneii_lcell_ff \FimResto~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(\saidaResto[0]~reg0feeder_combout ),
+	.datain(\FimResto~reg0feeder_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\EnResto~combout ),
+	.ena(!\resetResto~combout ),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.regout(\FimResto~reg0_regout ));
+
+// Location: LCCOMB_X19_Y26_N8
+cycloneii_lcell_comb \saidaResto~0 (
+// Equation(s):
+// \saidaResto~0_combout  = (\entrada~combout [0] & !\resetResto~combout )
+
+	.dataa(\entrada~combout [0]),
+	.datab(vcc),
+	.datac(\resetResto~combout ),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\saidaResto~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \saidaResto~0 .lut_mask = 16'h0A0A;
+defparam \saidaResto~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X15_Y26_N2
+cycloneii_lcell_comb \saidaResto[0]~1 (
+// Equation(s):
+// \saidaResto[0]~1_combout  = (\EnResto~combout ) # (\resetResto~combout )
+
+	.dataa(\EnResto~combout ),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\resetResto~combout ),
+	.cin(gnd),
+	.combout(\saidaResto[0]~1_combout ),
+	.cout());
+// synopsys translate_off
+defparam \saidaResto[0]~1 .lut_mask = 16'hFFAA;
+defparam \saidaResto[0]~1 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X19_Y26_N9
+cycloneii_lcell_ff \saidaResto[0]~reg0 (
+	.clk(\clk~clkctrl_outclk ),
+	.datain(\saidaResto~0_combout ),
+	.sdata(gnd),
+	.aclr(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[0]~reg0_regout ));
 
-// Location: PIN_V1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_B8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[1]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -325,37 +444,37 @@ defparam \entrada[1]~I .output_register_mode = "none";
 defparam \entrada[1]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y7_N28
-cycloneii_lcell_comb \saidaResto[1]~reg0feeder (
+// Location: LCCOMB_X19_Y26_N18
+cycloneii_lcell_comb \saidaResto~2 (
 // Equation(s):
-// \saidaResto[1]~reg0feeder_combout  = \entrada~combout [1]
+// \saidaResto~2_combout  = (\entrada~combout [1] & !\resetResto~combout )
 
 	.dataa(vcc),
-	.datab(vcc),
-	.datac(vcc),
-	.datad(\entrada~combout [1]),
+	.datab(\entrada~combout [1]),
+	.datac(\resetResto~combout ),
+	.datad(vcc),
 	.cin(gnd),
-	.combout(\saidaResto[1]~reg0feeder_combout ),
+	.combout(\saidaResto~2_combout ),
 	.cout());
 // synopsys translate_off
-defparam \saidaResto[1]~reg0feeder .lut_mask = 16'hFF00;
-defparam \saidaResto[1]~reg0feeder .sum_lutc_input = "datac";
+defparam \saidaResto~2 .lut_mask = 16'h0C0C;
+defparam \saidaResto~2 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N29
+// Location: LCFF_X19_Y26_N19
 cycloneii_lcell_ff \saidaResto[1]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(\saidaResto[1]~reg0feeder_combout ),
+	.datain(\saidaResto~2_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\EnResto~combout ),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[1]~reg0_regout ));
 
-// Location: PIN_U1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_D11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[2]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -391,37 +510,37 @@ defparam \entrada[2]~I .output_register_mode = "none";
 defparam \entrada[2]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y7_N22
-cycloneii_lcell_comb \saidaResto[2]~reg0feeder (
+// Location: LCCOMB_X19_Y26_N28
+cycloneii_lcell_comb \saidaResto~3 (
 // Equation(s):
-// \saidaResto[2]~reg0feeder_combout  = \entrada~combout [2]
+// \saidaResto~3_combout  = (!\resetResto~combout  & \entrada~combout [2])
 
 	.dataa(vcc),
 	.datab(vcc),
-	.datac(vcc),
+	.datac(\resetResto~combout ),
 	.datad(\entrada~combout [2]),
 	.cin(gnd),
-	.combout(\saidaResto[2]~reg0feeder_combout ),
+	.combout(\saidaResto~3_combout ),
 	.cout());
 // synopsys translate_off
-defparam \saidaResto[2]~reg0feeder .lut_mask = 16'hFF00;
-defparam \saidaResto[2]~reg0feeder .sum_lutc_input = "datac";
+defparam \saidaResto~3 .lut_mask = 16'h0F00;
+defparam \saidaResto~3 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N23
+// Location: LCFF_X19_Y26_N29
 cycloneii_lcell_ff \saidaResto[2]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(\saidaResto[2]~reg0feeder_combout ),
+	.datain(\saidaResto~3_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\EnResto~combout ),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[2]~reg0_regout ));
 
-// Location: PIN_W5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_D7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[3]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -457,20 +576,37 @@ defparam \entrada[3]~I .output_register_mode = "none";
 defparam \entrada[3]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N1
+// Location: LCCOMB_X19_Y26_N30
+cycloneii_lcell_comb \saidaResto~4 (
+// Equation(s):
+// \saidaResto~4_combout  = (!\resetResto~combout  & \entrada~combout [3])
+
+	.dataa(vcc),
+	.datab(\resetResto~combout ),
+	.datac(\entrada~combout [3]),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\saidaResto~4_combout ),
+	.cout());
+// synopsys translate_off
+defparam \saidaResto~4 .lut_mask = 16'h3030;
+defparam \saidaResto~4 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X19_Y26_N31
 cycloneii_lcell_ff \saidaResto[3]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(gnd),
-	.sdata(\entrada~combout [3]),
+	.datain(\saidaResto~4_combout ),
+	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
-	.sload(vcc),
-	.ena(\EnResto~combout ),
+	.sload(gnd),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[3]~reg0_regout ));
 
-// Location: PIN_D4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_A13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[4]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -506,20 +642,37 @@ defparam \entrada[4]~I .output_register_mode = "none";
 defparam \entrada[4]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N3
+// Location: LCCOMB_X19_Y26_N24
+cycloneii_lcell_comb \saidaResto~5 (
+// Equation(s):
+// \saidaResto~5_combout  = (!\resetResto~combout  & \entrada~combout [4])
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\resetResto~combout ),
+	.datad(\entrada~combout [4]),
+	.cin(gnd),
+	.combout(\saidaResto~5_combout ),
+	.cout());
+// synopsys translate_off
+defparam \saidaResto~5 .lut_mask = 16'h0F00;
+defparam \saidaResto~5 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X19_Y26_N25
 cycloneii_lcell_ff \saidaResto[4]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(gnd),
-	.sdata(\entrada~combout [4]),
+	.datain(\saidaResto~5_combout ),
+	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
-	.sload(vcc),
-	.ena(\EnResto~combout ),
+	.sload(gnd),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[4]~reg0_regout ));
 
-// Location: PIN_W3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_A10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[5]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -555,37 +708,37 @@ defparam \entrada[5]~I .output_register_mode = "none";
 defparam \entrada[5]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y7_N12
-cycloneii_lcell_comb \saidaResto[5]~reg0feeder (
+// Location: LCCOMB_X19_Y26_N26
+cycloneii_lcell_comb \saidaResto~6 (
 // Equation(s):
-// \saidaResto[5]~reg0feeder_combout  = \entrada~combout [5]
+// \saidaResto~6_combout  = (!\resetResto~combout  & \entrada~combout [5])
 
 	.dataa(vcc),
 	.datab(vcc),
-	.datac(vcc),
+	.datac(\resetResto~combout ),
 	.datad(\entrada~combout [5]),
 	.cin(gnd),
-	.combout(\saidaResto[5]~reg0feeder_combout ),
+	.combout(\saidaResto~6_combout ),
 	.cout());
 // synopsys translate_off
-defparam \saidaResto[5]~reg0feeder .lut_mask = 16'hFF00;
-defparam \saidaResto[5]~reg0feeder .sum_lutc_input = "datac";
+defparam \saidaResto~6 .lut_mask = 16'h0F00;
+defparam \saidaResto~6 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N13
+// Location: LCFF_X19_Y26_N27
 cycloneii_lcell_ff \saidaResto[5]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(\saidaResto[5]~reg0feeder_combout ),
+	.datain(\saidaResto~6_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\EnResto~combout ),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[5]~reg0_regout ));
 
-// Location: PIN_P6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_F8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[6]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -621,20 +774,37 @@ defparam \entrada[6]~I .output_register_mode = "none";
 defparam \entrada[6]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N31
+// Location: LCCOMB_X19_Y26_N12
+cycloneii_lcell_comb \saidaResto~7 (
+// Equation(s):
+// \saidaResto~7_combout  = (!\resetResto~combout  & \entrada~combout [6])
+
+	.dataa(vcc),
+	.datab(\resetResto~combout ),
+	.datac(\entrada~combout [6]),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\saidaResto~7_combout ),
+	.cout());
+// synopsys translate_off
+defparam \saidaResto~7 .lut_mask = 16'h3030;
+defparam \saidaResto~7 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X19_Y26_N13
 cycloneii_lcell_ff \saidaResto[6]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(gnd),
-	.sdata(\entrada~combout [6]),
+	.datain(\saidaResto~7_combout ),
+	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
-	.sload(vcc),
-	.ena(\EnResto~combout ),
+	.sload(gnd),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[6]~reg0_regout ));
 
-// Location: PIN_J2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_G12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[7]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -670,37 +840,37 @@ defparam \entrada[7]~I .output_register_mode = "none";
 defparam \entrada[7]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y7_N24
-cycloneii_lcell_comb \saidaResto[7]~reg0feeder (
+// Location: LCCOMB_X19_Y26_N14
+cycloneii_lcell_comb \saidaResto~8 (
 // Equation(s):
-// \saidaResto[7]~reg0feeder_combout  = \entrada~combout [7]
+// \saidaResto~8_combout  = (!\resetResto~combout  & \entrada~combout [7])
 
 	.dataa(vcc),
 	.datab(vcc),
-	.datac(vcc),
+	.datac(\resetResto~combout ),
 	.datad(\entrada~combout [7]),
 	.cin(gnd),
-	.combout(\saidaResto[7]~reg0feeder_combout ),
+	.combout(\saidaResto~8_combout ),
 	.cout());
 // synopsys translate_off
-defparam \saidaResto[7]~reg0feeder .lut_mask = 16'hFF00;
-defparam \saidaResto[7]~reg0feeder .sum_lutc_input = "datac";
+defparam \saidaResto~8 .lut_mask = 16'h0F00;
+defparam \saidaResto~8 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N25
+// Location: LCFF_X19_Y26_N15
 cycloneii_lcell_ff \saidaResto[7]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(\saidaResto[7]~reg0feeder_combout ),
+	.datain(\saidaResto~8_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\EnResto~combout ),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[7]~reg0_regout ));
 
-// Location: PIN_R6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_G11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[8]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -736,37 +906,37 @@ defparam \entrada[8]~I .output_register_mode = "none";
 defparam \entrada[8]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y7_N10
-cycloneii_lcell_comb \saidaResto[8]~reg0feeder (
+// Location: LCCOMB_X19_Y26_N0
+cycloneii_lcell_comb \saidaResto~9 (
 // Equation(s):
-// \saidaResto[8]~reg0feeder_combout  = \entrada~combout [8]
+// \saidaResto~9_combout  = (\entrada~combout [8] & !\resetResto~combout )
 
 	.dataa(vcc),
-	.datab(vcc),
-	.datac(vcc),
-	.datad(\entrada~combout [8]),
+	.datab(\entrada~combout [8]),
+	.datac(\resetResto~combout ),
+	.datad(vcc),
 	.cin(gnd),
-	.combout(\saidaResto[8]~reg0feeder_combout ),
+	.combout(\saidaResto~9_combout ),
 	.cout());
 // synopsys translate_off
-defparam \saidaResto[8]~reg0feeder .lut_mask = 16'hFF00;
-defparam \saidaResto[8]~reg0feeder .sum_lutc_input = "datac";
+defparam \saidaResto~9 .lut_mask = 16'h0C0C;
+defparam \saidaResto~9 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N11
+// Location: LCFF_X19_Y26_N1
 cycloneii_lcell_ff \saidaResto[8]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(\saidaResto[8]~reg0feeder_combout ),
+	.datain(\saidaResto~9_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\EnResto~combout ),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[8]~reg0_regout ));
 
-// Location: PIN_AB4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_E11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[9]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -802,20 +972,37 @@ defparam \entrada[9]~I .output_register_mode = "none";
 defparam \entrada[9]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N5
+// Location: LCCOMB_X19_Y26_N2
+cycloneii_lcell_comb \saidaResto~10 (
+// Equation(s):
+// \saidaResto~10_combout  = (!\resetResto~combout  & \entrada~combout [9])
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\resetResto~combout ),
+	.datad(\entrada~combout [9]),
+	.cin(gnd),
+	.combout(\saidaResto~10_combout ),
+	.cout());
+// synopsys translate_off
+defparam \saidaResto~10 .lut_mask = 16'h0F00;
+defparam \saidaResto~10 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X19_Y26_N3
 cycloneii_lcell_ff \saidaResto[9]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(gnd),
-	.sdata(\entrada~combout [9]),
+	.datain(\saidaResto~10_combout ),
+	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
-	.sload(vcc),
-	.ena(\EnResto~combout ),
+	.sload(gnd),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[9]~reg0_regout ));
 
-// Location: PIN_W4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[10]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -851,37 +1038,37 @@ defparam \entrada[10]~I .output_register_mode = "none";
 defparam \entrada[10]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X1_Y7_N6
-cycloneii_lcell_comb \saidaResto[10]~reg0feeder (
+// Location: LCCOMB_X19_Y26_N20
+cycloneii_lcell_comb \saidaResto~11 (
 // Equation(s):
-// \saidaResto[10]~reg0feeder_combout  = \entrada~combout [10]
+// \saidaResto~11_combout  = (!\resetResto~combout  & \entrada~combout [10])
 
 	.dataa(vcc),
 	.datab(vcc),
-	.datac(vcc),
+	.datac(\resetResto~combout ),
 	.datad(\entrada~combout [10]),
 	.cin(gnd),
-	.combout(\saidaResto[10]~reg0feeder_combout ),
+	.combout(\saidaResto~11_combout ),
 	.cout());
 // synopsys translate_off
-defparam \saidaResto[10]~reg0feeder .lut_mask = 16'hFF00;
-defparam \saidaResto[10]~reg0feeder .sum_lutc_input = "datac";
+defparam \saidaResto~11 .lut_mask = 16'h0F00;
+defparam \saidaResto~11 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N7
+// Location: LCFF_X19_Y26_N21
 cycloneii_lcell_ff \saidaResto[10]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(\saidaResto[10]~reg0feeder_combout ),
+	.datain(\saidaResto~11_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\EnResto~combout ),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[10]~reg0_regout ));
 
-// Location: PIN_F8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_A14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[11]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -917,103 +1104,67 @@ defparam \entrada[11]~I .output_register_mode = "none";
 defparam \entrada[11]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCCOMB_X5_Y21_N16
-cycloneii_lcell_comb \saidaResto[11]~reg0feeder (
+// Location: LCCOMB_X19_Y26_N22
+cycloneii_lcell_comb \saidaResto~12 (
 // Equation(s):
-// \saidaResto[11]~reg0feeder_combout  = \entrada~combout [11]
+// \saidaResto~12_combout  = (!\resetResto~combout  & \entrada~combout [11])
 
 	.dataa(vcc),
 	.datab(vcc),
-	.datac(vcc),
+	.datac(\resetResto~combout ),
 	.datad(\entrada~combout [11]),
 	.cin(gnd),
-	.combout(\saidaResto[11]~reg0feeder_combout ),
+	.combout(\saidaResto~12_combout ),
 	.cout());
 // synopsys translate_off
-defparam \saidaResto[11]~reg0feeder .lut_mask = 16'hFF00;
-defparam \saidaResto[11]~reg0feeder .sum_lutc_input = "datac";
+defparam \saidaResto~12 .lut_mask = 16'h0F00;
+defparam \saidaResto~12 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCFF_X5_Y21_N17
+// Location: LCFF_X19_Y26_N23
 cycloneii_lcell_ff \saidaResto[11]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(\saidaResto[11]~reg0feeder_combout ),
+	.datain(\saidaResto~12_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\EnResto~combout ),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[11]~reg0_regout ));
 
-// Location: PIN_B4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-cycloneii_io \entrada[12]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.outclk(gnd),
-	.outclkena(vcc),
-	.inclk(gnd),
-	.inclkena(vcc),
-	.areset(gnd),
-	.sreset(gnd),
-	.differentialin(gnd),
-	.linkin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.devoe(devoe),
-	.combout(\entrada~combout [12]),
-	.regout(),
-	.differentialout(),
-	.linkout(),
-	.padio(entrada[12]));
-// synopsys translate_off
-defparam \entrada[12]~I .input_async_reset = "none";
-defparam \entrada[12]~I .input_power_up = "low";
-defparam \entrada[12]~I .input_register_mode = "none";
-defparam \entrada[12]~I .input_sync_reset = "none";
-defparam \entrada[12]~I .oe_async_reset = "none";
-defparam \entrada[12]~I .oe_power_up = "low";
-defparam \entrada[12]~I .oe_register_mode = "none";
-defparam \entrada[12]~I .oe_sync_reset = "none";
-defparam \entrada[12]~I .operation_mode = "input";
-defparam \entrada[12]~I .output_async_reset = "none";
-defparam \entrada[12]~I .output_power_up = "low";
-defparam \entrada[12]~I .output_register_mode = "none";
-defparam \entrada[12]~I .output_sync_reset = "none";
-// synopsys translate_on
-
-// Location: LCCOMB_X1_Y7_N8
-cycloneii_lcell_comb \saidaResto[12]~reg0feeder (
+// Location: LCCOMB_X19_Y26_N16
+cycloneii_lcell_comb \saidaResto~13 (
 // Equation(s):
-// \saidaResto[12]~reg0feeder_combout  = \entrada~combout [12]
+// \saidaResto~13_combout  = (\entrada~combout [12] & !\resetResto~combout )
 
-	.dataa(vcc),
+	.dataa(\entrada~combout [12]),
 	.datab(vcc),
-	.datac(vcc),
-	.datad(\entrada~combout [12]),
+	.datac(\resetResto~combout ),
+	.datad(vcc),
 	.cin(gnd),
-	.combout(\saidaResto[12]~reg0feeder_combout ),
+	.combout(\saidaResto~13_combout ),
 	.cout());
 // synopsys translate_off
-defparam \saidaResto[12]~reg0feeder .lut_mask = 16'hFF00;
-defparam \saidaResto[12]~reg0feeder .sum_lutc_input = "datac";
+defparam \saidaResto~13 .lut_mask = 16'h0A0A;
+defparam \saidaResto~13 .sum_lutc_input = "datac";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N9
+// Location: LCFF_X19_Y26_N17
 cycloneii_lcell_ff \saidaResto[12]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(\saidaResto[12]~reg0feeder_combout ),
+	.datain(\saidaResto~13_combout ),
 	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\EnResto~combout ),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[12]~reg0_regout ));
 
-// Location: PIN_Y1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_B13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[13]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -1049,20 +1200,37 @@ defparam \entrada[13]~I .output_register_mode = "none";
 defparam \entrada[13]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N19
+// Location: LCCOMB_X19_Y26_N10
+cycloneii_lcell_comb \saidaResto~14 (
+// Equation(s):
+// \saidaResto~14_combout  = (!\resetResto~combout  & \entrada~combout [13])
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\resetResto~combout ),
+	.datad(\entrada~combout [13]),
+	.cin(gnd),
+	.combout(\saidaResto~14_combout ),
+	.cout());
+// synopsys translate_off
+defparam \saidaResto~14 .lut_mask = 16'h0F00;
+defparam \saidaResto~14 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X19_Y26_N11
 cycloneii_lcell_ff \saidaResto[13]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(gnd),
-	.sdata(\entrada~combout [13]),
+	.datain(\saidaResto~14_combout ),
+	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
-	.sload(vcc),
-	.ena(\EnResto~combout ),
+	.sload(gnd),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[13]~reg0_regout ));
 
-// Location: PIN_U3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_B14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[14]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -1098,20 +1266,37 @@ defparam \entrada[14]~I .output_register_mode = "none";
 defparam \entrada[14]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N21
+// Location: LCCOMB_X19_Y26_N4
+cycloneii_lcell_comb \saidaResto~15 (
+// Equation(s):
+// \saidaResto~15_combout  = (!\resetResto~combout  & \entrada~combout [14])
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\resetResto~combout ),
+	.datad(\entrada~combout [14]),
+	.cin(gnd),
+	.combout(\saidaResto~15_combout ),
+	.cout());
+// synopsys translate_off
+defparam \saidaResto~15 .lut_mask = 16'h0F00;
+defparam \saidaResto~15 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X19_Y26_N5
 cycloneii_lcell_ff \saidaResto[14]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(gnd),
-	.sdata(\entrada~combout [14]),
+	.datain(\saidaResto~15_combout ),
+	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
-	.sload(vcc),
-	.ena(\EnResto~combout ),
+	.sload(gnd),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[14]~reg0_regout ));
 
-// Location: PIN_R7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_B9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 cycloneii_io \entrada[15]~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -1147,20 +1332,37 @@ defparam \entrada[15]~I .output_register_mode = "none";
 defparam \entrada[15]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: LCFF_X1_Y7_N15
+// Location: LCCOMB_X19_Y26_N6
+cycloneii_lcell_comb \saidaResto~16 (
+// Equation(s):
+// \saidaResto~16_combout  = (!\resetResto~combout  & \entrada~combout [15])
+
+	.dataa(vcc),
+	.datab(\resetResto~combout ),
+	.datac(\entrada~combout [15]),
+	.datad(vcc),
+	.cin(gnd),
+	.combout(\saidaResto~16_combout ),
+	.cout());
+// synopsys translate_off
+defparam \saidaResto~16 .lut_mask = 16'h3030;
+defparam \saidaResto~16 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCFF_X19_Y26_N7
 cycloneii_lcell_ff \saidaResto[15]~reg0 (
 	.clk(\clk~clkctrl_outclk ),
-	.datain(gnd),
-	.sdata(\entrada~combout [15]),
+	.datain(\saidaResto~16_combout ),
+	.sdata(gnd),
 	.aclr(gnd),
 	.sclr(gnd),
-	.sload(vcc),
-	.ena(\EnResto~combout ),
+	.sload(gnd),
+	.ena(\saidaResto[0]~1_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
 	.regout(\saidaResto[15]~reg0_regout ));
 
-// Location: PIN_Y3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_E9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \FimResto~I (
 	.datain(\FimResto~reg0_regout ),
 	.oe(vcc),
@@ -1196,7 +1398,7 @@ defparam \FimResto~I .output_register_mode = "none";
 defparam \FimResto~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_R5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_D8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[0]~I (
 	.datain(\saidaResto[0]~reg0_regout ),
 	.oe(vcc),
@@ -1232,7 +1434,7 @@ defparam \saidaResto[0]~I .output_register_mode = "none";
 defparam \saidaResto[0]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_R2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_T11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[1]~I (
 	.datain(\saidaResto[1]~reg0_regout ),
 	.oe(vcc),
@@ -1268,7 +1470,7 @@ defparam \saidaResto[1]~I .output_register_mode = "none";
 defparam \saidaResto[1]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_T1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_F11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[2]~I (
 	.datain(\saidaResto[2]~reg0_regout ),
 	.oe(vcc),
@@ -1304,7 +1506,7 @@ defparam \saidaResto[2]~I .output_register_mode = "none";
 defparam \saidaResto[2]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_P5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_C10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[3]~I (
 	.datain(\saidaResto[3]~reg0_regout ),
 	.oe(vcc),
@@ -1340,7 +1542,7 @@ defparam \saidaResto[3]~I .output_register_mode = "none";
 defparam \saidaResto[3]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_H5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_A7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[4]~I (
 	.datain(\saidaResto[4]~reg0_regout ),
 	.oe(vcc),
@@ -1376,7 +1578,7 @@ defparam \saidaResto[4]~I .output_register_mode = "none";
 defparam \saidaResto[4]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_R19,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_AA9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[5]~I (
 	.datain(\saidaResto[5]~reg0_regout ),
 	.oe(vcc),
@@ -1412,7 +1614,7 @@ defparam \saidaResto[5]~I .output_register_mode = "none";
 defparam \saidaResto[5]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_U2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_A9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[6]~I (
 	.datain(\saidaResto[6]~reg0_regout ),
 	.oe(vcc),
@@ -1448,7 +1650,7 @@ defparam \saidaResto[6]~I .output_register_mode = "none";
 defparam \saidaResto[6]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_J4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_D9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[7]~I (
 	.datain(\saidaResto[7]~reg0_regout ),
 	.oe(vcc),
@@ -1484,7 +1686,7 @@ defparam \saidaResto[7]~I .output_register_mode = "none";
 defparam \saidaResto[7]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_T6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_F9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[8]~I (
 	.datain(\saidaResto[8]~reg0_regout ),
 	.oe(vcc),
@@ -1520,7 +1722,7 @@ defparam \saidaResto[8]~I .output_register_mode = "none";
 defparam \saidaResto[8]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_T2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_B10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[9]~I (
 	.datain(\saidaResto[9]~reg0_regout ),
 	.oe(vcc),
@@ -1556,7 +1758,7 @@ defparam \saidaResto[9]~I .output_register_mode = "none";
 defparam \saidaResto[9]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_T5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_B7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[10]~I (
 	.datain(\saidaResto[10]~reg0_regout ),
 	.oe(vcc),
@@ -1592,7 +1794,7 @@ defparam \saidaResto[10]~I .output_register_mode = "none";
 defparam \saidaResto[10]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_H4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_A8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[11]~I (
 	.datain(\saidaResto[11]~reg0_regout ),
 	.oe(vcc),
@@ -1628,7 +1830,7 @@ defparam \saidaResto[11]~I .output_register_mode = "none";
 defparam \saidaResto[11]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_V2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_F10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[12]~I (
 	.datain(\saidaResto[12]~reg0_regout ),
 	.oe(vcc),
@@ -1664,7 +1866,7 @@ defparam \saidaResto[12]~I .output_register_mode = "none";
 defparam \saidaResto[12]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_T3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_E8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[13]~I (
 	.datain(\saidaResto[13]~reg0_regout ),
 	.oe(vcc),
@@ -1700,7 +1902,7 @@ defparam \saidaResto[13]~I .output_register_mode = "none";
 defparam \saidaResto[13]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_Y2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_H10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[14]~I (
 	.datain(\saidaResto[14]~reg0_regout ),
 	.oe(vcc),
@@ -1736,7 +1938,7 @@ defparam \saidaResto[14]~I .output_register_mode = "none";
 defparam \saidaResto[14]~I .output_sync_reset = "none";
 // synopsys translate_on
 
-// Location: PIN_AA3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
+// Location: PIN_C9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \saidaResto[15]~I (
 	.datain(\saidaResto[15]~reg0_regout ),
 	.oe(vcc),

@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Mon Jul 02 15:53:30 2018
+Analysis & Synthesis Status : Successful - Wed Jul 04 01:07:02 2018
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : SISTEMA_FINAL
 Top-level Entity Name : SISTEMA_FINAL
 Family : Cyclone II
-Total logic elements : 256
-    Total combinational functions : 235
-    Dedicated logic registers : 109
-Total registers : 109
+Total logic elements : 259
+    Total combinational functions : 238
+    Dedicated logic registers : 110
+Total registers : 110
 Total pins : 33
 Total virtual pins : 0
 Total memory bits : 64

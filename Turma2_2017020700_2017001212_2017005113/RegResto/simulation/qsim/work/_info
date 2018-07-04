@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\git\Turma2_2017020700_2017001212_2017005113\RegResto\simulation\qsim
+vRegResto
+Z1 ISCRT;R0a8^oZ]E;12YT_M1
+Z2 V@^fZ:;P5f[@S7M@JZ13A<2
+Z3 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\git\Turma2_2017020700_2017001212_2017005113\RegResto\simulation\qsim
+Z4 w1530677155
+Z5 8RegResto.vo
+Z6 FRegResto.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@reg@resto
+!i10b 1
+Z10 !s100 c]=07UE@kWdVXz@F?<:dX1
+!s85 0
+Z11 !s108 1530677158.441000
+Z12 !s107 RegResto.vo|
+Z13 !s90 -work|work|RegResto.vo|
+!s101 -O0
+vRegResto_vlg_check_tst
+!i10b 1
+!s100 V7niLTzk9c6RnL9j1Acz;1
+IDe>Nzfjc]7KgT<C^BNT5Z0
+VEmRjo80M;NOR<S:ne5gR:2
+R3
+Z14 w1530677154
+Z15 8RegResto.vt
+Z16 FRegResto.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z17 !s108 1530677158.709000
+Z18 !s107 RegResto.vt|
+Z19 !s90 -work|work|RegResto.vt|
+!s101 -O0
+R8
+n@reg@resto_vlg_check_tst
+vRegResto_vlg_sample_tst
+!i10b 1
+!s100 jkS8JK?Ej1K=l?@gUU[R?2
+I]h2W;Nb3h>`MM@30IIhJY0
+Va>d_0<2h;LdOKn<:m7:7?1
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@reg@resto_vlg_sample_tst
+vRegResto_vlg_vec_tst
+!i10b 1
+!s100 1MOfi<DhLaHY;dLhUzGnk3
+I0UK[TaRoZOmb_8zP0zcUa3
+VClYVMd8SZ3dbla:9TFQ;73
+R3
+R14
+R15
+R16
+L0 454
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@reg@resto_vlg_vec_tst

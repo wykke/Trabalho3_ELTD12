@@ -1,21 +1,21 @@
-`timescale 1 ps/ 1 ps
+`timescale 100 ps/ 1 ps
 module Sistema_TB ;
 	
 	reg clk;
-	wire [15:0] saida;
+	wire [15:0] saida, saidaResto;
 	
 	SISTEMA_FINAL S0 (
 	.clk 		(clk),
-	.saida	(saida)
+	.saida	(saida),
+	.saidaResto (saidaResto) 
 	);
 	
-	//integer repeticoes;
 	
 	initial begin
-		clk = 0;		
+		clk = 0;
 	end	
 
-	always 		#2000 	clk = ~clk;
+	always 		#2 	clk = ~clk;
 		
 	initial begin
 		$dumpfile ("sistema.vcd");
@@ -23,12 +23,12 @@ module Sistema_TB ;
 	end
 	
 	initial begin
-		$display("\t\ttime,\tclk,\tSaida");
-		$monitor("%d, \t%b, \t%d", $time, clk, saida); 
+		$display("\t\ttime\t\tCLK\tSaida\tResto");
+		$monitor("%d, \t%b, \t%d, \t%d", $time, clk, saida, saidaResto); 
 	end
 	
 	initial
-		#1000000 $stop;
+		#1000 $stop;
 		
 endmodule
 	

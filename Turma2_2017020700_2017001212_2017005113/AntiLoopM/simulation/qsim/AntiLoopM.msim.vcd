@@ -1,0 +1,254 @@
+$comment
+	File created using the following command:
+		vcd file AntiLoopM.msim.vcd -direction
+$end
+$date
+	Wed Jul 04 01:03:20 2018
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module AntiLoopM_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 8 " contador [7:0] $end
+$var reg 16 # entrada [15:0] $end
+$var wire 1 $ saidaALM [15] $end
+$var wire 1 % saidaALM [14] $end
+$var wire 1 & saidaALM [13] $end
+$var wire 1 ' saidaALM [12] $end
+$var wire 1 ( saidaALM [11] $end
+$var wire 1 ) saidaALM [10] $end
+$var wire 1 * saidaALM [9] $end
+$var wire 1 + saidaALM [8] $end
+$var wire 1 , saidaALM [7] $end
+$var wire 1 - saidaALM [6] $end
+$var wire 1 . saidaALM [5] $end
+$var wire 1 / saidaALM [4] $end
+$var wire 1 0 saidaALM [3] $end
+$var wire 1 1 saidaALM [2] $end
+$var wire 1 2 saidaALM [1] $end
+$var wire 1 3 saidaALM [0] $end
+$var wire 1 4 sampler $end
+$scope module i1 $end
+$var wire 1 5 gnd $end
+$var wire 1 6 vcc $end
+$var wire 1 7 unknown $end
+$var tri1 1 8 devclrn $end
+$var tri1 1 9 devpor $end
+$var tri1 1 : devoe $end
+$var wire 1 ; clk~combout $end
+$var wire 1 < clk~clkctrl_outclk $end
+$var wire 1 = Equal0~1_combout $end
+$var wire 1 > saidaALM~0_combout $end
+$var wire 1 ? saidaALM[0]~reg0_regout $end
+$var wire 1 @ saidaALM~1_combout $end
+$var wire 1 A saidaALM[1]~reg0_regout $end
+$var wire 1 B Equal0~0_combout $end
+$var wire 1 C saidaALM~2_combout $end
+$var wire 1 D saidaALM[2]~reg0_regout $end
+$var wire 1 E saidaALM~3_combout $end
+$var wire 1 F saidaALM[3]~reg0_regout $end
+$var wire 1 G saidaALM~4_combout $end
+$var wire 1 H saidaALM[4]~reg0_regout $end
+$var wire 1 I saidaALM~5_combout $end
+$var wire 1 J saidaALM[5]~reg0_regout $end
+$var wire 1 K saidaALM~6_combout $end
+$var wire 1 L saidaALM[6]~reg0_regout $end
+$var wire 1 M saidaALM~7_combout $end
+$var wire 1 N saidaALM[7]~reg0_regout $end
+$var wire 1 O saidaALM~8_combout $end
+$var wire 1 P saidaALM[8]~reg0_regout $end
+$var wire 1 Q saidaALM~9_combout $end
+$var wire 1 R saidaALM[9]~reg0_regout $end
+$var wire 1 S saidaALM~10_combout $end
+$var wire 1 T saidaALM[10]~reg0_regout $end
+$var wire 1 U saidaALM~11_combout $end
+$var wire 1 V saidaALM[11]~reg0_regout $end
+$var wire 1 W saidaALM~12_combout $end
+$var wire 1 X saidaALM[12]~reg0_regout $end
+$var wire 1 Y saidaALM~13_combout $end
+$var wire 1 Z saidaALM[13]~reg0_regout $end
+$var wire 1 [ saidaALM~14_combout $end
+$var wire 1 \ saidaALM[14]~reg0_regout $end
+$var wire 1 ] saidaALM~15_combout $end
+$var wire 1 ^ saidaALM[15]~reg0_regout $end
+$var wire 1 _ contador~combout [7] $end
+$var wire 1 ` contador~combout [6] $end
+$var wire 1 a contador~combout [5] $end
+$var wire 1 b contador~combout [4] $end
+$var wire 1 c contador~combout [3] $end
+$var wire 1 d contador~combout [2] $end
+$var wire 1 e contador~combout [1] $end
+$var wire 1 f contador~combout [0] $end
+$var wire 1 g entrada~combout [15] $end
+$var wire 1 h entrada~combout [14] $end
+$var wire 1 i entrada~combout [13] $end
+$var wire 1 j entrada~combout [12] $end
+$var wire 1 k entrada~combout [11] $end
+$var wire 1 l entrada~combout [10] $end
+$var wire 1 m entrada~combout [9] $end
+$var wire 1 n entrada~combout [8] $end
+$var wire 1 o entrada~combout [7] $end
+$var wire 1 p entrada~combout [6] $end
+$var wire 1 q entrada~combout [5] $end
+$var wire 1 r entrada~combout [4] $end
+$var wire 1 s entrada~combout [3] $end
+$var wire 1 t entrada~combout [2] $end
+$var wire 1 u entrada~combout [1] $end
+$var wire 1 v entrada~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b0 "
+b1111111111111111 #
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+x4
+05
+16
+x7
+18
+19
+1:
+0;
+0<
+1=
+0>
+0?
+0@
+0A
+1B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+1v
+1u
+1t
+1s
+1r
+1q
+1p
+1o
+1n
+1m
+1l
+1k
+1j
+1i
+1h
+1g
+$end
+#60000
+b100 "
+1d
+04
+0B
+1]
+1[
+1Y
+1W
+1U
+1S
+1Q
+1O
+1M
+1K
+1I
+1G
+1E
+1C
+1@
+1>
+#100000
+b110 "
+b111 "
+b11 "
+1f
+1e
+0d
+14
+#140000
+b10 "
+0f
+04
+#180000
+b0 "
+b1 "
+1f
+0e
+14
+#220000
+b0 "
+0f
+04
+1B
+0]
+0[
+0Y
+0W
+0U
+0S
+0Q
+0O
+0M
+0K
+0I
+0G
+0E
+0C
+0@
+0>
+#1000000
