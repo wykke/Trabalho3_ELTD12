@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "07/03/2018 20:35:53"
+// Generated on "07/04/2018 00:52:23"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    SISTEMA_FINAL
 // 
@@ -28,16 +28,14 @@
 `timescale 1 ps/ 1 ps
 module SISTEMA_FINAL_vlg_sample_tst(
 	clk,
-	reset,
 	sampler_tx
 );
 input  clk;
-input  reset;
 output sampler_tx;
 
 reg sample;
 time current_time;
-always @(clk or reset)
+always @(clk)
                                                                                 
 begin                                                 
  if ($realtime > 0)                                   
@@ -720,7 +718,6 @@ module SISTEMA_FINAL_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
-reg reset;
 // wires                                               
 wire [15:0] saida;
 wire [15:0] saidaResto;
@@ -731,7 +728,6 @@ wire sampler;
 SISTEMA_FINAL i1 (
 // port map - connection between master ports and signals/registers   
 	.clk(clk),
-	.reset(reset),
 	.saida(saida),
 	.saidaResto(saidaResto)
 );
@@ -749,17 +745,8 @@ begin
 	clk = #3000 1'b1;
 end 
 
-// reset
-initial
-begin
-	reset = 1'b0;
-	reset = #120000 1'b1;
-	reset = #60000 1'b0;
-end 
-
 SISTEMA_FINAL_vlg_sample_tst tb_sample (
 	.clk(clk),
-	.reset(reset),
 	.sampler_tx(sampler)
 );
 

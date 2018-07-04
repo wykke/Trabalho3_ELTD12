@@ -4,34 +4,34 @@ K3
 cModel Technology
 Z0 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\git\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\modelsim
 vALU
-IhY]1JTCn8NNYc[0SmlTOf0
+I[>Lfm>lMP297h:UN;;bo80
 VMn3I]Hma^J5[f9D9`LEK<1
 Z1 dC:\Users\WyKKe\Documentos\Unifei\2018.1\Eletrônica Digital II\Trabalhos\Trabalho 3\git\Turma2_2017020700_2017001212_2017005113\SISTEMA_FINAL\simulation\modelsim
-Z2 w1530467507
+Z2 w1530670187
 Z3 8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ALU/ALU.v
 Z4 FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ALU/ALU.v
 L0 1
 Z5 OV;L;10.1d;51
 r1
 31
-Z6 !s108 1530663788.595000
+Z6 !s108 1530677256.369000
 Z7 !s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ALU/ALU.v|
 Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ALU|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ALU/ALU.v|
 Z9 o-vlog01compat -work work -O0
 Z10 !s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ALU} -O0
 n@a@l@u
 !i10b 1
-!s100 0I18<XPWhMaZ_GJFFPfX;0
+!s100 gcoiUGOm@[@HUE^b`j;2F1
 !s85 0
 !s101 -O0
 vALU_8bits
-I;JTNjUFMcERC0mZf@kXhX2
+ITog;Gb`_OTRfZ?IFG^Fkn0
 VdVV]8W@7?2ifhmbSU`mHL0
 R1
 R2
 R3
 R4
-L0 15
+L0 14
 R5
 r1
 31
@@ -42,14 +42,14 @@ R9
 R10
 n@a@l@u_8bits
 !i10b 1
-!s100 0mB]2LVii1H9]`5gT<KcG1
+!s100 j52n>jUOgXadYjT@;i4HP3
 !s85 0
 !s101 -O0
 vAntiLoopD
-Io63el1;HaYBE986G3HFl[1
-VZ@CPjFVO`jlf5E[?4mSV32
+I75QdIUlJcVe2]C3f>H8ZJ2
+VZUVb`[5`[`75]04U5HSC?1
 R1
-w1530663717
+w1530672094
 8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopD/AntiLoopD.v
 FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopD/AntiLoopD.v
 L0 1
@@ -59,18 +59,18 @@ r1
 R9
 n@anti@loop@d
 !i10b 1
-!s100 Wb96PJ89GbI80f1jdZ@`j3
+!s100 4fUG:SmgTA^cA=DZM]B5A2
 !s85 0
-!s108 1530663787.489000
+!s108 1530677255.047000
 !s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopD/AntiLoopD.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopD|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopD/AntiLoopD.v|
 !s101 -O0
 !s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopD} -O0
 vAntiLoopM
-I97PFnBE<O4C7=:9LFbhAV1
-V3BRm8bfT<OdX_^:WeSJXf2
+Ib1Va8?Uhkb>K7Vo:>7M_h2
+V0<j`LHb13eRI>>?lXP^N>2
 R1
-w1530663553
+Z11 w1530557939
 8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopM/AntiLoopM.v
 FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopM/AntiLoopM.v
 L0 1
@@ -80,18 +80,18 @@ r1
 R9
 n@anti@loop@m
 !i10b 1
-!s100 3J0@AJd9JYNUX8kcC_I`h3
+!s100 k9>1K7=MdmX<Y6?k;bnoC1
 !s85 0
-!s108 1530663786.588000
+!s108 1530677254.384000
 !s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopM/AntiLoopM.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopM|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopM/AntiLoopM.v|
 !s101 -O0
 !s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopM} -O0
 vControle
-I;;bHLJ=F7Ob:L:M1=2=0j0
-VDaW[HDD;QFdQRNcII]iEW0
+ID2bDP3lVajbiHZYV8WH`f1
+V;Sz2c^ET6hNbUT>cBW6@c0
 R1
-w1530663668
+w1530676245
 8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/Controle/Controle.v
 FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/Controle/Controle.v
 L0 1
@@ -101,18 +101,18 @@ r1
 R9
 n@controle
 !i10b 1
-!s100 B^Zm59GX93zY@GoRgC_hV0
+!s100 El:L3dXD9kh4mPm6?E]0P1
 !s85 0
-!s108 1530663788.348000
+!s108 1530677256.127000
 !s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/Controle/Controle.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/Controle|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/Controle/Controle.v|
 !s101 -O0
 !s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/Controle} -O0
 vregA
-Io@63ZK05PjoHa`FEeP>J52
-VAGhGMhzTlKijF:9435F[G2
+IcRQG4aZ[iW3I[eASDUCVM2
+V09d1RlQ9bn7nZnKMoEQ4J3
 R1
-w1530660318
+R11
 8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regA/regA.v
 FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regA/regA.v
 L0 1
@@ -122,18 +122,18 @@ r1
 R9
 nreg@a
 !i10b 1
-!s100 _Lj^`M`DOh@?V>fcmllj`3
+!s100 4]lk^:n4^IN[V1fgc@CJY3
 !s85 0
-!s108 1530663788.154000
+!s108 1530677255.872000
 !s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regA/regA.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regA|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regA/regA.v|
 !s101 -O0
 !s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regA} -O0
 vregC
-Ik9D>_=UAR[jzbL58@MiF22
-VQ]TG?nhczDScHi;a2QM=A2
+IC]DR9@OjEaO=I]lFOOe8a3
+Vn[Kb[T0fHlQH[IL[Z0Ejn0
 R1
-w1530660294
+R11
 8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regC/regC.v
 FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regC/regC.v
 L0 1
@@ -143,18 +143,18 @@ r1
 R9
 nreg@c
 !i10b 1
-!s100 ?[8WJmRS9RbTnCbDUoNHa1
+!s100 :1I0Cm4JKgX5cem?:;1RP0
 !s85 0
-!s108 1530663787.945000
+!s108 1530677255.581000
 !s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regC/regC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regC|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regC/regC.v|
 !s101 -O0
 !s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/regC} -O0
 vRegResto
-I1n[cOk@2NHFSdUGNL_ETg0
+Ie:b2[?z_9mLoAd=Ne^P[k2
 V@^fZ:;P5f[@S7M@JZ13A<2
 R1
-w1530660398
+R11
 8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/RegResto/RegResto.v
 FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/RegResto/RegResto.v
 L0 1
@@ -164,9 +164,9 @@ r1
 R9
 n@reg@resto
 !i10b 1
-!s100 f@XL2]gTaXa10Z]jXBmc82
+!s100 3iR_oX866G]C8g<em;WZ=1
 !s85 0
-!s108 1530663787.035000
+!s108 1530677254.698000
 !s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/RegResto/RegResto.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/RegResto|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/RegResto/RegResto.v|
 !s101 -O0
@@ -175,7 +175,7 @@ vROM
 IggLfln2^BaR7oG9;D?j040
 VM=E;Aoh>?3:UZH_b@CR1l2
 R1
-w1530558340
+w1530673741
 8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ROM/ROM.v
 FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ROM/ROM.v
 L0 1
@@ -187,16 +187,16 @@ n@r@o@m
 !i10b 1
 !s100 W<Z5CaWZoMUVZlZh2YLMg2
 !s85 0
-!s108 1530663787.683000
+!s108 1530677255.344000
 !s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ROM/ROM.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ROM|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ROM/ROM.v|
 !s101 -O0
 !s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/ROM} -O0
 vSISTEMA_FINAL
-IS_8zG;mmkf=6;Q4nEFofH2
-VQShi2hEP<5o8=@fo2D:Lf0
+IjPQQ8Ioc9X?@[I_R8?94;0
+V@fS=XeM3mGP>fgn^R1]P12
 R1
-w1530663701
+w1530673866
 8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINAL.v
 FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINAL.v
 L0 1
@@ -206,20 +206,20 @@ r1
 R9
 n@s@i@s@t@e@m@a_@f@i@n@a@l
 !i10b 1
-!s100 QdR;dMRPcFkA:MDFM2:9f0
+!s100 @45Ah<H:E;PPTob[5EeR60
 !s85 0
-!s108 1530663788.897000
+!s108 1530677256.702000
 !s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINAL.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/SISTEMA_FINAL.v|
 !s101 -O0
-Z11 !s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL} -O0
+Z12 !s92 -vlog01compat -work work {+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL} -O0
 vSistema_TB
 !i10b 1
-!s100 KL5@SGWW2GMRQYRhd3VE31
-I>_hQR:]PEDB[nn_zEV5Am0
+!s100 _JH0X=62PgP>gC;eO:6zl2
+IQ6E3XgnMZ2=E=;<Rkmbe03
 V7>?a=E0EQ3V9KL0oFi?de2
 R1
-w1530661624
+w1530674480
 8C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v
 FC:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v
 L0 2
@@ -227,10 +227,10 @@ R5
 r1
 !s85 0
 31
-!s108 1530663789.060000
+!s108 1530677256.897000
 !s107 C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL|C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/SISTEMA_FINAL/Sistema_TB.v|
 !s101 -O0
 R9
-R11
+R12
 n@sistema_@t@b

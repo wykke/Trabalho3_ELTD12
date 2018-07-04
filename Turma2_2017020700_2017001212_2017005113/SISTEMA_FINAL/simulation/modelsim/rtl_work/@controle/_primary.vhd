@@ -3,7 +3,6 @@ use verilog.vl_types.all;
 entity Controle is
     port(
         clk             : in     vl_logic;
-        reset           : in     vl_logic;
         FimA            : in     vl_logic;
         FimB            : in     vl_logic;
         FimC            : in     vl_logic;
@@ -16,6 +15,7 @@ entity Controle is
         EnB             : out    vl_logic;
         EnC             : out    vl_logic;
         EnResto         : out    vl_logic;
+        ENALD           : out    vl_logic;
         Op              : out    vl_logic;
         SELM            : out    vl_logic;
         SELD            : out    vl_logic;

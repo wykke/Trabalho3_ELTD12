@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for AntiLoopM
-Mon Jul 02 15:31:52 2018
+Wed Jul 04 01:03:05 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -141,83 +141,83 @@ No paths to report.
 +-------+--------+-----------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Slow Model Minimum Pulse Width: 'clk'                                                                 ;
-+--------+--------------+----------------+------------------+-------+------------+----------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target               ;
-+--------+--------------+----------------+------------------+-------+------------+----------------------+
-; -1.631 ; 1.000        ; 2.631          ; Port Rate        ; clk   ; Rise       ; clk                  ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[0]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[0]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[10]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[10]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[11]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[11]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[12]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[12]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[13]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[13]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[14]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[14]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[15]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[15]~reg0      ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[1]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[1]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[2]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[2]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[3]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[3]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[4]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[4]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[5]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[5]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[6]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[6]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[7]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[7]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[8]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[8]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaA[9]~reg0       ;
-; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[9]~reg0       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[0]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[0]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[10]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[10]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[11]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[11]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[12]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[12]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[13]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[13]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[14]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[14]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[15]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[15]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[1]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[1]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[2]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[2]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[3]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[3]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[4]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[4]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[5]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[5]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[6]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[6]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[7]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[7]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[8]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[8]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[9]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[9]~reg0|clk   ;
-+--------+--------------+----------------+------------------+-------+------------+----------------------+
++--------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clk'                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+; -1.631 ; 1.000        ; 2.631          ; Port Rate        ; clk   ; Rise       ; clk                   ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[0]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[0]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[10]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[10]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[11]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[11]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[12]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[12]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[13]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[13]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[14]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[14]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[15]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[15]~reg0     ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[1]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[1]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[2]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[2]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[3]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[3]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[4]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[4]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[5]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[5]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[6]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[6]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[7]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[7]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[8]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[8]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; High Pulse Width ; clk   ; Rise       ; saidaALM[9]~reg0      ;
+; -0.611 ; 0.500        ; 1.111          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[9]~reg0      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[0]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[0]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[10]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[10]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[11]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[11]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[12]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[12]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[13]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[13]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[14]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[14]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[15]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[15]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[1]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[1]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[2]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[2]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[3]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[3]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[4]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[4]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[5]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[5]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[6]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[6]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[7]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[7]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[8]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[8]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[9]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[9]~reg0|clk  ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -288,54 +288,54 @@ No paths to report.
 +--------------+------------+--------+--------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; saidaA[*]   ; clk        ; 7.272 ; 7.272 ; Rise       ; clk             ;
-;  saidaA[0]  ; clk        ; 6.863 ; 6.863 ; Rise       ; clk             ;
-;  saidaA[1]  ; clk        ; 6.920 ; 6.920 ; Rise       ; clk             ;
-;  saidaA[2]  ; clk        ; 6.890 ; 6.890 ; Rise       ; clk             ;
-;  saidaA[3]  ; clk        ; 6.889 ; 6.889 ; Rise       ; clk             ;
-;  saidaA[4]  ; clk        ; 7.100 ; 7.100 ; Rise       ; clk             ;
-;  saidaA[5]  ; clk        ; 7.272 ; 7.272 ; Rise       ; clk             ;
-;  saidaA[6]  ; clk        ; 6.908 ; 6.908 ; Rise       ; clk             ;
-;  saidaA[7]  ; clk        ; 6.905 ; 6.905 ; Rise       ; clk             ;
-;  saidaA[8]  ; clk        ; 6.948 ; 6.948 ; Rise       ; clk             ;
-;  saidaA[9]  ; clk        ; 6.866 ; 6.866 ; Rise       ; clk             ;
-;  saidaA[10] ; clk        ; 6.560 ; 6.560 ; Rise       ; clk             ;
-;  saidaA[11] ; clk        ; 7.232 ; 7.232 ; Rise       ; clk             ;
-;  saidaA[12] ; clk        ; 6.900 ; 6.900 ; Rise       ; clk             ;
-;  saidaA[13] ; clk        ; 7.254 ; 7.254 ; Rise       ; clk             ;
-;  saidaA[14] ; clk        ; 6.870 ; 6.870 ; Rise       ; clk             ;
-;  saidaA[15] ; clk        ; 6.853 ; 6.853 ; Rise       ; clk             ;
-+-------------+------------+-------+-------+------------+-----------------+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++---------------+------------+-------+-------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------+------------+-------+-------+------------+-----------------+
+; saidaALM[*]   ; clk        ; 7.272 ; 7.272 ; Rise       ; clk             ;
+;  saidaALM[0]  ; clk        ; 6.863 ; 6.863 ; Rise       ; clk             ;
+;  saidaALM[1]  ; clk        ; 6.920 ; 6.920 ; Rise       ; clk             ;
+;  saidaALM[2]  ; clk        ; 6.890 ; 6.890 ; Rise       ; clk             ;
+;  saidaALM[3]  ; clk        ; 6.889 ; 6.889 ; Rise       ; clk             ;
+;  saidaALM[4]  ; clk        ; 7.100 ; 7.100 ; Rise       ; clk             ;
+;  saidaALM[5]  ; clk        ; 7.272 ; 7.272 ; Rise       ; clk             ;
+;  saidaALM[6]  ; clk        ; 6.908 ; 6.908 ; Rise       ; clk             ;
+;  saidaALM[7]  ; clk        ; 6.905 ; 6.905 ; Rise       ; clk             ;
+;  saidaALM[8]  ; clk        ; 6.948 ; 6.948 ; Rise       ; clk             ;
+;  saidaALM[9]  ; clk        ; 6.866 ; 6.866 ; Rise       ; clk             ;
+;  saidaALM[10] ; clk        ; 6.560 ; 6.560 ; Rise       ; clk             ;
+;  saidaALM[11] ; clk        ; 7.232 ; 7.232 ; Rise       ; clk             ;
+;  saidaALM[12] ; clk        ; 6.900 ; 6.900 ; Rise       ; clk             ;
+;  saidaALM[13] ; clk        ; 7.254 ; 7.254 ; Rise       ; clk             ;
+;  saidaALM[14] ; clk        ; 6.870 ; 6.870 ; Rise       ; clk             ;
+;  saidaALM[15] ; clk        ; 6.853 ; 6.853 ; Rise       ; clk             ;
++---------------+------------+-------+-------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                           ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; saidaA[*]   ; clk        ; 6.560 ; 6.560 ; Rise       ; clk             ;
-;  saidaA[0]  ; clk        ; 6.863 ; 6.863 ; Rise       ; clk             ;
-;  saidaA[1]  ; clk        ; 6.920 ; 6.920 ; Rise       ; clk             ;
-;  saidaA[2]  ; clk        ; 6.890 ; 6.890 ; Rise       ; clk             ;
-;  saidaA[3]  ; clk        ; 6.889 ; 6.889 ; Rise       ; clk             ;
-;  saidaA[4]  ; clk        ; 7.100 ; 7.100 ; Rise       ; clk             ;
-;  saidaA[5]  ; clk        ; 7.272 ; 7.272 ; Rise       ; clk             ;
-;  saidaA[6]  ; clk        ; 6.908 ; 6.908 ; Rise       ; clk             ;
-;  saidaA[7]  ; clk        ; 6.905 ; 6.905 ; Rise       ; clk             ;
-;  saidaA[8]  ; clk        ; 6.948 ; 6.948 ; Rise       ; clk             ;
-;  saidaA[9]  ; clk        ; 6.866 ; 6.866 ; Rise       ; clk             ;
-;  saidaA[10] ; clk        ; 6.560 ; 6.560 ; Rise       ; clk             ;
-;  saidaA[11] ; clk        ; 7.232 ; 7.232 ; Rise       ; clk             ;
-;  saidaA[12] ; clk        ; 6.900 ; 6.900 ; Rise       ; clk             ;
-;  saidaA[13] ; clk        ; 7.254 ; 7.254 ; Rise       ; clk             ;
-;  saidaA[14] ; clk        ; 6.870 ; 6.870 ; Rise       ; clk             ;
-;  saidaA[15] ; clk        ; 6.853 ; 6.853 ; Rise       ; clk             ;
-+-------------+------------+-------+-------+------------+-----------------+
++---------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                             ;
++---------------+------------+-------+-------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------+------------+-------+-------+------------+-----------------+
+; saidaALM[*]   ; clk        ; 6.560 ; 6.560 ; Rise       ; clk             ;
+;  saidaALM[0]  ; clk        ; 6.863 ; 6.863 ; Rise       ; clk             ;
+;  saidaALM[1]  ; clk        ; 6.920 ; 6.920 ; Rise       ; clk             ;
+;  saidaALM[2]  ; clk        ; 6.890 ; 6.890 ; Rise       ; clk             ;
+;  saidaALM[3]  ; clk        ; 6.889 ; 6.889 ; Rise       ; clk             ;
+;  saidaALM[4]  ; clk        ; 7.100 ; 7.100 ; Rise       ; clk             ;
+;  saidaALM[5]  ; clk        ; 7.272 ; 7.272 ; Rise       ; clk             ;
+;  saidaALM[6]  ; clk        ; 6.908 ; 6.908 ; Rise       ; clk             ;
+;  saidaALM[7]  ; clk        ; 6.905 ; 6.905 ; Rise       ; clk             ;
+;  saidaALM[8]  ; clk        ; 6.948 ; 6.948 ; Rise       ; clk             ;
+;  saidaALM[9]  ; clk        ; 6.866 ; 6.866 ; Rise       ; clk             ;
+;  saidaALM[10] ; clk        ; 6.560 ; 6.560 ; Rise       ; clk             ;
+;  saidaALM[11] ; clk        ; 7.232 ; 7.232 ; Rise       ; clk             ;
+;  saidaALM[12] ; clk        ; 6.900 ; 6.900 ; Rise       ; clk             ;
+;  saidaALM[13] ; clk        ; 7.254 ; 7.254 ; Rise       ; clk             ;
+;  saidaALM[14] ; clk        ; 6.870 ; 6.870 ; Rise       ; clk             ;
+;  saidaALM[15] ; clk        ; 6.853 ; 6.853 ; Rise       ; clk             ;
++---------------+------------+-------+-------+------------+-----------------+
 
 
 ----------------------------
@@ -371,83 +371,83 @@ No paths to report.
 +-------+--------+-----------------------+
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Fast Model Minimum Pulse Width: 'clk'                                                                 ;
-+--------+--------------+----------------+------------------+-------+------------+----------------------+
-; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target               ;
-+--------+--------------+----------------+------------------+-------+------------+----------------------+
-; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                  ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[0]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[0]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[10]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[10]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[11]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[11]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[12]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[12]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[13]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[13]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[14]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[14]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[15]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[15]~reg0      ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[1]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[1]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[2]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[2]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[3]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[3]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[4]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[4]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[5]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[5]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[6]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[6]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[7]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[7]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[8]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[8]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[9]~reg0       ;
-; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[9]~reg0       ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout          ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0] ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[0]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[0]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[10]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[10]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[11]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[11]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[12]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[12]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[13]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[13]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[14]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[14]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[15]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[15]~reg0|clk  ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[1]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[1]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[2]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[2]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[3]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[3]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[4]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[4]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[5]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[5]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[6]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[6]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[7]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[7]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[8]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[8]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaA[9]~reg0|clk   ;
-; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaA[9]~reg0|clk   ;
-+--------+--------------+----------------+------------------+-------+------------+----------------------+
++--------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clk'                                                                  ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clk   ; Rise       ; clk                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[0]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[0]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[10]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[10]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[11]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[11]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[12]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[12]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[13]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[13]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[14]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[14]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[15]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[15]~reg0     ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[1]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[1]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[2]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[2]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[3]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[3]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[4]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[4]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[5]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[5]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[6]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[6]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[7]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[7]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[8]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[8]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[9]~reg0      ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[9]~reg0      ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk|combout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|inclk[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|inclk[0]  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; clk~clkctrl|outclk    ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; clk~clkctrl|outclk    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[0]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[0]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[10]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[10]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[11]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[11]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[12]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[12]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[13]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[13]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[14]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[14]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[15]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[15]~reg0|clk ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[1]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[1]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[2]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[2]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[3]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[3]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[4]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[4]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[5]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[5]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[6]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[6]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[7]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[7]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[8]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[8]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clk   ; Rise       ; saidaALM[9]~reg0|clk  ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clk   ; Rise       ; saidaALM[9]~reg0|clk  ;
++--------+--------------+----------------+------------------+-------+------------+-----------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -518,54 +518,54 @@ No paths to report.
 +--------------+------------+--------+--------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; saidaA[*]   ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
-;  saidaA[0]  ; clk        ; 3.715 ; 3.715 ; Rise       ; clk             ;
-;  saidaA[1]  ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
-;  saidaA[2]  ; clk        ; 3.736 ; 3.736 ; Rise       ; clk             ;
-;  saidaA[3]  ; clk        ; 3.721 ; 3.721 ; Rise       ; clk             ;
-;  saidaA[4]  ; clk        ; 3.801 ; 3.801 ; Rise       ; clk             ;
-;  saidaA[5]  ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
-;  saidaA[6]  ; clk        ; 3.740 ; 3.740 ; Rise       ; clk             ;
-;  saidaA[7]  ; clk        ; 3.743 ; 3.743 ; Rise       ; clk             ;
-;  saidaA[8]  ; clk        ; 3.775 ; 3.775 ; Rise       ; clk             ;
-;  saidaA[9]  ; clk        ; 3.713 ; 3.713 ; Rise       ; clk             ;
-;  saidaA[10] ; clk        ; 3.604 ; 3.604 ; Rise       ; clk             ;
-;  saidaA[11] ; clk        ; 3.871 ; 3.871 ; Rise       ; clk             ;
-;  saidaA[12] ; clk        ; 3.731 ; 3.731 ; Rise       ; clk             ;
-;  saidaA[13] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
-;  saidaA[14] ; clk        ; 3.714 ; 3.714 ; Rise       ; clk             ;
-;  saidaA[15] ; clk        ; 3.704 ; 3.704 ; Rise       ; clk             ;
-+-------------+------------+-------+-------+------------+-----------------+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++---------------+------------+-------+-------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------+------------+-------+-------+------------+-----------------+
+; saidaALM[*]   ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
+;  saidaALM[0]  ; clk        ; 3.715 ; 3.715 ; Rise       ; clk             ;
+;  saidaALM[1]  ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
+;  saidaALM[2]  ; clk        ; 3.736 ; 3.736 ; Rise       ; clk             ;
+;  saidaALM[3]  ; clk        ; 3.721 ; 3.721 ; Rise       ; clk             ;
+;  saidaALM[4]  ; clk        ; 3.801 ; 3.801 ; Rise       ; clk             ;
+;  saidaALM[5]  ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
+;  saidaALM[6]  ; clk        ; 3.740 ; 3.740 ; Rise       ; clk             ;
+;  saidaALM[7]  ; clk        ; 3.743 ; 3.743 ; Rise       ; clk             ;
+;  saidaALM[8]  ; clk        ; 3.775 ; 3.775 ; Rise       ; clk             ;
+;  saidaALM[9]  ; clk        ; 3.713 ; 3.713 ; Rise       ; clk             ;
+;  saidaALM[10] ; clk        ; 3.604 ; 3.604 ; Rise       ; clk             ;
+;  saidaALM[11] ; clk        ; 3.871 ; 3.871 ; Rise       ; clk             ;
+;  saidaALM[12] ; clk        ; 3.731 ; 3.731 ; Rise       ; clk             ;
+;  saidaALM[13] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
+;  saidaALM[14] ; clk        ; 3.714 ; 3.714 ; Rise       ; clk             ;
+;  saidaALM[15] ; clk        ; 3.704 ; 3.704 ; Rise       ; clk             ;
++---------------+------------+-------+-------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                           ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; saidaA[*]   ; clk        ; 3.604 ; 3.604 ; Rise       ; clk             ;
-;  saidaA[0]  ; clk        ; 3.715 ; 3.715 ; Rise       ; clk             ;
-;  saidaA[1]  ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
-;  saidaA[2]  ; clk        ; 3.736 ; 3.736 ; Rise       ; clk             ;
-;  saidaA[3]  ; clk        ; 3.721 ; 3.721 ; Rise       ; clk             ;
-;  saidaA[4]  ; clk        ; 3.801 ; 3.801 ; Rise       ; clk             ;
-;  saidaA[5]  ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
-;  saidaA[6]  ; clk        ; 3.740 ; 3.740 ; Rise       ; clk             ;
-;  saidaA[7]  ; clk        ; 3.743 ; 3.743 ; Rise       ; clk             ;
-;  saidaA[8]  ; clk        ; 3.775 ; 3.775 ; Rise       ; clk             ;
-;  saidaA[9]  ; clk        ; 3.713 ; 3.713 ; Rise       ; clk             ;
-;  saidaA[10] ; clk        ; 3.604 ; 3.604 ; Rise       ; clk             ;
-;  saidaA[11] ; clk        ; 3.871 ; 3.871 ; Rise       ; clk             ;
-;  saidaA[12] ; clk        ; 3.731 ; 3.731 ; Rise       ; clk             ;
-;  saidaA[13] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
-;  saidaA[14] ; clk        ; 3.714 ; 3.714 ; Rise       ; clk             ;
-;  saidaA[15] ; clk        ; 3.704 ; 3.704 ; Rise       ; clk             ;
-+-------------+------------+-------+-------+------------+-----------------+
++---------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                             ;
++---------------+------------+-------+-------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------+------------+-------+-------+------------+-----------------+
+; saidaALM[*]   ; clk        ; 3.604 ; 3.604 ; Rise       ; clk             ;
+;  saidaALM[0]  ; clk        ; 3.715 ; 3.715 ; Rise       ; clk             ;
+;  saidaALM[1]  ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
+;  saidaALM[2]  ; clk        ; 3.736 ; 3.736 ; Rise       ; clk             ;
+;  saidaALM[3]  ; clk        ; 3.721 ; 3.721 ; Rise       ; clk             ;
+;  saidaALM[4]  ; clk        ; 3.801 ; 3.801 ; Rise       ; clk             ;
+;  saidaALM[5]  ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
+;  saidaALM[6]  ; clk        ; 3.740 ; 3.740 ; Rise       ; clk             ;
+;  saidaALM[7]  ; clk        ; 3.743 ; 3.743 ; Rise       ; clk             ;
+;  saidaALM[8]  ; clk        ; 3.775 ; 3.775 ; Rise       ; clk             ;
+;  saidaALM[9]  ; clk        ; 3.713 ; 3.713 ; Rise       ; clk             ;
+;  saidaALM[10] ; clk        ; 3.604 ; 3.604 ; Rise       ; clk             ;
+;  saidaALM[11] ; clk        ; 3.871 ; 3.871 ; Rise       ; clk             ;
+;  saidaALM[12] ; clk        ; 3.731 ; 3.731 ; Rise       ; clk             ;
+;  saidaALM[13] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
+;  saidaALM[14] ; clk        ; 3.714 ; 3.714 ; Rise       ; clk             ;
+;  saidaALM[15] ; clk        ; 3.704 ; 3.704 ; Rise       ; clk             ;
++---------------+------------+-------+-------+------------+-----------------+
 
 
 +----------------------------------------------------------------------------+
@@ -648,54 +648,54 @@ No paths to report.
 +--------------+------------+--------+--------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Clock to Output Times                                                   ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; saidaA[*]   ; clk        ; 7.272 ; 7.272 ; Rise       ; clk             ;
-;  saidaA[0]  ; clk        ; 6.863 ; 6.863 ; Rise       ; clk             ;
-;  saidaA[1]  ; clk        ; 6.920 ; 6.920 ; Rise       ; clk             ;
-;  saidaA[2]  ; clk        ; 6.890 ; 6.890 ; Rise       ; clk             ;
-;  saidaA[3]  ; clk        ; 6.889 ; 6.889 ; Rise       ; clk             ;
-;  saidaA[4]  ; clk        ; 7.100 ; 7.100 ; Rise       ; clk             ;
-;  saidaA[5]  ; clk        ; 7.272 ; 7.272 ; Rise       ; clk             ;
-;  saidaA[6]  ; clk        ; 6.908 ; 6.908 ; Rise       ; clk             ;
-;  saidaA[7]  ; clk        ; 6.905 ; 6.905 ; Rise       ; clk             ;
-;  saidaA[8]  ; clk        ; 6.948 ; 6.948 ; Rise       ; clk             ;
-;  saidaA[9]  ; clk        ; 6.866 ; 6.866 ; Rise       ; clk             ;
-;  saidaA[10] ; clk        ; 6.560 ; 6.560 ; Rise       ; clk             ;
-;  saidaA[11] ; clk        ; 7.232 ; 7.232 ; Rise       ; clk             ;
-;  saidaA[12] ; clk        ; 6.900 ; 6.900 ; Rise       ; clk             ;
-;  saidaA[13] ; clk        ; 7.254 ; 7.254 ; Rise       ; clk             ;
-;  saidaA[14] ; clk        ; 6.870 ; 6.870 ; Rise       ; clk             ;
-;  saidaA[15] ; clk        ; 6.853 ; 6.853 ; Rise       ; clk             ;
-+-------------+------------+-------+-------+------------+-----------------+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++---------------+------------+-------+-------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------+------------+-------+-------+------------+-----------------+
+; saidaALM[*]   ; clk        ; 7.272 ; 7.272 ; Rise       ; clk             ;
+;  saidaALM[0]  ; clk        ; 6.863 ; 6.863 ; Rise       ; clk             ;
+;  saidaALM[1]  ; clk        ; 6.920 ; 6.920 ; Rise       ; clk             ;
+;  saidaALM[2]  ; clk        ; 6.890 ; 6.890 ; Rise       ; clk             ;
+;  saidaALM[3]  ; clk        ; 6.889 ; 6.889 ; Rise       ; clk             ;
+;  saidaALM[4]  ; clk        ; 7.100 ; 7.100 ; Rise       ; clk             ;
+;  saidaALM[5]  ; clk        ; 7.272 ; 7.272 ; Rise       ; clk             ;
+;  saidaALM[6]  ; clk        ; 6.908 ; 6.908 ; Rise       ; clk             ;
+;  saidaALM[7]  ; clk        ; 6.905 ; 6.905 ; Rise       ; clk             ;
+;  saidaALM[8]  ; clk        ; 6.948 ; 6.948 ; Rise       ; clk             ;
+;  saidaALM[9]  ; clk        ; 6.866 ; 6.866 ; Rise       ; clk             ;
+;  saidaALM[10] ; clk        ; 6.560 ; 6.560 ; Rise       ; clk             ;
+;  saidaALM[11] ; clk        ; 7.232 ; 7.232 ; Rise       ; clk             ;
+;  saidaALM[12] ; clk        ; 6.900 ; 6.900 ; Rise       ; clk             ;
+;  saidaALM[13] ; clk        ; 7.254 ; 7.254 ; Rise       ; clk             ;
+;  saidaALM[14] ; clk        ; 6.870 ; 6.870 ; Rise       ; clk             ;
+;  saidaALM[15] ; clk        ; 6.853 ; 6.853 ; Rise       ; clk             ;
++---------------+------------+-------+-------+------------+-----------------+
 
 
-+-------------------------------------------------------------------------+
-; Minimum Clock to Output Times                                           ;
-+-------------+------------+-------+-------+------------+-----------------+
-; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
-+-------------+------------+-------+-------+------------+-----------------+
-; saidaA[*]   ; clk        ; 3.604 ; 3.604 ; Rise       ; clk             ;
-;  saidaA[0]  ; clk        ; 3.715 ; 3.715 ; Rise       ; clk             ;
-;  saidaA[1]  ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
-;  saidaA[2]  ; clk        ; 3.736 ; 3.736 ; Rise       ; clk             ;
-;  saidaA[3]  ; clk        ; 3.721 ; 3.721 ; Rise       ; clk             ;
-;  saidaA[4]  ; clk        ; 3.801 ; 3.801 ; Rise       ; clk             ;
-;  saidaA[5]  ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
-;  saidaA[6]  ; clk        ; 3.740 ; 3.740 ; Rise       ; clk             ;
-;  saidaA[7]  ; clk        ; 3.743 ; 3.743 ; Rise       ; clk             ;
-;  saidaA[8]  ; clk        ; 3.775 ; 3.775 ; Rise       ; clk             ;
-;  saidaA[9]  ; clk        ; 3.713 ; 3.713 ; Rise       ; clk             ;
-;  saidaA[10] ; clk        ; 3.604 ; 3.604 ; Rise       ; clk             ;
-;  saidaA[11] ; clk        ; 3.871 ; 3.871 ; Rise       ; clk             ;
-;  saidaA[12] ; clk        ; 3.731 ; 3.731 ; Rise       ; clk             ;
-;  saidaA[13] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
-;  saidaA[14] ; clk        ; 3.714 ; 3.714 ; Rise       ; clk             ;
-;  saidaA[15] ; clk        ; 3.704 ; 3.704 ; Rise       ; clk             ;
-+-------------+------------+-------+-------+------------+-----------------+
++---------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                             ;
++---------------+------------+-------+-------+------------+-----------------+
+; Data Port     ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++---------------+------------+-------+-------+------------+-----------------+
+; saidaALM[*]   ; clk        ; 3.604 ; 3.604 ; Rise       ; clk             ;
+;  saidaALM[0]  ; clk        ; 3.715 ; 3.715 ; Rise       ; clk             ;
+;  saidaALM[1]  ; clk        ; 3.752 ; 3.752 ; Rise       ; clk             ;
+;  saidaALM[2]  ; clk        ; 3.736 ; 3.736 ; Rise       ; clk             ;
+;  saidaALM[3]  ; clk        ; 3.721 ; 3.721 ; Rise       ; clk             ;
+;  saidaALM[4]  ; clk        ; 3.801 ; 3.801 ; Rise       ; clk             ;
+;  saidaALM[5]  ; clk        ; 3.895 ; 3.895 ; Rise       ; clk             ;
+;  saidaALM[6]  ; clk        ; 3.740 ; 3.740 ; Rise       ; clk             ;
+;  saidaALM[7]  ; clk        ; 3.743 ; 3.743 ; Rise       ; clk             ;
+;  saidaALM[8]  ; clk        ; 3.775 ; 3.775 ; Rise       ; clk             ;
+;  saidaALM[9]  ; clk        ; 3.713 ; 3.713 ; Rise       ; clk             ;
+;  saidaALM[10] ; clk        ; 3.604 ; 3.604 ; Rise       ; clk             ;
+;  saidaALM[11] ; clk        ; 3.871 ; 3.871 ; Rise       ; clk             ;
+;  saidaALM[12] ; clk        ; 3.731 ; 3.731 ; Rise       ; clk             ;
+;  saidaALM[13] ; clk        ; 3.889 ; 3.889 ; Rise       ; clk             ;
+;  saidaALM[14] ; clk        ; 3.714 ; 3.714 ; Rise       ; clk             ;
+;  saidaALM[15] ; clk        ; 3.704 ; 3.704 ; Rise       ; clk             ;
++---------------+------------+-------+-------+------------+-----------------+
 
 
 -------------------
@@ -736,7 +736,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Mon Jul 02 15:31:50 2018
+    Info: Processing started: Wed Jul 04 01:03:03 2018
 Info: Command: quartus_sta AntiLoopM -c AntiLoopM
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 4 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 2 of the 2 physical processors detected instead.
@@ -773,9 +773,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4567 megabytes
-    Info: Processing ended: Mon Jul 02 15:31:52 2018
+    Info: Peak virtual memory: 4562 megabytes
+    Info: Processing ended: Wed Jul 04 01:03:05 2018
     Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Total CPU time (on all processors): 00:00:02
 
 

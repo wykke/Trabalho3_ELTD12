@@ -1,0 +1,797 @@
+$comment
+	File created using the following command:
+		vcd file RegResto.msim.vcd -direction
+$end
+$date
+	Wed Jul 04 01:06:00 2018
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module RegResto_vlg_vec_tst $end
+$var reg 1 ! EnResto $end
+$var reg 1 " clk $end
+$var reg 16 # entrada [15:0] $end
+$var reg 1 $ resetResto $end
+$var wire 1 % FimResto $end
+$var wire 1 & saidaResto [15] $end
+$var wire 1 ' saidaResto [14] $end
+$var wire 1 ( saidaResto [13] $end
+$var wire 1 ) saidaResto [12] $end
+$var wire 1 * saidaResto [11] $end
+$var wire 1 + saidaResto [10] $end
+$var wire 1 , saidaResto [9] $end
+$var wire 1 - saidaResto [8] $end
+$var wire 1 . saidaResto [7] $end
+$var wire 1 / saidaResto [6] $end
+$var wire 1 0 saidaResto [5] $end
+$var wire 1 1 saidaResto [4] $end
+$var wire 1 2 saidaResto [3] $end
+$var wire 1 3 saidaResto [2] $end
+$var wire 1 4 saidaResto [1] $end
+$var wire 1 5 saidaResto [0] $end
+$var wire 1 6 sampler $end
+$scope module i1 $end
+$var wire 1 7 gnd $end
+$var wire 1 8 vcc $end
+$var wire 1 9 unknown $end
+$var tri1 1 : devclrn $end
+$var tri1 1 ; devpor $end
+$var tri1 1 < devoe $end
+$var wire 1 = clk~combout $end
+$var wire 1 > clk~clkctrl_outclk $end
+$var wire 1 ? EnResto~combout $end
+$var wire 1 @ FimResto~reg0feeder_combout $end
+$var wire 1 A resetResto~combout $end
+$var wire 1 B FimResto~reg0_regout $end
+$var wire 1 C saidaResto~0_combout $end
+$var wire 1 D saidaResto[0]~1_combout $end
+$var wire 1 E saidaResto[0]~reg0_regout $end
+$var wire 1 F saidaResto~2_combout $end
+$var wire 1 G saidaResto[1]~reg0_regout $end
+$var wire 1 H saidaResto~3_combout $end
+$var wire 1 I saidaResto[2]~reg0_regout $end
+$var wire 1 J saidaResto~4_combout $end
+$var wire 1 K saidaResto[3]~reg0_regout $end
+$var wire 1 L saidaResto~5_combout $end
+$var wire 1 M saidaResto[4]~reg0_regout $end
+$var wire 1 N saidaResto~6_combout $end
+$var wire 1 O saidaResto[5]~reg0_regout $end
+$var wire 1 P saidaResto~7_combout $end
+$var wire 1 Q saidaResto[6]~reg0_regout $end
+$var wire 1 R saidaResto~8_combout $end
+$var wire 1 S saidaResto[7]~reg0_regout $end
+$var wire 1 T saidaResto~9_combout $end
+$var wire 1 U saidaResto[8]~reg0_regout $end
+$var wire 1 V saidaResto~10_combout $end
+$var wire 1 W saidaResto[9]~reg0_regout $end
+$var wire 1 X saidaResto~11_combout $end
+$var wire 1 Y saidaResto[10]~reg0_regout $end
+$var wire 1 Z saidaResto~12_combout $end
+$var wire 1 [ saidaResto[11]~reg0_regout $end
+$var wire 1 \ saidaResto~13_combout $end
+$var wire 1 ] saidaResto[12]~reg0_regout $end
+$var wire 1 ^ saidaResto~14_combout $end
+$var wire 1 _ saidaResto[13]~reg0_regout $end
+$var wire 1 ` saidaResto~15_combout $end
+$var wire 1 a saidaResto[14]~reg0_regout $end
+$var wire 1 b saidaResto~16_combout $end
+$var wire 1 c saidaResto[15]~reg0_regout $end
+$var wire 1 d entrada~combout [15] $end
+$var wire 1 e entrada~combout [14] $end
+$var wire 1 f entrada~combout [13] $end
+$var wire 1 g entrada~combout [12] $end
+$var wire 1 h entrada~combout [11] $end
+$var wire 1 i entrada~combout [10] $end
+$var wire 1 j entrada~combout [9] $end
+$var wire 1 k entrada~combout [8] $end
+$var wire 1 l entrada~combout [7] $end
+$var wire 1 m entrada~combout [6] $end
+$var wire 1 n entrada~combout [5] $end
+$var wire 1 o entrada~combout [4] $end
+$var wire 1 p entrada~combout [3] $end
+$var wire 1 q entrada~combout [2] $end
+$var wire 1 r entrada~combout [1] $end
+$var wire 1 s entrada~combout [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+b1111111111111111 #
+0$
+0%
+05
+04
+03
+02
+01
+00
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+x6
+07
+18
+x9
+1:
+1;
+1<
+0=
+0>
+0?
+0@
+0A
+0B
+1C
+0D
+0E
+1F
+0G
+1H
+0I
+1J
+0K
+1L
+0M
+1N
+0O
+1P
+0Q
+1R
+0S
+1T
+0U
+1V
+0W
+1X
+0Y
+1Z
+0[
+1\
+0]
+1^
+0_
+1`
+0a
+1b
+0c
+1s
+1r
+1q
+1p
+1o
+1n
+1m
+1l
+1k
+1j
+1i
+1h
+1g
+1f
+1e
+1d
+$end
+#10000
+1"
+1=
+1>
+06
+#20000
+0"
+0=
+0>
+16
+#30000
+1"
+1=
+1>
+06
+#40000
+0"
+0=
+0>
+16
+#50000
+1"
+1=
+1>
+06
+#60000
+1!
+0"
+1?
+0=
+0>
+16
+1D
+1@
+#70000
+1"
+1=
+1>
+06
+1c
+1a
+1_
+1]
+1[
+1Y
+1W
+1U
+1S
+1Q
+1O
+1M
+1K
+1I
+1G
+1E
+1B
+1&
+1'
+1(
+1)
+1*
+1+
+1,
+1-
+1.
+1/
+10
+11
+12
+13
+14
+15
+1%
+#80000
+0"
+0=
+0>
+16
+#90000
+1"
+1=
+1>
+06
+#100000
+0"
+0=
+0>
+16
+#110000
+1"
+1=
+1>
+06
+#120000
+0"
+0=
+0>
+16
+#130000
+1"
+1=
+1>
+06
+#140000
+0"
+0=
+0>
+16
+#150000
+1"
+1=
+1>
+06
+#160000
+0!
+0"
+0?
+0=
+0>
+16
+0D
+0@
+#170000
+1"
+1=
+1>
+06
+0B
+0%
+#180000
+0"
+0=
+0>
+16
+#190000
+1"
+1=
+1>
+06
+#200000
+0"
+0=
+0>
+16
+#210000
+1"
+1=
+1>
+06
+#220000
+0"
+0=
+0>
+16
+#230000
+1"
+1=
+1>
+06
+#240000
+0"
+0=
+0>
+16
+#250000
+1"
+1=
+1>
+06
+#260000
+0"
+0=
+0>
+16
+#270000
+1"
+1=
+1>
+06
+#280000
+0"
+0=
+0>
+16
+#290000
+1"
+1=
+1>
+06
+#300000
+0"
+0=
+0>
+16
+#310000
+1"
+1=
+1>
+06
+#320000
+0"
+0=
+0>
+16
+#330000
+1"
+1=
+1>
+06
+#340000
+0"
+0=
+0>
+16
+#350000
+1"
+1=
+1>
+06
+#360000
+0"
+0=
+0>
+16
+#370000
+1"
+1=
+1>
+06
+#380000
+0"
+0=
+0>
+16
+#390000
+1"
+1=
+1>
+06
+#400000
+0"
+0=
+0>
+16
+#410000
+1"
+1=
+1>
+06
+#420000
+0"
+0=
+0>
+16
+#430000
+1"
+1=
+1>
+06
+#440000
+0"
+0=
+0>
+16
+#450000
+1"
+1=
+1>
+06
+#460000
+0"
+0=
+0>
+16
+#470000
+1"
+1=
+1>
+06
+#480000
+0"
+0=
+0>
+16
+#490000
+1"
+1=
+1>
+06
+#500000
+0"
+0=
+0>
+16
+#510000
+1"
+1=
+1>
+06
+#520000
+0"
+0=
+0>
+16
+#530000
+1"
+1=
+1>
+06
+#540000
+0"
+0=
+0>
+16
+#550000
+1"
+1=
+1>
+06
+#560000
+1$
+0"
+1A
+0=
+0>
+16
+0b
+0`
+0^
+0\
+0Z
+0X
+0V
+0T
+0R
+0P
+0N
+0L
+0J
+0H
+0F
+1D
+0C
+#570000
+1"
+1=
+1>
+06
+0c
+0a
+0_
+0]
+0[
+0Y
+0W
+0U
+0S
+0Q
+0O
+0M
+0K
+0I
+0G
+0E
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+03
+04
+05
+#580000
+0"
+0=
+0>
+16
+#590000
+1"
+1=
+1>
+06
+#600000
+0"
+0=
+0>
+16
+#610000
+1"
+1=
+1>
+06
+#620000
+0"
+0=
+0>
+16
+#630000
+1"
+1=
+1>
+06
+#640000
+0"
+0=
+0>
+16
+#650000
+1"
+1=
+1>
+06
+#660000
+0$
+0"
+0A
+0=
+0>
+16
+1b
+1`
+1^
+1\
+1Z
+1X
+1V
+1T
+1R
+1P
+1N
+1L
+1J
+1H
+1F
+0D
+1C
+#670000
+1"
+1=
+1>
+06
+#680000
+0"
+0=
+0>
+16
+#690000
+1"
+1=
+1>
+06
+#700000
+0"
+0=
+0>
+16
+#710000
+1"
+1=
+1>
+06
+#720000
+0"
+0=
+0>
+16
+#730000
+1"
+1=
+1>
+06
+#740000
+0"
+0=
+0>
+16
+#750000
+1"
+1=
+1>
+06
+#760000
+0"
+0=
+0>
+16
+#770000
+1"
+1=
+1>
+06
+#780000
+0"
+0=
+0>
+16
+#790000
+1"
+1=
+1>
+06
+#800000
+0"
+0=
+0>
+16
+#810000
+1"
+1=
+1>
+06
+#820000
+0"
+0=
+0>
+16
+#830000
+1"
+1=
+1>
+06
+#840000
+0"
+0=
+0>
+16
+#850000
+1"
+1=
+1>
+06
+#860000
+0"
+0=
+0>
+16
+#870000
+1"
+1=
+1>
+06
+#880000
+0"
+0=
+0>
+16
+#890000
+1"
+1=
+1>
+06
+#900000
+0"
+0=
+0>
+16
+#910000
+1"
+1=
+1>
+06
+#920000
+0"
+0=
+0>
+16
+#930000
+1"
+1=
+1>
+06
+#940000
+0"
+0=
+0>
+16
+#950000
+1"
+1=
+1>
+06
+#960000
+0"
+0=
+0>
+16
+#970000
+1"
+1=
+1>
+06
+#980000
+0"
+0=
+0>
+16
+#990000
+1"
+1=
+1>
+06
+#1000000

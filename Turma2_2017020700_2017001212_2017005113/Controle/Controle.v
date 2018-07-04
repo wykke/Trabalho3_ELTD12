@@ -1,7 +1,7 @@
-module Controle(clk, reset, FimA, FimB, FimC, FimResto, A, B, Quociente, Endereco, EnA, EnB, EnC, EnResto, Op, SELM, SELD, contador, menor, resetResto);
-input FimA, FimB, FimC, FimResto, clk, reset;
+module Controle(clk, FimA, FimB, FimC, FimResto, A, B, Quociente, Endereco, EnA, EnB, EnC, EnResto, ENALD, Op, SELM, SELD, contador, menor, resetResto);
+input FimA, FimB, FimC, FimResto, clk;
 input [15:0] A, B, Quociente;
-output reg EnA, EnB, EnC, EnResto, Op, SELM, SELD, menor, resetResto;
+output reg EnA, EnB, EnC, ENALD, EnResto, Op, SELM, SELD, menor, resetResto;
 output reg [7:0] contador;
 output reg [8:0] Endereco;
 
@@ -21,16 +21,7 @@ always @(*)
 // tarefas de cada estado, adicionado clock para facilitar a implementação e não gastar portas logicas
 // negedge para alternar com os registradores que são posedge
 always @(negedge clk) begin
-	
-	// resetar para iniciar o ciclo
-	if(reset) begin
-		Op<=1'b1; SELM<=1'b0; DIV<=1'b0; Endereco<=9'd1; SELD<=1'b0; // variaveis de estado
-		state<=s1;
-		multp<=1'b0; menor<=1'b0; contador<=8'b0; // variaveis de multiplicação e divisão
-		EnC<=1'b0; EnB<=1'b0; EnResto<=1'b0; resetResto<=1'b0; EnA<=1'b1; // variaveis de registradores
-		
-	end else
-	
+
 	// fazer assim que ler o registrador A
 	if(FimA) begin
 		case(state)
@@ -84,7 +75,7 @@ always @(negedge clk) begin
 			// caso seja divisao
 			else begin
 				// vendo se A = 0, ou A < B
-				if((A==8'b0)||(A<B)) begin
+				if(((A==8'b0)||(A<B))&&(multp==1'b0)) begin
 					contador<=8'd0;
 					menor<=1'b1;
 					SELD<=1'b1;
@@ -111,6 +102,7 @@ always @(negedge clk) begin
 						// se nao pode mais
 						else begin
 							multp<=1'b0;
+							ENALD<=1'b0;
 							EnB<=1'b0;
 							EnResto<=1'b1;
 						end
@@ -150,6 +142,7 @@ always @(negedge clk) begin
 		EnC<=1'b0;
 		SELD<=1'b0;
 		menor<=1'b0;
+		ENALD<=1'b1;
 		// ir para proximo estado
 		state<=next_state;
 		
@@ -158,8 +151,8 @@ always @(negedge clk) begin
 		state<=s1;
 		EnC<=1'b1;
 		multp<=1'b0;
-		SELD<=1'b0;
 		menor<=1'b0;
+		ENALD<=1'b1;
 	end
 end
 

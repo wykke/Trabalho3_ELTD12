@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Jul 01 22:19:26 2018
+Analysis & Synthesis Status : Successful - Wed Jul 04 01:05:22 2018
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version
 Revision Name : RegResto
 Top-level Entity Name : RegResto
 Family : Cyclone II
-Total logic elements : 17
-    Total combinational functions : 0
+Total logic elements : 18
+    Total combinational functions : 17
     Dedicated logic registers : 17
 Total registers : 17
-Total pins : 35
+Total pins : 36
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

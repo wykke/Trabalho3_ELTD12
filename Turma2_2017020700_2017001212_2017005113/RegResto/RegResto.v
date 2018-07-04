@@ -6,10 +6,8 @@ module RegResto(entrada, EnResto, clk, resetResto, FimResto, saidaResto);
 	output reg [15:0] saidaResto;
 
 always @(posedge clk) begin
-	if(resetResto) begin
+	if(resetResto)
 		saidaResto<=16'b0;
-		FimResto<=1'b0;
-	end
 		else
 			if (EnResto == 1'b1) begin
 				saidaResto <= entrada; 

@@ -1,5 +1,5 @@
 Flow report for AntiLoopM
-Mon Jul 02 15:31:54 2018
+Wed Jul 04 01:03:17 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Flow Summary                                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Flow Status                        ; Successful - Mon Jul 02 15:31:54 2018            ;
+; Flow Status                        ; Successful - Wed Jul 04 01:03:17 2018            ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; AntiLoopM                                        ;
 ; Top-level Entity Name              ; AntiLoopM                                        ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/02/2018 15:31:40 ;
+; Start date & time ; 07/04/2018 01:02:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; AntiLoopM           ;
 +-------------------+---------------------+
@@ -75,7 +75,8 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 110073159149891.153055629948328 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 110073159149891.153067696913096 ; --            ; --          ; --             ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                              ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -92,12 +93,14 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4608 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:05     ; 1.3                     ; 4941 MB             ; 00:00:05                           ;
-; Assembler                 ; 00:00:00     ; 1.0                     ; 4532 MB             ; 00:00:00                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4567 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4614 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:07     ; 1.2                     ; 4943 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4538 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4562 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4527 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:10     ; --                      ; --                  ; 00:00:09                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4535 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4535 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:17     ; --                      ; --                  ; 00:00:14                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -111,6 +114,8 @@ applicable agreement for further details.
 ; Assembler                 ; DESKTOP-787UAHE  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DESKTOP-787UAHE  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-787UAHE  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-787UAHE  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-787UAHE  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -122,6 +127,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off AntiLoopM -c An
 quartus_asm --read_settings_files=off --write_settings_files=off AntiLoopM -c AntiLoopM
 quartus_sta AntiLoopM -c AntiLoopM
 quartus_eda --read_settings_files=off --write_settings_files=off AntiLoopM -c AntiLoopM
+quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog AntiLoopM -c AntiLoopM --vector_source="C:/Users/WyKKe/Documentos/Unifei/2018.1/Eletrônica Digital II/Trabalhos/Trabalho 3/git/Turma2_2017020700_2017001212_2017005113/AntiLoopM/AntiLoopMWaveform.vwf" --testbench_file=./simulation/qsim/AntiLoopM.vt
+quartus_eda --functional=on --simulation=on --tool=modelsim_oem --format=verilog AntiLoopM -c AntiLoopM
 
 
 
