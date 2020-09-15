@@ -1,5 +1,5 @@
 # Trabalho3_ELTD12
-Trabalho feito para avaliação cuja nota será usado como substitutiva.
+Trabalho feito para avaliação de projeto de sistemas digitais.
 
 Grupo:
   Alex Junior Pereira: 2017020700
